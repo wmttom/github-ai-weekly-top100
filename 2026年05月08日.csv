@@ -1,0 +1,101 @@
+排名,项目,热度分,对比上周排名变动,项目分类,项目 License,项目简介
+1,NousResearch/hermes-agent,124200,持平,通用 AI Agent / 自主执行框架,Apache-2.0,hermes-agent 面向通用自主 agent 与多步骤执行，重点解决把规划、工具调用和连续执行串起来的问题，适合用于研究代理、自动化助手和长链路任务系统。
+2,anthropics/claude-code,123400,上升1,AI 编码助手 / Claude Code 能力增强,MIT,claude-code 面向AI 编码与仓库级工程协作，重点解决让模型理解仓库上下文并稳定修改、测试和重构代码的问题，适合用于日常开发、代码修复、测试补全和研发提效。
+3,anthropics/skills,122600,上升1,AI 工具与技能清单,未知 / 未声明,skills 面向agent 技能库与工具能力沉淀，重点解决把常见任务模式、工具用法和执行规范标准化的问题，适合用于团队技能库、提示模板沉淀和 agent 能力扩展。
+4,obra/superpowers,121800,上升1,AI 编码助手 / Claude Code 能力增强,MIT,superpowers 面向Claude Code 工程流程增强，重点解决把需求澄清、实现、测试和评审固化成更可靠的流程的问题，适合用于多人协作、重构、复杂开发任务和编码规范沉淀。
+5,forrestchang/andrej-karpathy-skills,121000,下降3,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,andrej-karpathy-skills 面向Claude Code 行为约束与编码技能增强，重点解决减少 AI 编码中的上下文丢失、冒进修改和流程随机性的问题，适合用于为项目配置 CLAUDE.md、提升 coding agent 稳定性。
+6,shanraisshan/claude-code-best-practice,120200,上升1,AI 编码助手 / Claude Code 能力增强,MIT,claude-code-best-practice 面向Claude Code 最佳实践与工程流程沉淀，重点解决解决团队使用 AI 编码工具时方法不统一、效果不稳定的问题的问题，适合用于团队培训、项目规范和 AI 编码 SOP。
+7,microsoft/markitdown,119400,下降1,文档解析 / PDF 与结构化抽取,MIT,markitdown 面向文档、PDF 与 Office 内容结构化，重点解决把复杂文件转换成模型可消费的 Markdown 或文本的问题，适合用于RAG 数据准备、文档问答和资料抽取。
+8,HKUDS/RAG-Anything,118600,新上榜,RAG / 知识库 / 文档解析,未知 / 未声明,RAG-Anything 面向多模态 RAG 与复杂文档理解，重点解决把图文、表格、结构化内容接入检索增强链路的问题，适合用于企业知识库、论文资料问答和多模态知识助手。
+9,thedotmack/claude-mem,117800,持平,Agent 记忆 / 长上下文记忆,MIT,claude-mem 面向Claude Code 长期记忆与会话压缩，重点解决捕获编码会话历史并回注相关上下文的问题，适合用于长期项目维护、跨天开发和仓库级记忆。
+10,google/mcp,117000,上升16,MCP Server / MCP 工具链,Apache-2.0,mcp 面向MCP 工具接入与上下文协议，重点解决让模型以标准方式连接工具、服务和外部系统的问题，适合用于企业工具层、上下文服务和 agent 集成。
+11,ChromeDevTools/chrome-devtools-mcp,116200,上升11,MCP Server / MCP 工具链,Apache-2.0,chrome-devtools-mcp 面向浏览器调试能力接入 MCP，重点解决让 agent 读取页面状态、调试前端并操作 DevTools 能力的问题，适合用于Web agent、前端测试和浏览器自动化。
+12,OpenBMB/VoxCPM,115400,下降2,语音 / TTS / STT,未知 / 未声明,VoxCPM 面向多语言 TTS 与语音克隆，重点解决降低自然语音生成、音色设计和配音成本的问题，适合用于语音助手、数字人配音和内容生产。
+13,openai/openai-agents-python,114600,上升10,AI Agent / 工作流编排,MIT,openai-agents-python 面向Python 多 agent 工作流开发，重点解决把模型、工具和任务流程组织成可维护的执行系统的问题，适合用于业务自动化、研究代理和后端 agent 服务。
+14,openai/openai-agents-js,113800,上升15,AI Agent / 工作流编排,MIT,openai-agents-js 面向JavaScript/TypeScript agent 开发，重点解决方便在 Web 与 Node 生态中构建工具调用和工作流 agent的问题，适合用于前端集成、云端 agent 和业务自动化。
+15,microsoft/agent-lightning,113000,新上榜,AI Agent / 工作流编排,未知 / 未声明,agent-lightning 面向agent 训练、评测与强化学习框架，重点解决提升 agent 在真实任务中的学习和优化能力的问题，适合用于agent 研究、任务评测和生产级优化。
+16,anomalyco/opencode,112200,上升8,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,opencode 面向开源 coding agent 与终端开发，重点解决让 AI 能围绕仓库执行代码修改、命令和验证的问题，适合用于本地编码助手、自动修复和开发流水线。
+17,zilliztech/claude-context,111400,持平,Agent 记忆 / 长上下文记忆,未知 / 未声明,claude-context 面向Claude 上下文检索和代码库记忆，重点解决把仓库与历史上下文转成可检索记忆，减少重复解释的问题，适合用于大型代码库问答、持续编码和项目知识回注。
+18,bytedance/deer-flow,110600,下降5,AI 工作流 / Agent 编排,MIT,deer-flow 面向多步骤 agent 流程编排，重点解决让研究、检索、生成和校验更可追踪、可复用的问题，适合用于自动研究、内容处理和内部流程自动化。
+19,firecrawl/firecrawl,109800,下降5,Agent 抓取 / 外部信息收集,AGPL-3.0,firecrawl 面向网页抓取与 LLM 数据抽取，重点解决把网页内容转成适合模型消费的结构化数据的问题，适合用于RAG 数据建设、竞品监控和情报采集。
+20,virattt/ai-hedge-fund,109000,下降8,量化 / 金融 AI 代理,MIT,ai-hedge-fund 面向金融研究与投资 agent 团队，重点解决把资讯、指标和多角色分析串成自动化投研流程的问题，适合用于投研助手、策略实验和市场情报汇总。
+21,multica-ai/multica,108200,下降6,AI Agent / 工作流编排,未知 / 未声明,multica 面向托管式 agent 协作平台，重点解决把 coding agent 变成可分派、可追踪、可积累技能的团队成员的问题，适合用于研发协作、任务分派和 agent 管理。
+22,HKUDS/DeepTutor,107400,下降14,AI Agent / 工作流编排,未知 / 未声明,DeepTutor 面向个性化教学 agent，重点解决把学习路径、答疑、练习和反馈组织成 agent-native 流程的问题，适合用于教育助手、自适应学习和课程辅导。
+23,vercel-labs/open-agents,106600,下降3,AI Agent / 工作流编排,未知 / 未声明,open-agents 面向云端 agent 应用模板，重点解决降低构建、部署和运行 Web agent 的门槛的问题，适合用于云端助手、任务自动化和产品原型。
+24,vercel-labs/agent-browser,105800,新上榜,浏览器自动化 / Web Agent,未知 / 未声明,agent-browser 面向浏览器驱动的 agent 执行环境，重点解决让模型在真实网页中读取、点击和完成操作的问题，适合用于网页自动化、表单处理和浏览器助手。
+25,alibaba/page-agent,105000,新上榜,浏览器自动化 / Web Agent,未知 / 未声明,page-agent 面向页面理解与 Web agent 操作，重点解决解决模型只理解页面但难稳定操作的问题的问题，适合用于网页任务执行、前端自动化和业务流程机器人。
+26,google/magika,104200,下降8,视觉 / OCR / 多模态,Apache-2.0,magika 面向AI 文件类型识别与内容理解，重点解决自动识别文件内容类型，减少人工分类和规则维护的问题，适合用于安全检测、文件处理和多模态管线。
+27,Tencent/WeKnora,103400,上升1,RAG / 知识库 / 文档解析,未知 / 未声明,WeKnora 面向企业知识库与检索增强问答，重点解决让模型基于真实资料回答，降低幻觉和知识接入门槛的问题，适合用于企业问答、FAQ 和内部知识助手。
+28,yichuan-w/LEANN,102600,新上榜,RAG / 知识库 / 文档解析,未知 / 未声明,LEANN 面向轻量向量检索与知识索引，重点解决降低大规模知识检索的存储和部署成本的问题，适合用于本地 RAG、知识库检索和轻量搜索应用。
+29,openclaw/mcporter,101800,新上榜,MCP Server / MCP 工具链,未知 / 未声明,mcporter 面向MCP 工具服务迁移与转换，重点解决减少不同 MCP 工具之间接入、改造和复用成本的问题，适合用于内部工具接入、MCP 生态迁移和 agent 工具层。
+30,czlonkowski/n8n-mcp,101000,新上榜,MCP Server / MCP 工具链,MIT,n8n-mcp 面向n8n 工作流与 MCP 集成，重点解决让 agent 能调用 n8n 自动化节点和业务流程的问题，适合用于低代码自动化、运营流程和工具调用。
+31,IBM/mcp-context-forge,100200,新上榜,MCP Server / MCP 工具链,Apache-2.0,mcp-context-forge 面向企业级 MCP 网关与上下文服务，重点解决统一治理多个 MCP server、工具和访问策略的问题，适合用于企业 agent 平台、工具网关和安全治理。
+32,MCP-UI-Org/mcp-ui,99400,新上榜,MCP Server / MCP 工具链,MIT,mcp-ui 面向MCP 交互界面与组件协议，重点解决让工具调用结果能以更友好的 UI 形式呈现的问题，适合用于agent 工具前端、交互组件和可视化工作台。
+33,BAI-LAB/MemoryOS,98600,新上榜,Agent 记忆 / 长上下文记忆,未知 / 未声明,MemoryOS 面向AI 记忆操作系统，重点解决为 agent 提供长期记忆、偏好和上下文管理的问题，适合用于个人助理、长期协作和记忆型应用。
+34,memvid/memvid,97800,新上榜,Agent 记忆 / 长上下文记忆,未知 / 未声明,memvid 面向视频化记忆与轻量知识存储，重点解决用压缩媒介保存和检索大量上下文信息的问题，适合用于本地记忆库、知识检索和轻量 RAG。
+35,topoteretes/cognee,97000,持平,Agent 记忆 / 长上下文记忆,未知 / 未声明,cognee 面向AI agent 记忆引擎，重点解决把知识、关系和历史上下文沉淀成可检索记忆的问题，适合用于长期助理、项目知识库和 agent 记忆层。
+36,rowboatlabs/rowboat,96200,下降15,Agent 记忆 / 长上下文记忆,未知 / 未声明,rowboat 面向带记忆的 AI coworker，重点解决让 agent 在长期任务中保留历史、计划和偏好的问题，适合用于AI 同事、长期项目协作和任务跟进。
+37,lsdefine/GenericAgent,95400,下降18,AI Agent / 工作流编排,未知 / 未声明,GenericAgent 面向自演化通用 agent，重点解决通过技能树成长减少 token 消耗并增强系统控制能力的问题，适合用于自主任务执行、技能演化和通用自动化。
+38,k2-fsa/OmniVoice,94600,新上榜,语音 / TTS / STT,未知 / 未声明,OmniVoice 面向全向语音生成与语音理解，重点解决降低多语言语音生成和克隆的使用门槛的问题，适合用于语音助手、配音工具和音频内容生产。
+39,jamiepine/voicebox,93800,下降23,文本转语音 / TTS,MIT,voicebox 面向开源语音合成工作室，重点解决让文本快速变成自然语音并支持内容生产流程的问题，适合用于播报、配音、数字人和语音产品原型。
+40,BasedHardware/omi,93000,下降7,AIoT / 智能硬件,未知 / 未声明,omi 面向屏幕与对话感知型 AI 硬件，重点解决把环境感知、语音和模型建议结合起来的问题，适合用于可穿戴助手、会议记录和实时辅助。
+41,EvoMap/evolver,92200,下降7,AI Agent / 工作流编排,未知 / 未声明,evolver 面向自进化 agent 引擎，重点解决让 agent 通过协议化方式迭代策略和能力的问题，适合用于自主任务系统、能力演化和实验型 agent。
+42,HKUDS/OpenHarness,91400,新上榜,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,OpenHarness 面向AI coding harness 与评测框架，重点解决让 coding agent 的执行过程更可控、可复现、可评估的问题，适合用于代码生成评测、开发流程验证和 agent benchmark。
+43,openclaw/openclaw,90600,下降5,自托管 AI 助手 / 本地代理,MIT,openclaw 面向自托管 AI 助手平台，重点解决在私有环境中连接模型、消息和自动化能力的问题，适合用于本地助手、私有知识问答和个人自动化。
+44,affaan-m/everything-claude-code,89800,下降5,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,everything-claude-code 面向Claude Code 工具与流程合集，重点解决把命令、技能、规则和实践集中管理的问题，适合用于团队研发规范、AI 编码能力库和工程加速。
+45,addyosmani/agent-skills,89000,下降8,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,agent-skills 面向生产级 coding agent 技能，重点解决沉淀工程任务的可复用技能和高质量执行模式的问题，适合用于代码审查、重构、调试和团队技能复用。
+46,charmbracelet/crush,88200,下降5,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,crush 面向终端中的 AI 编码助手，重点解决把开发者熟悉的命令行体验和 coding agent 结合的问题，适合用于终端开发、仓库修改和命令执行。
+47,rtk-ai/rtk,87400,下降7,AI 基础设施 / 运行与平台层,Apache-2.0,rtk 面向AI 应用运行时与平台底座，重点解决统一模型、工具和服务接入，减少应用开发重复工作的问题，适合用于AI 平台、统一接入层和应用底座。
+48,78/xiaozhi-esp32,86600,下降6,AIoT / 智能硬件,MIT,xiaozhi-esp32 面向ESP32 语音智能硬件，重点解决让低成本设备具备语音交互和模型能力的问题，适合用于智能终端、教育硬件和边缘助手。
+49,googleanalytics/google-analytics-mcp,85800,新上榜,MCP Server / MCP 工具链,未知 / 未声明,google-analytics-mcp 面向Google Analytics MCP 接入，重点解决让 agent 读取分析指标并执行数据问答的问题，适合用于增长分析、运营看板和自动化报告。
+50,microsoft/azure-devops-mcp,85000,新上榜,MCP Server / MCP 工具链,未知 / 未声明,azure-devops-mcp 面向Azure DevOps MCP 工具，重点解决让 agent 连接项目、工单、代码和发布系统的问题，适合用于研发管理、CI/CD 助手和工程自动化。
+51,CursorTouch/Windows-MCP,84200,新上榜,MCP Server / MCP 工具链,未知 / 未声明,Windows-MCP 面向Windows 桌面环境 MCP 控制，重点解决让 agent 操作本地桌面和系统能力的问题，适合用于桌面自动化、RPA 和个人工作流助手。
+52,xpzouying/xiaohongshu-mcp,83400,下降25,MCP Server / MCP 工具链,未知 / 未声明,xiaohongshu-mcp 面向小红书内容与运营 MCP 工具，重点解决让 agent 接入平台内容、检索和运营动作的问题，适合用于内容运营、社媒分析和自动发布流程。
+53,tirth8205/code-review-graph,82600,上升34,MCP Server / MCP 工具链,MIT,code-review-graph 面向代码审查图谱与 MCP 工具，重点解决帮助 agent 理解代码依赖和审查上下文的问题，适合用于代码评审、影响分析和工程知识导航。
+54,southleft/figma-console-mcp,81800,新上榜,面向 AI 编码的设计系统 / UI 规范,MIT,figma-console-mcp 面向Figma 与设计工具 MCP 接入，重点解决让 agent 读取设计信息并辅助前端实现的问题，适合用于设计到开发协同、组件规范抽取和 UI 生成。
+55,nageoffer/ragent,81000,下降3,RAG / 知识库 / 文档解析,未知 / 未声明,ragent 面向RAG 与知识库 agent，重点解决把文档检索、生成和工具执行组合成应用流程的问题，适合用于企业问答、知识助手和文档型 agent。
+56,VectifyAI/OpenKB,80200,新上榜,RAG / 知识库 / 文档解析,未知 / 未声明,OpenKB 面向开放知识库与 RAG 平台，重点解决把资料组织成可检索、可维护的知识系统的问题，适合用于企业知识库、文档问答和内部信息检索。
+57,VectifyAI/PageIndex,79400,上升28,文档解析 / PDF 与结构化抽取,Apache-2.0,PageIndex 面向页面索引与文档结构化，重点解决把网页和页面内容组织成适合检索的索引的问题，适合用于RAG 数据准备、网站问答和知识库建设。
+58,langflow-ai/openrag,78600,上升33,RAG / 知识库 / 文档解析,MIT,openrag 面向开源 RAG 应用框架，重点解决解决模型回答缺少外部知识支撑的问题的问题，适合用于企业问答、FAQ 和知识库应用。
+59,run-llama/liteparse,77800,上升31,文档解析 / PDF 与结构化抽取,Apache-2.0,liteparse 面向轻量文档解析工具，重点解决降低 PDF、页面和文档内容进入模型流程的门槛的问题，适合用于轻量 RAG、文档问答和快速原型。
+60,opendataloader-project/opendataloader-pdf,77000,上升13,文档解析 / PDF 与结构化抽取,Apache-2.0,opendataloader-pdf 面向PDF 数据加载与结构化抽取，重点解决处理票据、合同、论文等复杂 PDF 内容的问题，适合用于文档自动处理、RAG 和资料录入。
+61,supermemoryai/supermemory,76200,上升23,Agent 记忆 / 长上下文记忆,Apache-2.0,supermemory 面向AI 长期记忆与信息检索，重点解决让助手持续保存和检索历史知识的问题，适合用于个人助理、客户关系和项目协作。
+62,volcengine/OpenViking,75400,下降32,Agent 记忆 / 长上下文记忆,Apache-2.0,OpenViking 面向agent 长期记忆系统，重点解决解决模型跨轮、跨天任务中忘记历史的问题的问题，适合用于长期助理、项目协作和有状态 agent。
+63,HKUDS/CLI-Anything,74600,下降31,AI 自动化流程 / 内容或任务流水线,MIT,CLI-Anything 面向自然语言到 CLI 工作流，重点解决让模型稳定调用命令行和系统工具的问题，适合用于开发辅助、运维自动化和批量处理。
+64,openai/symphony,73800,下降33,AI 自动化流程 / 内容或任务流水线,Apache-2.0,symphony 面向多角色任务编排系统，重点解决把复杂任务拆成角色、阶段和执行链路的问题，适合用于研究流程、内容生产和业务自动化。
+65,Panniantong/Agent-Reach,73000,下降17,搜索 Agent / SEO / 发现,MIT,Agent-Reach 面向搜索触达与信息发现 agent，重点解决提高搜索覆盖、信息发现和长期跟踪效率的问题，适合用于SEO、线索发现和主题研究。
+66,msitarzewski/agency-agents,72200,下降23,通用 AI Agent / 自主执行框架,MIT,agency-agents 面向多 agent 协作框架，重点解决通过角色分工完成复杂任务的问题，适合用于研究代理、任务拆解和协作自动化。
+67,garrytan/gstack,71400,下降23,AI 工作流 / Agent 编排,未知 / 未声明,gstack 面向agent 栈式工作流整合，重点解决把模型、工具、上下文和任务状态集中管理的问题，适合用于内部平台、流程编排和自动化工具。
+68,ultraworkers/claw-code,70600,下降23,AI 工作流 / Agent 编排,未知 / 未声明,claw-code 面向代码任务执行与 agent 流程，重点解决将开发任务拆解、执行和校验串成流程的问题，适合用于自动编码、脚本执行和终端开发。
+69,karpathy/autoresearch,69800,下降23,AI 工作流 / Agent 编排,未知 / 未声明,autoresearch 面向自动研究 agent 工作流，重点解决自动检索、阅读、总结并推进研究任务的问题，适合用于技术调研、论文阅读和竞品分析。
+70,FujiwaraChoki/MoneyPrinterV2,69000,下降23,AI 自动化流程 / 内容或任务流水线,AGPL-3.0,MoneyPrinterV2 面向内容生产与增长流水线，重点解决把选题、生成、素材和发布前处理自动化的问题，适合用于短视频、自媒体和营销内容工厂。
+71,paperclipai/paperclip,68200,下降18,AI 自动化流程 / 内容或任务流水线,MIT,paperclip 面向AI 工作流自动化工具，重点解决把模型输出接入真实业务动作的问题，适合用于办公自动化、资料处理和内部助手。
+72,gsd-build/get-shit-done,67400,下降18,AI 自动化流程 / 内容或任务流水线,MIT,get-shit-done 面向任务执行型 AI 自动化，重点解决把琐碎重复任务组织成可执行流程的问题，适合用于任务清单、资料整理和批量操作。
+73,moeru-ai/airi,66600,下降24,数字人 / 陪伴型 AI,AGPL-3.0,airi 面向人格化数字人和陪伴助手，重点解决解决通用问答缺少长期人格与互动体验的问题的问题，适合用于虚拟角色、陪伴产品和直播互动。
+74,AstrBotDevs/AstrBot,65800,下降17,聊天机器人 / 角色陪伴,AGPL-3.0,AstrBot 面向多平台聊天机器人框架，重点解决降低 IM 平台机器人接入和维护成本的问题，适合用于群助手、私聊问答和社区运营。
+75,agentscope-ai/CoPaw,65000,下降6,聊天机器人 / 角色陪伴,Apache-2.0,CoPaw 面向互动式陪伴与角色对话，重点解决增强对话粘性和情感化交互的问题，适合用于陪伴应用、角色聊天和娱乐机器人。
+76,obot-platform/nanobot,64200,新上榜,聊天机器人 / 角色陪伴,MIT,nanobot 面向轻量机器人与 agent 接口，重点解决快速搭建小型 AI 服务和聊天入口的问题，适合用于原型验证、自动回复和轻量助手。
+77,HKUDS/nanobot,63400,下降6,聊天机器人 / 角色陪伴,MIT,nanobot 面向轻量 AI 机器人框架，重点解决降低聊天机器人和任务型助手搭建成本的问题，适合用于教学、原型和轻量服务。
+78,jackwener/opencli,62600,下降6,浏览器自动化 / Web Agent,MIT,opencli 面向自然语言到命令行自动化，重点解决让模型更可靠地执行系统命令和工具的问题，适合用于开发、运维和自动化工作台。
+79,pinchtab/pinchtab,61800,下降1,浏览器自动化 / Web Agent,MIT,pinchtab 面向浏览器标签页与网页操作增强，重点解决帮助 agent 管理多页面、多标签任务的问题，适合用于网页研究、表单处理和浏览器工作流。
+80,D4Vinci/Scrapling,61000,下降14,Agent 抓取 / 外部信息收集,MIT,Scrapling 面向网页抓取与信息抽取工具，重点解决从复杂网页中稳定提取可用数据的问题，适合用于RAG 数据源、竞品监控和研究准备。
+81,Vaibhavs10/insanely-fast-whisper,60200,下降5,语音 / TTS / STT,Apache-2.0,insanely-fast-whisper 面向高速语音识别优化，重点解决降低转写延迟和资源占用的问题，适合用于会议转写、字幕生成和语音输入。
+82,OpenMOSS/MOSS-TTS,59400,新上榜,文本转语音 / TTS,未知 / 未声明,MOSS-TTS 面向中文与多语言 TTS 生成，重点解决降低高质量语音合成和克隆成本的问题，适合用于语音助手、内容配音和播报系统。
+83,KittenML/KittenTTS,58600,上升10,文本转语音 / TTS,Apache-2.0,KittenTTS 面向轻量文本转语音工具，重点解决让本地和低成本 TTS 更易集成的问题，适合用于原型验证、教育产品和轻量语音应用。
+84,ysharma3501/LuxTTS,57800,下降3,文本转语音 / TTS,MIT,LuxTTS 面向高质量语音生成，重点解决改善传统 TTS 生硬和风格单一的问题的问题，适合用于数字人配音、教育播报和内容创作。
+85,microsoft/BitNet,57000,下降10,NLP / LLM 训练与轻量模型,MIT,BitNet 面向低比特大模型与高效推理，重点解决降低模型部署成本和算力依赖的问题，适合用于边缘推理、小模型研究和模型压缩。
+86,gofr-dev/gofr,56200,下降7,AI 可观测 / LLM 评测,Apache-2.0,gofr 面向AI 服务框架与可观测能力，重点解决提高 AI 服务上线后的指标、日志和治理能力的问题，适合用于平台工程、后端服务和生产运维。
+87,builderz-labs/mission-control,55400,上升1,监控 / 趋势跟踪代理,MIT,mission-control 面向任务与外部信号统一监控台，重点解决解决自动化系统状态分散和不可见问题的问题，适合用于任务监控、运行汇总和运营观察。
+88,koala73/worldmonitor,54600,下降32,监控 / 趋势跟踪代理,NOASSERTION,worldmonitor 面向外部事件和趋势监控系统，重点解决减少人工持续盯盘和信息汇总成本的问题，适合用于OSINT、市场观察和风险提醒。
+89,TauricResearch/TradingAgents,53800,下降21,量化 / 金融 AI 代理,MIT,TradingAgents 面向多 agent 金融研究框架，重点解决用角色协作分析市场与投资信息的问题，适合用于量化研究、投资分析和金融 agent 实验。
+90,hsliuping/TradingAgents-CN,53000,下降7,量化 / 金融 AI 代理,MIT,TradingAgents-CN 面向TradingAgents 中文本地化项目，重点解决降低中文用户搭建金融 agent 的门槛的问题，适合用于中文投研、金融教学和策略实验。
+91,ZhuLinsen/daily_stock_analysis,52200,下降5,量化 / 金融 AI 代理,MIT,daily_stock_analysis 面向日常股票分析自动化，重点解决汇总市场资讯、指标和个股观察的问题，适合用于投资简报、个股跟踪和金融研究助手。
+92,BIT-DataLab/Edit-Banana,51400,下降10,AI 图像生成 / 图像工作流,MIT,Edit-Banana 面向图像生成与编辑工作流，重点解决让视觉素材改写和编辑流程更自动化的问题，适合用于营销素材、设计实验和图像处理。
+93,ResearAI/AutoFigure-Edit,50600,上升5,AI 图像编辑 / 修图,MIT,AutoFigure-Edit 面向科研图表与图片自动编辑，重点解决减少论文插图和技术图像修改成本的问题，适合用于科研图片处理、图表规范化和学术编辑。
+94,CyberTimon/RapidRAW,49800,上升6,AI 图像编辑 / 修图,MIT,RapidRAW 面向RAW 图像处理与摄影后期，重点解决提升原始照片批量处理效率的问题，适合用于摄影后期、素材增强和图片整理。
+95,dimensionalOS/dimos,49000,下降1,机器人 / Embodied AI,Apache-2.0,dimos 面向机器人与具身智能系统层，重点解决组织感知、动作控制和智能策略的问题，适合用于机器人原型、实验平台和具身 AI。
+96,Physical-Intelligence/openpi,48200,上升3,机器人 / Embodied AI,Apache-2.0,openpi 面向具身智能与机器人控制，重点解决统一感知、动作和策略建模的问题，适合用于机器人研究、控制实验和原型开发。
+97,PKU-YuanGroup/Helios,47400,下降1,AI 视频生成 / 自动剪辑,MIT,Helios 面向视频生成与时序视觉建模，重点解决降低文本到视频和视频控制的实验成本的问题，适合用于生成式视频研究和内容原型。
+98,nv-tlabs/kimodo,46600,下降6,3D 生成 / CAD / 场景生成,未知 / 未声明,kimodo 面向3D 与空间内容生成，重点解决降低三维建模和空间生成门槛的问题，适合用于3D 原型、场景生成和空间 AI。
+99,pascalorg/editor,45800,下降25,3D 生成 / CAD / 场景生成,MIT,editor 面向3D 编辑与空间内容创作，重点解决降低三维资产编辑和场景搭建复杂度的问题，适合用于游戏原型、空间设计和 3D 应用。
+100,OpenCut-app/OpenCut,45000,下降3,视频制作 / 演示视频生成,MIT,OpenCut 面向轻量视频剪辑与素材处理，重点解决降低基础剪辑、切片和整理门槛的问题，适合用于教学视频、产品演示和创作者工作流。
