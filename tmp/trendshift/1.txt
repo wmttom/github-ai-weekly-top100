@@ -1,0 +1,427 @@
+GitHub trending history — every repository that ever trended | Trendshift
+Reach
+125K+
+monthly visitors
+Advertise on Trendshift
+sydasif/nornir-napalm-mcp
+@SydAsif78
+Live mentions
+Trending repositories
+Daily
+Weekly
+Monthly
+Yearly
+Live mentions
+Topics
+GitHub trending
+Repositories
+Developers
+Insights
+Stats
+Submit repository
+GitHub trending repositories
+The repositories have continued to trend on GitHub Trending
+MadsLorentzen/ai-job-search
+19.1k
+5.7k
+Featured on GitHub Trending
+1
+times
+of today.
+New
+2026
+Mentioned on
+AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.
+#
+AI agent
+#
+AI workflow
+#
+Workflow automation
+#
+Resume building
+SmartlyDressedGames/U3-SDK
+2.1k
+263
+Featured on GitHub Trending
+1
+times
+of today.
+Source code for Unturned, a free open-world zombie survival sandbox game.
+#
+Game development
+addyosmani/agent-skills
+76.3k
+8.3k
+Featured on GitHub Trending
+1
+times
+of today.
+New
+2026
+Mentioned on
+Production-grade engineering skills for AI coding agents.
+#
+AI agent
+#
+AI coding assistant
+#
+AI skills
+4
+VoltAgent/awesome-design-md
+100.2k
+11.7k
+Featured on GitHub Trending
+1
+times
+of today.
+New
+2026
+Mentioned on
+A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.
+#
+AI coding assistant
+#
+Design system
+#
+Curated list
+5
+iOfficeAI/OfficeCLI
+13.5k
+934
+Featured on GitHub Trending
+1
+times
+of today.
+New
+2026
+Mentioned on
+OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.
+#
+AI agent
+#
+MCP
+#
+Document processing
+6
+wonderwhy-er/DesktopCommanderMCP
+6.6k
+783
+Featured on GitHub Trending
+1
+times
+of today.
+Mentioned on
+This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities
+#
+AI agent
+#
+MCP
+7
+anthropics/claude-cookbooks
+47.4k
+5.6k
+Featured on GitHub Trending
+1
+times
+of today.
+Mentioned on
+A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.
+#
+RAG
+#
+Programming examples
+8
+vxcontrol/pentagi
+19.5k
+2.7k
+Featured on GitHub Trending
+1
+times
+of today.
+Mentioned on
+Fully autonomous AI Agents system capable of performing complex penetration testing tasks
+#
+AI agent
+#
+Pentesting
+#
+Self-hosted
+9
+unclecode/crawl4ai
+72.1k
+7.4k
+Featured on GitHub Trending
+1
+times
+of today.
+Mentioned on
+🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN
+#
+Headless browser
+#
+Web scraping
+10
+imthenachoman/How-To-Secure-A-Linux-Server
+29.2k
+1.9k
+Featured on GitHub Trending
+1
+times
+of today.
+Mentioned on
+An evolving how-to guide for securing a Linux server.
+11
+huxingyi/autoremesher
+2.4k
+172
+Featured on GitHub Trending
+1
+times
+of today.
+Mentioned on
+Automatic quad remeshing tool
+#
+3D generation
+12
+bradautomates/claude-video
+6.7k
+775
+Featured on GitHub Trending
+1
+times
+of today.
+New
+2026
+Mentioned on
+Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.
+#
+Computer vision
+#
+AI video generation
+#
+AI workflow
+13
+prisma/prisma
+47.4k
+2.3k
+Featured on GitHub Trending
+1
+times
+of today.
+Mentioned on
+Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB
+14
+kyutai-labs/pocket-tts
+7k
+688
+Featured on GitHub Trending
+1
+times
+of today.
+New
+2026
+Mentioned on
+A TTS that fits in your CPU (and pocket)
+#
+AI voice
+#
+Text to speech
+#
+Audio processing
+15
+asgeirtj/system_prompts_leaks
+55.4k
+9.1k
+Featured on GitHub Trending
+1
+times
+of today.
+Mentioned on
+Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.
+#
+Chatbot
+Ad space available
+Your brand here
+In front of
+125K+
+developers every month
+Want to advertise your product to high-intent tech audiences at a simple, flat rate?
+Advertise on Trendshift
+Live
+//
+Mentions
+sydasif/nornir-napalm-mcp
+@SydAsif78
+isaac-mason/packcat
+@isaac_mason_
+RhysSullivan/twitter-account-location-in-username
+@the_osps
+wonderwhy-er/DesktopCommanderMCP
+@Moxbyapp
+bradautomates/claude-video
+@Moxbyapp
+View all mentions
+Trending
+//
+Daily
+1
+#
+AI agent
+1.9k
+stars
+2
+#
+AI skills
+877
+stars
+3
+#
+AI coding assistant
+667
+stars
+4
+#
+Self-hosted
+569
+stars
+5
+#
+AI workflow
+486
+stars
+6
+#
+Curated list
+449
+stars
+7
+#
+Workflow automation
+332
+stars
+8
+#
+Local LLM
+282
+stars
+9
+#
+MCP
+260
+stars
+10
+#
+Programming examples
+222
+stars
+11
+#
+Web scraping
+217
+stars
+12
+#
+Document processing
+203
+stars
+13
+#
+NLP
+169
+stars
+14
+#
+RAG
+166
+stars
+15
+#
+AI infrastructure
+165
+stars
+Browse all topics →
+Trending
+//
+Daily
+#
+AI agent
+1.9k
+stars
+·
+#
+AI skills
+877
+stars
+·
+#
+AI coding assistant
+667
+stars
+·
+#
+Self-hosted
+569
+stars
+·
+#
+AI workflow
+486
+stars
+·
+#
+Curated list
+449
+stars
+·
+#
+Workflow automation
+332
+stars
+·
+#
+Local LLM
+282
+stars
+·
+#
+MCP
+260
+stars
+·
+#
+Programming examples
+222
+stars
+Footer
+Your go-to destination for discovering trending open-source projects and uncovering the insights that matter
+Legal
+Terms and conditions
+Privacy policy
+More
+Advertise
+onedump
+gosnakego
+Contact us
+Social
+X (Twitter)
+GitHub
+What they build speaks louder than words
+©
+2026
+Trendshift, created by
+Julian Li
+with ❤️
+Discover trends that matter
+Trending repositories
+Daily
+Weekly
+Monthly
+Yearly
+Live mentions
+Topics
+GitHub trending
+Repositories
+Developers
+Insights
+Stats
