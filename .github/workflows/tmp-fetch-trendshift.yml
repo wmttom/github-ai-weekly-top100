@@ -1,0 +1,70 @@
+name: Temporary Trendshift fetch
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/tmp-fetch-trendshift.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Fetch Trendshift ranges with curl
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p trendshift-output
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0 Safari/537.36'
+          for range in 14 7 1; do
+            url="https://trendshift.io/github-trending-repositories?trending-range=${range}&trending-limit=100"
+            echo "Fetching ${url}"
+            curl --fail --location --compressed \
+              --retry 5 --retry-delay 3 --retry-all-errors \
+              --connect-timeout 30 --max-time 180 \
+              --user-agent "$UA" \
+              --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
+              --header 'Accept-Language: en-US,en;q=0.9' \
+              --dump-header "trendshift-output/${range}.headers" \
+              --output "trendshift-output/${range}.html" \
+              "$url"
+            test -s "trendshift-output/${range}.html"
+            wc -c "trendshift-output/${range}.html"
+          done
+
+      - name: Extract readable page text and validate ranges
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from bs4 import BeautifulSoup
+
+          expected = {
+              '14': ('past 14 days', '14 days'),
+              '7': ('past 7 days', '7 days'),
+              '1': ('of today', "today's"),
+          }
+          for r, markers in expected.items():
+              html_path = Path('trendshift-output') / f'{r}.html'
+              html = html_path.read_text(encoding='utf-8', errors='replace')
+              soup = BeautifulSoup(html, 'html.parser')
+              text = '\n'.join(line.strip() for line in soup.get_text('\n').splitlines() if line.strip())
+              (Path('trendshift-output') / f'{r}.txt').write_text(text, encoding='utf-8')
+              lower = text.lower()
+              if not any(marker in lower for marker in markers):
+                  raise SystemExit(f'Range {r} validation failed; expected one of {markers!r}. First text: {text[:500]!r}')
+              print(f'Range {r}: {len(html)} HTML chars, {len(text)} text chars, validation passed')
+          PY
+
+      - name: Upload raw Trendshift pages
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trendshift-ranges-20260710
+          path: trendshift-output/
+          if-no-files-found: error
+          retention-days: 1
