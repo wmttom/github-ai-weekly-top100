@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - '.github/workflows/tmp-fetch-trendshift.yml'
+      - 'tmp/candidate-repos-20260710.txt'
   workflow_dispatch:
 
 permissions:
@@ -12,8 +13,13 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Install parser dependencies
+        run: python -m pip install --disable-pip-version-check beautifulsoup4 requests
+
       - name: Fetch Trendshift ranges with curl
         shell: bash
         run: |
@@ -60,11 +66,61 @@ jobs:
               print(f'Range {r}: {len(html)} HTML chars, {len(text)} text chars, validation passed')
           PY
 
-      - name: Upload raw Trendshift pages
+      - name: Fetch GitHub repository metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os, time
+          from pathlib import Path
+          import requests
+
+          repos=[]
+          for line in Path('tmp/candidate-repos-20260710.txt').read_text(encoding='utf-8').splitlines():
+              repo=line.strip()
+              if repo and repo not in repos:
+                  repos.append(repo)
+          headers={
+              'Accept':'application/vnd.github+json',
+              'Authorization':f"Bearer {os.environ['GH_TOKEN']}",
+              'X-GitHub-Api-Version':'2022-11-28',
+              'User-Agent':'github-ai-weekly-top100',
+          }
+          result=[]
+          for i,repo in enumerate(repos,1):
+              url=f'https://api.github.com/repos/{repo}'
+              r=requests.get(url,headers=headers,timeout=30)
+              if r.status_code==200:
+                  d=r.json()
+                  result.append({
+                      'requested_repo':repo,
+                      'full_name':d.get('full_name'),
+                      'description':d.get('description') or '',
+                      'created_at':d.get('created_at'),
+                      'updated_at':d.get('updated_at'),
+                      'pushed_at':d.get('pushed_at'),
+                      'stargazers_count':d.get('stargazers_count'),
+                      'forks_count':d.get('forks_count'),
+                      'archived':d.get('archived'),
+                      'disabled':d.get('disabled'),
+                      'license':(d.get('license') or {}).get('spdx_id') or 'NOASSERTION',
+                      'default_branch':d.get('default_branch'),
+                      'html_url':d.get('html_url'),
+                      'error':None,
+                  })
+              else:
+                  result.append({'requested_repo':repo,'error':f'{r.status_code}: {r.text[:300]}'})
+              print(f'{i}/{len(repos)} {repo}: {r.status_code}')
+              time.sleep(0.05)
+          Path('trendshift-output/metadata.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+
+      - name: Upload raw Trendshift pages and metadata
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: trendshift-ranges-20260710
+          name: trendshift-ranges-metadata-20260710
           path: trendshift-output/
           if-no-files-found: error
           retention-days: 1
