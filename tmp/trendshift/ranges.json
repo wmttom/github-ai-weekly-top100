@@ -1,1 +1,2464 @@
-[]
+[
+  {
+    "range_days": 14,
+    "rank": 1,
+    "repo": "asgeirtj/system_prompts_leaks",
+    "stars": "55.4k",
+    "forks": "9.1k",
+    "appearances": 7,
+    "new": false,
+    "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+    "tags": [
+      "Chatbot"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 2,
+    "repo": "usestrix/strix",
+    "stars": "39.8k",
+    "forks": "4.1k",
+    "appearances": 7,
+    "new": false,
+    "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+    "tags": [
+      "AI agent",
+      "Pentesting"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 3,
+    "repo": "msitarzewski/agency-agents",
+    "stars": "130.5k",
+    "forks": "21.4k",
+    "appearances": 7,
+    "new": false,
+    "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+    "tags": [
+      "AI agent"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 4,
+    "repo": "addyosmani/agent-skills",
+    "stars": "76.3k",
+    "forks": "8.3k",
+    "appearances": 5,
+    "new": true,
+    "description": "Production-grade engineering skills for AI coding agents.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 5,
+    "repo": "openai/codex-plugin-cc",
+    "stars": "27.4k",
+    "forks": "1.7k",
+    "appearances": 5,
+    "new": true,
+    "description": "Use Codex from Claude Code to review code or delegate tasks.",
+    "tags": [
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 6,
+    "repo": "simplex-chat/simplex-chat",
+    "stars": "18.4k",
+    "forks": "1.1k",
+    "appearances": 4,
+    "new": false,
+    "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 7,
+    "repo": "Zackriya-Solutions/meetily",
+    "stars": "22.3k",
+    "forks": "2.3k",
+    "appearances": 4,
+    "new": false,
+    "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.",
+    "tags": [
+      "AI agent",
+      "Audio processing",
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 8,
+    "repo": "MadsLorentzen/ai-job-search",
+    "stars": "19.1k",
+    "forks": "5.7k",
+    "appearances": 3,
+    "new": true,
+    "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+    "tags": [
+      "AI agent",
+      "AI workflow",
+      "Workflow automation",
+      "Resume building"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 9,
+    "repo": "hasaneyldrm/exercises-dataset",
+    "stars": "11.2k",
+    "forks": "1.3k",
+    "appearances": 3,
+    "new": true,
+    "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
+    "tags": [
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 10,
+    "repo": "ruvnet/RuView",
+    "stars": "81.1k",
+    "forks": "10.9k",
+    "appearances": 5,
+    "new": false,
+    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 11,
+    "repo": "ripienaar/free-for-dev",
+    "stars": "129.3k",
+    "forks": "13.4k",
+    "appearances": 4,
+    "new": false,
+    "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+    "tags": [
+      "Curated list"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 12,
+    "repo": "JuliusBrussee/caveman",
+    "stars": "88.2k",
+    "forks": "5k",
+    "appearances": 4,
+    "new": true,
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+    "tags": [
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 13,
+    "repo": "xbtlin/ai-berkshire",
+    "stars": "12.4k",
+    "forks": "1.7k",
+    "appearances": 4,
+    "new": true,
+    "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.",
+    "tags": [
+      "AI agent",
+      "Fintech"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 14,
+    "repo": "SmartlyDressedGames/U3-SDK",
+    "stars": "2.1k",
+    "forks": "263",
+    "appearances": 2,
+    "new": false,
+    "description": "Source code for Unturned, a free open-world zombie survival sandbox game.",
+    "tags": [
+      "Game development"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 15,
+    "repo": "HKUDS/Vibe-Trading",
+    "stars": "19k",
+    "forks": "3.3k",
+    "appearances": 7,
+    "new": true,
+    "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+    "tags": [
+      "AI agent",
+      "Workflow automation",
+      "Fintech"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 16,
+    "repo": "commaai/openpilot",
+    "stars": "63.2k",
+    "forks": "11.1k",
+    "appearances": 3,
+    "new": false,
+    "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+    "tags": [
+      "Robotics"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 17,
+    "repo": "cupy/cupy",
+    "stars": "12.1k",
+    "forks": "1.1k",
+    "appearances": 2,
+    "new": false,
+    "description": "NumPy & SciPy for GPU",
+    "tags": [
+      "AI infrastructure"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 18,
+    "repo": "alibaba/page-agent",
+    "stars": "25.7k",
+    "forks": "2.3k",
+    "appearances": 2,
+    "new": false,
+    "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+    "tags": [
+      "AI agent"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 19,
+    "repo": "TencentCloud/TencentDB-Agent-Memory",
+    "stars": "8.1k",
+    "forks": "752",
+    "appearances": 1,
+    "new": true,
+    "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+    "tags": [
+      "AI agent",
+      "AI memory"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 20,
+    "repo": "altic-dev/FluidVoice",
+    "stars": "7k",
+    "forks": "443",
+    "appearances": 4,
+    "new": false,
+    "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
+    "tags": [
+      "AI voice"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 21,
+    "repo": "prisma/prisma",
+    "stars": "47.4k",
+    "forks": "2.3k",
+    "appearances": 3,
+    "new": false,
+    "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 22,
+    "repo": "Leonxlnx/taste-skill",
+    "stars": "61.6k",
+    "forks": "4.1k",
+    "appearances": 2,
+    "new": true,
+    "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+    "tags": [
+      "AI agent",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 23,
+    "repo": "VoltAgent/awesome-design-md",
+    "stars": "100.2k",
+    "forks": "11.7k",
+    "appearances": 2,
+    "new": true,
+    "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+    "tags": [
+      "AI coding assistant",
+      "Design system",
+      "Curated list"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 24,
+    "repo": "elastic/elasticsearch",
+    "stars": "77.5k",
+    "forks": "26k",
+    "appearances": 1,
+    "new": false,
+    "description": "Free and Open Source, Distributed, RESTful Search Engine",
+    "tags": [
+      "Vector database",
+      "Search"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 25,
+    "repo": "IceWhaleTech/CasaOS",
+    "stars": "36.6k",
+    "forks": "2.1k",
+    "appearances": 1,
+    "new": false,
+    "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.",
+    "tags": [
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 26,
+    "repo": "iOfficeAI/OfficeCLI",
+    "stars": "13.5k",
+    "forks": "934",
+    "appearances": 4,
+    "new": true,
+    "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+    "tags": [
+      "AI agent",
+      "MCP",
+      "Document processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 27,
+    "repo": "facebook/astryx",
+    "stars": "7.5k",
+    "forks": "524",
+    "appearances": 4,
+    "new": true,
+    "description": "An open source design system that's fully customizable and agent ready",
+    "tags": [
+      "Design system",
+      "UI components"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 28,
+    "repo": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": "46.8k",
+    "forks": "3.1k",
+    "appearances": 3,
+    "new": false,
+    "description": "Chrome DevTools for coding agents",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "MCP"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 29,
+    "repo": "alirezarezvani/claude-skills",
+    "stars": "22k",
+    "forks": "3k",
+    "appearances": 3,
+    "new": false,
+    "description": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 30,
+    "repo": "actions/checkout",
+    "stars": "8.4k",
+    "forks": "2.6k",
+    "appearances": 2,
+    "new": false,
+    "description": "Action for checking out a repo",
+    "tags": [
+      "Workflow automation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 31,
+    "repo": "mvanhorn/last30days-skill",
+    "stars": "51.6k",
+    "forks": "4.4k",
+    "appearances": 2,
+    "new": true,
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "tags": [
+      "AI agent",
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 32,
+    "repo": "diegosouzapw/OmniRoute",
+    "stars": "14.5k",
+    "forks": "2.2k",
+    "appearances": 2,
+    "new": true,
+    "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+    "tags": [
+      "AI infrastructure",
+      "Proxy"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 33,
+    "repo": "Robbyant/lingbot-map",
+    "stars": "10.4k",
+    "forks": "1.1k",
+    "appearances": 2,
+    "new": true,
+    "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+    "tags": [
+      "Computer vision",
+      "3D generation",
+      "Data streaming"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 34,
+    "repo": "soxoj/maigret",
+    "stars": "35.5k",
+    "forks": "2.7k",
+    "appearances": 1,
+    "new": false,
+    "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+    "tags": [
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 35,
+    "repo": "santifer/career-ops",
+    "stars": "59.8k",
+    "forks": "12k",
+    "appearances": 1,
+    "new": true,
+    "description": "Open-source AI job search: scan job portals, score listings A-F, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Gemini, Codex, OpenCode…)",
+    "tags": [
+      "AI agent",
+      "Web scraping",
+      "Resume building"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 36,
+    "repo": "browser-use/video-use",
+    "stars": "16.4k",
+    "forks": "1.9k",
+    "appearances": 6,
+    "new": true,
+    "description": "Edit videos with coding agents",
+    "tags": [
+      "AI video generation",
+      "Video editing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 37,
+    "repo": "TencentCloud/CubeSandbox",
+    "stars": "9.4k",
+    "forks": "814",
+    "appearances": 6,
+    "new": true,
+    "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+    "tags": [
+      "AI agent"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 38,
+    "repo": "obra/superpowers",
+    "stars": "252.4k",
+    "forks": "22.6k",
+    "appearances": 4,
+    "new": false,
+    "description": "An agentic skills framework & software development methodology that works.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 39,
+    "repo": "wonderwhy-er/DesktopCommanderMCP",
+    "stars": "6.6k",
+    "forks": "783",
+    "appearances": 3,
+    "new": false,
+    "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+    "tags": [
+      "AI agent",
+      "MCP"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 40,
+    "repo": "rommapp/romm",
+    "stars": "11k",
+    "forks": "564",
+    "appearances": 3,
+    "new": false,
+    "description": "A beautiful, powerful, self-hosted rom manager and player.",
+    "tags": [
+      "Self-hosted",
+      "Emulator"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 41,
+    "repo": "argoproj/argo-cd",
+    "stars": "23.6k",
+    "forks": "7.4k",
+    "appearances": 1,
+    "new": false,
+    "description": "Declarative Continuous Deployment for Kubernetes",
+    "tags": [
+      "Cloud native"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 42,
+    "repo": "DeusData/codebase-memory-mcp",
+    "stars": "29.4k",
+    "forks": "2.3k",
+    "appearances": 1,
+    "new": true,
+    "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+    "tags": [
+      "AI coding assistant",
+      "AI infrastructure",
+      "MCP"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 43,
+    "repo": "google-labs-code/design.md",
+    "stars": "25.7k",
+    "forks": "2k",
+    "appearances": 1,
+    "new": true,
+    "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+    "tags": [
+      "Design system"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 44,
+    "repo": "ogulcancelik/herdr",
+    "stars": "15k",
+    "forks": "908",
+    "appearances": 6,
+    "new": true,
+    "description": "agent multiplexer that lives in your terminal.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 45,
+    "repo": "anthropics/claude-cookbooks",
+    "stars": "47.4k",
+    "forks": "5.6k",
+    "appearances": 2,
+    "new": false,
+    "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+    "tags": [
+      "RAG",
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 46,
+    "repo": "microsoft/PowerToys",
+    "stars": "136.9k",
+    "forks": "8.2k",
+    "appearances": 1,
+    "new": false,
+    "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 47,
+    "repo": "ansible/ansible",
+    "stars": "69.8k",
+    "forks": "24.1k",
+    "appearances": 1,
+    "new": false,
+    "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.",
+    "tags": [
+      "Workflow automation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 48,
+    "repo": "allenai/olmocr",
+    "stars": "19.1k",
+    "forks": "1.6k",
+    "appearances": 1,
+    "new": false,
+    "description": "Toolkit for linearizing PDFs for LLM datasets/training",
+    "tags": [
+      "Document processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 49,
+    "repo": "AhmadIbrahiim/Website-downloader",
+    "stars": "4.6k",
+    "forks": "1k",
+    "appearances": 1,
+    "new": false,
+    "description": "💡 Download the complete source code of any website (including all assets). [ Javascripts, Stylesheets, Images ] using Node.js",
+    "tags": [
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 50,
+    "repo": "harvard-edge/cs249r_book",
+    "stars": "27.4k",
+    "forks": "3.3k",
+    "appearances": 4,
+    "new": false,
+    "description": "Machine Learning Systems",
+    "tags": [
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 51,
+    "repo": "steipete/CodexBar",
+    "stars": "17.6k",
+    "forks": "1.4k",
+    "appearances": 4,
+    "new": false,
+    "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 52,
+    "repo": "logto-io/logto",
+    "stars": "12.1k",
+    "forks": "804",
+    "appearances": 2,
+    "new": false,
+    "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
+    "tags": [
+      "Authentication"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 53,
+    "repo": "vxcontrol/pentagi",
+    "stars": "19.5k",
+    "forks": "2.7k",
+    "appearances": 2,
+    "new": false,
+    "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+    "tags": [
+      "AI agent",
+      "Pentesting",
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 54,
+    "repo": "Mebus/cupp",
+    "stars": "6.4k",
+    "forks": "2.1k",
+    "appearances": 2,
+    "new": false,
+    "description": "Common User Passwords Profiler (CUPP)",
+    "tags": [
+      "Pentesting"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 55,
+    "repo": "hugohe3/ppt-master",
+    "stars": "38.3k",
+    "forks": "3.3k",
+    "appearances": 1,
+    "new": false,
+    "description": "AI generates a real, editable PowerPoint from any document — native shapes & animations, editable charts & tables you can change the data on, speaker notes voiced as audio narration, and the option to follow your own .pptx template, not slide images · by Hugo He",
+    "tags": [
+      "AI workflow",
+      "Document processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 56,
+    "repo": "dotnet/skills",
+    "stars": "4.5k",
+    "forks": "338",
+    "appearances": 4,
+    "new": true,
+    "description": "Repository for skills to assist AI coding agents with .NET and C#",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 57,
+    "repo": "unclecode/crawl4ai",
+    "stars": "72.1k",
+    "forks": "7.4k",
+    "appearances": 2,
+    "new": false,
+    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+    "tags": [
+      "Headless browser",
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 58,
+    "repo": "opendatalab/MinerU",
+    "stars": "74.4k",
+    "forks": "6.3k",
+    "appearances": 1,
+    "new": false,
+    "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
+    "tags": [
+      "Document processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 59,
+    "repo": "JCodesMore/ai-website-cloner-template",
+    "stars": "27.4k",
+    "forks": "3.9k",
+    "appearances": 1,
+    "new": true,
+    "description": "Clone any website with one command using AI coding agents",
+    "tags": [
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 60,
+    "repo": "togatoga/karukan",
+    "stars": "676",
+    "forks": "42",
+    "appearances": 1,
+    "new": false,
+    "description": "Japanese Input Method System for Linux, macOS, Neural Kana-Kanji Conversion Engine",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 61,
+    "repo": "bradautomates/claude-video",
+    "stars": "6.7k",
+    "forks": "775",
+    "appearances": 5,
+    "new": true,
+    "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
+    "tags": [
+      "Computer vision",
+      "AI video generation",
+      "AI workflow"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 62,
+    "repo": "alibaba/zvec",
+    "stars": "14.7k",
+    "forks": "911",
+    "appearances": 3,
+    "new": false,
+    "description": "A lightweight, lightning-fast, in-process vector database",
+    "tags": [
+      "Vector database",
+      "Search"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 63,
+    "repo": "imthenachoman/How-To-Secure-A-Linux-Server",
+    "stars": "29.2k",
+    "forks": "1.9k",
+    "appearances": 2,
+    "new": false,
+    "description": "An evolving how-to guide for securing a Linux server.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 64,
+    "repo": "affaan-m/ECC",
+    "stars": "229.4k",
+    "forks": "35.4k",
+    "appearances": 1,
+    "new": true,
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 65,
+    "repo": "garrytan/gstack",
+    "stars": "121.6k",
+    "forks": "18.4k",
+    "appearances": 1,
+    "new": true,
+    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+    "tags": [
+      "AI agent",
+      "AI workflow"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 66,
+    "repo": "google/agents-cli",
+    "stars": "5k",
+    "forks": "550",
+    "appearances": 1,
+    "new": true,
+    "description": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 67,
+    "repo": "huxingyi/autoremesher",
+    "stars": "2.4k",
+    "forks": "172",
+    "appearances": 3,
+    "new": false,
+    "description": "Automatic quad remeshing tool",
+    "tags": [
+      "3D generation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 68,
+    "repo": "pytorch/pytorch",
+    "stars": "102.5k",
+    "forks": "28.3k",
+    "appearances": 2,
+    "new": false,
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "tags": [
+      "AI infrastructure"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 69,
+    "repo": "hesreallyhim/awesome-claude-code",
+    "stars": "50k",
+    "forks": "4.4k",
+    "appearances": 2,
+    "new": false,
+    "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+    "tags": [
+      "AI agent",
+      "AI skills",
+      "Curated list"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 70,
+    "repo": "Unclecheng-li/VulnClaw",
+    "stars": "2k",
+    "forks": "276",
+    "appearances": 2,
+    "new": true,
+    "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
+    "tags": [
+      "AI agent",
+      "AI workflow",
+      "MCP",
+      "Pentesting"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 71,
+    "repo": "roboflow/supervision",
+    "stars": "47.8k",
+    "forks": "4.3k",
+    "appearances": 1,
+    "new": false,
+    "description": "We write your reusable computer vision tools. 💜",
+    "tags": [
+      "Computer vision"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 72,
+    "repo": "ByteByteGoHq/system-design-101",
+    "stars": "82.9k",
+    "forks": "9.2k",
+    "appearances": 1,
+    "new": false,
+    "description": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.",
+    "tags": [
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 73,
+    "repo": "NanmiCoder/MediaCrawler",
+    "stars": "56.2k",
+    "forks": "11.3k",
+    "appearances": 1,
+    "new": false,
+    "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
+    "tags": [
+      "Headless browser",
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 74,
+    "repo": "karakeep-app/karakeep",
+    "stars": "27.3k",
+    "forks": "1.4k",
+    "appearances": 1,
+    "new": false,
+    "description": "A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search",
+    "tags": [
+      "NLP",
+      "Search",
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 75,
+    "repo": "Diolinux/PhotoGIMP",
+    "stars": "15.5k",
+    "forks": "615",
+    "appearances": 1,
+    "new": false,
+    "description": "A Patch for GIMP 3+ for Photoshop Users",
+    "tags": [
+      "Image editing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 76,
+    "repo": "kyutai-labs/pocket-tts",
+    "stars": "7k",
+    "forks": "688",
+    "appearances": 3,
+    "new": true,
+    "description": "A TTS that fits in your CPU (and pocket)",
+    "tags": [
+      "AI voice",
+      "Text to speech",
+      "Audio processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 77,
+    "repo": "agentskills/agentskills",
+    "stars": "22.9k",
+    "forks": "1.5k",
+    "appearances": 3,
+    "new": false,
+    "description": "Specification and documentation for Agent Skills",
+    "tags": [
+      "AI agent",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 78,
+    "repo": "microsoft/AI-For-Beginners",
+    "stars": "52.2k",
+    "forks": "10.5k",
+    "appearances": 2,
+    "new": false,
+    "description": "12 Weeks, 24 Lessons, AI for All!",
+    "tags": [
+      "AI skills",
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 79,
+    "repo": "0xNyk/council-of-high-intelligence",
+    "stars": "3.5k",
+    "forks": "312",
+    "appearances": 2,
+    "new": true,
+    "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Structured multi-round deliberation, confidence-weighted verdicts, genuine model diversity. Install as a Claude Code plugin — one command: /council",
+    "tags": [
+      "AI agent",
+      "AI workflow"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 80,
+    "repo": "apache/maven",
+    "stars": "5.4k",
+    "forks": "2.9k",
+    "appearances": 1,
+    "new": false,
+    "description": "Apache Maven core",
+    "tags": [
+      "Workflow automation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 81,
+    "repo": "firecrawl/firecrawl",
+    "stars": "149.3k",
+    "forks": "8.5k",
+    "appearances": 1,
+    "new": false,
+    "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+    "tags": [
+      "AI workflow",
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 82,
+    "repo": "coreyhaines31/marketingskills",
+    "stars": "37.6k",
+    "forks": "6.1k",
+    "appearances": 1,
+    "new": true,
+    "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+    "tags": [
+      "AI agent",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 83,
+    "repo": "Anil-matcha/Open-Generative-AI",
+    "stars": "23.1k",
+    "forks": "4k",
+    "appearances": 1,
+    "new": false,
+    "description": "Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
+    "tags": [
+      "AI image generation",
+      "AI video generation",
+      "AI workflow",
+      "Digital human",
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 84,
+    "repo": "immich-app/immich",
+    "stars": "107.5k",
+    "forks": "6.2k",
+    "appearances": 2,
+    "new": false,
+    "description": "High performance self-hosted photo and video management solution.",
+    "tags": [
+      "Self-hosted",
+      "File management"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 85,
+    "repo": "refactoringhq/tolaria",
+    "stars": "18.9k",
+    "forks": "1.3k",
+    "appearances": 2,
+    "new": true,
+    "description": "Desktop app to manage markdown knowledge bases",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 86,
+    "repo": "topoteretes/cognee",
+    "stars": "27.7k",
+    "forks": "2.7k",
+    "appearances": 1,
+    "new": false,
+    "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+    "tags": [
+      "AI agent",
+      "AI memory"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 87,
+    "repo": "Graphify-Labs/graphify",
+    "stars": "82k",
+    "forks": "8.2k",
+    "appearances": 1,
+    "new": true,
+    "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+    "tags": [
+      "AI agent",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 88,
+    "repo": "anthropics/claude-code",
+    "stars": "138.2k",
+    "forks": "22.3k",
+    "appearances": 4,
+    "new": false,
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 89,
+    "repo": "CoplayDev/unity-mcp",
+    "stars": "12.4k",
+    "forks": "1.3k",
+    "appearances": 2,
+    "new": false,
+    "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
+    "tags": [
+      "AI agent",
+      "MCP",
+      "Game development"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 90,
+    "repo": "luongnv89/claude-howto",
+    "stars": "39.8k",
+    "forks": "4.8k",
+    "appearances": 2,
+    "new": false,
+    "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+    "tags": [
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 91,
+    "repo": "CoreBunch/Instatic",
+    "stars": "3.1k",
+    "forks": "264",
+    "appearances": 2,
+    "new": true,
+    "description": "Instatic is a modern self-hosted visual CMS - get it running in 1 minute",
+    "tags": [
+      "Self-hosted",
+      "Headless CMS"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 92,
+    "repo": "dbt-labs/dbt-core",
+    "stars": "13.4k",
+    "forks": "2.5k",
+    "appearances": 1,
+    "new": false,
+    "description": "dbt enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.",
+    "tags": [
+      "Workflow automation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 93,
+    "repo": "langflow-ai/langflow",
+    "stars": "152k",
+    "forks": "9.6k",
+    "appearances": 1,
+    "new": false,
+    "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "tags": [
+      "AI agent",
+      "AI workflow"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 94,
+    "repo": "chthollyphile/folia-major",
+    "stars": "1.3k",
+    "forks": "91",
+    "appearances": 1,
+    "new": false,
+    "description": "专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方网易云播放器",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 95,
+    "repo": "sindresorhus/awesome",
+    "stars": "485.2k",
+    "forks": "35.8k",
+    "appearances": 2,
+    "new": false,
+    "description": "😎 Awesome lists about all kinds of interesting topics",
+    "tags": [
+      "Curated list"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 96,
+    "repo": "anomalyco/opencode",
+    "stars": "185.7k",
+    "forks": "23.6k",
+    "appearances": 2,
+    "new": false,
+    "description": "The open source coding agent.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 97,
+    "repo": "veracrypt/VeraCrypt",
+    "stars": "10.8k",
+    "forks": "1.3k",
+    "appearances": 1,
+    "new": false,
+    "description": "Disk encryption with strong security based on TrueCrypt",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 98,
+    "repo": "mattpocock/skills",
+    "stars": "163.9k",
+    "forks": "14.3k",
+    "appearances": 1,
+    "new": true,
+    "description": "Skills for Real Engineers. Straight from my .claude directory.",
+    "tags": [
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 99,
+    "repo": "gastownhall/gastown",
+    "stars": "17k",
+    "forks": "1.6k",
+    "appearances": 4,
+    "new": false,
+    "description": "Gas Town - multi-agent workspace manager",
+    "tags": [
+      "AI agent",
+      "AI workflow",
+      "Workflow automation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 14,
+    "rank": 100,
+    "repo": "Fission-AI/OpenSpec",
+    "stars": "60k",
+    "forks": "4.1k",
+    "appearances": 2,
+    "new": false,
+    "description": "Spec-driven development (SDD) for AI coding assistants. Ad space available Your brand here In front of 125K+ developers every month Want to advertise your product to high-intent tech audiences at a simple, flat rate? Advertise on Trendshift Live // Mentions",
+    "tags": [
+      "AI workflow",
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 1,
+    "repo": "asgeirtj/system_prompts_leaks",
+    "stars": "55.4k",
+    "forks": "9.1k",
+    "appearances": 7,
+    "new": false,
+    "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+    "tags": [
+      "Chatbot"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 2,
+    "repo": "addyosmani/agent-skills",
+    "stars": "76.3k",
+    "forks": "8.3k",
+    "appearances": 5,
+    "new": true,
+    "description": "Production-grade engineering skills for AI coding agents.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 3,
+    "repo": "Zackriya-Solutions/meetily",
+    "stars": "22.3k",
+    "forks": "2.3k",
+    "appearances": 4,
+    "new": false,
+    "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.",
+    "tags": [
+      "AI agent",
+      "Audio processing",
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 4,
+    "repo": "openai/codex-plugin-cc",
+    "stars": "27.4k",
+    "forks": "1.7k",
+    "appearances": 3,
+    "new": true,
+    "description": "Use Codex from Claude Code to review code or delegate tasks.",
+    "tags": [
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 5,
+    "repo": "MadsLorentzen/ai-job-search",
+    "stars": "19.1k",
+    "forks": "5.7k",
+    "appearances": 3,
+    "new": true,
+    "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+    "tags": [
+      "AI agent",
+      "AI workflow",
+      "Workflow automation",
+      "Resume building"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 6,
+    "repo": "ruvnet/RuView",
+    "stars": "81.1k",
+    "forks": "10.9k",
+    "appearances": 5,
+    "new": false,
+    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 7,
+    "repo": "JuliusBrussee/caveman",
+    "stars": "88.2k",
+    "forks": "5k",
+    "appearances": 2,
+    "new": true,
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+    "tags": [
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 8,
+    "repo": "SmartlyDressedGames/U3-SDK",
+    "stars": "2.1k",
+    "forks": "263",
+    "appearances": 2,
+    "new": false,
+    "description": "Source code for Unturned, a free open-world zombie survival sandbox game.",
+    "tags": [
+      "Game development"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 9,
+    "repo": "alibaba/page-agent",
+    "stars": "25.7k",
+    "forks": "2.3k",
+    "appearances": 2,
+    "new": false,
+    "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+    "tags": [
+      "AI agent"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 10,
+    "repo": "TencentCloud/TencentDB-Agent-Memory",
+    "stars": "8.1k",
+    "forks": "752",
+    "appearances": 1,
+    "new": true,
+    "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+    "tags": [
+      "AI agent",
+      "AI memory"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 11,
+    "repo": "prisma/prisma",
+    "stars": "47.4k",
+    "forks": "2.3k",
+    "appearances": 3,
+    "new": false,
+    "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 12,
+    "repo": "usestrix/strix",
+    "stars": "39.8k",
+    "forks": "4.1k",
+    "appearances": 2,
+    "new": false,
+    "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+    "tags": [
+      "AI agent",
+      "Pentesting"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 13,
+    "repo": "Leonxlnx/taste-skill",
+    "stars": "61.6k",
+    "forks": "4.1k",
+    "appearances": 2,
+    "new": true,
+    "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+    "tags": [
+      "AI agent",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 14,
+    "repo": "VoltAgent/awesome-design-md",
+    "stars": "100.2k",
+    "forks": "11.7k",
+    "appearances": 2,
+    "new": true,
+    "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+    "tags": [
+      "AI coding assistant",
+      "Design system",
+      "Curated list"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 15,
+    "repo": "iOfficeAI/OfficeCLI",
+    "stars": "13.5k",
+    "forks": "934",
+    "appearances": 4,
+    "new": true,
+    "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+    "tags": [
+      "AI agent",
+      "MCP",
+      "Document processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 16,
+    "repo": "alirezarezvani/claude-skills",
+    "stars": "22k",
+    "forks": "3k",
+    "appearances": 3,
+    "new": false,
+    "description": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 17,
+    "repo": "mvanhorn/last30days-skill",
+    "stars": "51.6k",
+    "forks": "4.4k",
+    "appearances": 2,
+    "new": true,
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "tags": [
+      "AI agent",
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 18,
+    "repo": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": "46.8k",
+    "forks": "3.1k",
+    "appearances": 1,
+    "new": false,
+    "description": "Chrome DevTools for coding agents",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "MCP"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 19,
+    "repo": "TencentCloud/CubeSandbox",
+    "stars": "9.4k",
+    "forks": "814",
+    "appearances": 4,
+    "new": true,
+    "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+    "tags": [
+      "AI agent"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 20,
+    "repo": "wonderwhy-er/DesktopCommanderMCP",
+    "stars": "6.6k",
+    "forks": "783",
+    "appearances": 3,
+    "new": false,
+    "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+    "tags": [
+      "AI agent",
+      "MCP"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 21,
+    "repo": "rommapp/romm",
+    "stars": "11k",
+    "forks": "564",
+    "appearances": 2,
+    "new": false,
+    "description": "A beautiful, powerful, self-hosted rom manager and player.",
+    "tags": [
+      "Self-hosted",
+      "Emulator"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 22,
+    "repo": "argoproj/argo-cd",
+    "stars": "23.6k",
+    "forks": "7.4k",
+    "appearances": 1,
+    "new": false,
+    "description": "Declarative Continuous Deployment for Kubernetes",
+    "tags": [
+      "Cloud native"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 23,
+    "repo": "ogulcancelik/herdr",
+    "stars": "15k",
+    "forks": "908",
+    "appearances": 3,
+    "new": true,
+    "description": "agent multiplexer that lives in your terminal.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 24,
+    "repo": "anthropics/claude-cookbooks",
+    "stars": "47.4k",
+    "forks": "5.6k",
+    "appearances": 2,
+    "new": false,
+    "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+    "tags": [
+      "RAG",
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 25,
+    "repo": "AhmadIbrahiim/Website-downloader",
+    "stars": "4.6k",
+    "forks": "1k",
+    "appearances": 1,
+    "new": false,
+    "description": "💡 Download the complete source code of any website (including all assets). [ Javascripts, Stylesheets, Images ] using Node.js",
+    "tags": [
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 26,
+    "repo": "steipete/CodexBar",
+    "stars": "17.6k",
+    "forks": "1.4k",
+    "appearances": 4,
+    "new": false,
+    "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 27,
+    "repo": "harvard-edge/cs249r_book",
+    "stars": "27.4k",
+    "forks": "3.3k",
+    "appearances": 2,
+    "new": false,
+    "description": "Machine Learning Systems",
+    "tags": [
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 28,
+    "repo": "vxcontrol/pentagi",
+    "stars": "19.5k",
+    "forks": "2.7k",
+    "appearances": 2,
+    "new": false,
+    "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+    "tags": [
+      "AI agent",
+      "Pentesting",
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 29,
+    "repo": "dotnet/skills",
+    "stars": "4.5k",
+    "forks": "338",
+    "appearances": 4,
+    "new": true,
+    "description": "Repository for skills to assist AI coding agents with .NET and C#",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 30,
+    "repo": "unclecode/crawl4ai",
+    "stars": "72.1k",
+    "forks": "7.4k",
+    "appearances": 2,
+    "new": false,
+    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+    "tags": [
+      "Headless browser",
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 31,
+    "repo": "obra/superpowers",
+    "stars": "252.4k",
+    "forks": "22.6k",
+    "appearances": 1,
+    "new": false,
+    "description": "An agentic skills framework & software development methodology that works.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 32,
+    "repo": "bradautomates/claude-video",
+    "stars": "6.7k",
+    "forks": "775",
+    "appearances": 5,
+    "new": true,
+    "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
+    "tags": [
+      "Computer vision",
+      "AI video generation",
+      "AI workflow"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 33,
+    "repo": "alibaba/zvec",
+    "stars": "14.7k",
+    "forks": "911",
+    "appearances": 3,
+    "new": false,
+    "description": "A lightweight, lightning-fast, in-process vector database",
+    "tags": [
+      "Vector database",
+      "Search"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 34,
+    "repo": "imthenachoman/How-To-Secure-A-Linux-Server",
+    "stars": "29.2k",
+    "forks": "1.9k",
+    "appearances": 2,
+    "new": false,
+    "description": "An evolving how-to guide for securing a Linux server.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 35,
+    "repo": "huxingyi/autoremesher",
+    "stars": "2.4k",
+    "forks": "172",
+    "appearances": 3,
+    "new": false,
+    "description": "Automatic quad remeshing tool",
+    "tags": [
+      "3D generation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 36,
+    "repo": "hesreallyhim/awesome-claude-code",
+    "stars": "50k",
+    "forks": "4.4k",
+    "appearances": 2,
+    "new": false,
+    "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+    "tags": [
+      "AI agent",
+      "AI skills",
+      "Curated list"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 37,
+    "repo": "karakeep-app/karakeep",
+    "stars": "27.3k",
+    "forks": "1.4k",
+    "appearances": 1,
+    "new": false,
+    "description": "A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search",
+    "tags": [
+      "NLP",
+      "Search",
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 38,
+    "repo": "Diolinux/PhotoGIMP",
+    "stars": "15.5k",
+    "forks": "615",
+    "appearances": 1,
+    "new": false,
+    "description": "A Patch for GIMP 3+ for Photoshop Users",
+    "tags": [
+      "Image editing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 39,
+    "repo": "kyutai-labs/pocket-tts",
+    "stars": "7k",
+    "forks": "688",
+    "appearances": 3,
+    "new": true,
+    "description": "A TTS that fits in your CPU (and pocket)",
+    "tags": [
+      "AI voice",
+      "Text to speech",
+      "Audio processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 40,
+    "repo": "firecrawl/firecrawl",
+    "stars": "149.3k",
+    "forks": "8.5k",
+    "appearances": 1,
+    "new": false,
+    "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+    "tags": [
+      "AI workflow",
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 41,
+    "repo": "coreyhaines31/marketingskills",
+    "stars": "37.6k",
+    "forks": "6.1k",
+    "appearances": 1,
+    "new": true,
+    "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+    "tags": [
+      "AI agent",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 42,
+    "repo": "agentskills/agentskills",
+    "stars": "22.9k",
+    "forks": "1.5k",
+    "appearances": 1,
+    "new": false,
+    "description": "Specification and documentation for Agent Skills",
+    "tags": [
+      "AI agent",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 43,
+    "repo": "immich-app/immich",
+    "stars": "107.5k",
+    "forks": "6.2k",
+    "appearances": 2,
+    "new": false,
+    "description": "High performance self-hosted photo and video management solution.",
+    "tags": [
+      "Self-hosted",
+      "File management"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 44,
+    "repo": "CoplayDev/unity-mcp",
+    "stars": "12.4k",
+    "forks": "1.3k",
+    "appearances": 2,
+    "new": false,
+    "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
+    "tags": [
+      "AI agent",
+      "MCP",
+      "Game development"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 45,
+    "repo": "chthollyphile/folia-major",
+    "stars": "1.3k",
+    "forks": "91",
+    "appearances": 1,
+    "new": false,
+    "description": "专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方网易云播放器",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 46,
+    "repo": "sindresorhus/awesome",
+    "stars": "485.2k",
+    "forks": "35.8k",
+    "appearances": 2,
+    "new": false,
+    "description": "😎 Awesome lists about all kinds of interesting topics",
+    "tags": [
+      "Curated list"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 47,
+    "repo": "mattpocock/skills",
+    "stars": "163.9k",
+    "forks": "14.3k",
+    "appearances": 1,
+    "new": true,
+    "description": "Skills for Real Engineers. Straight from my .claude directory.",
+    "tags": [
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 48,
+    "repo": "facebook/astryx",
+    "stars": "7.5k",
+    "forks": "524",
+    "appearances": 1,
+    "new": true,
+    "description": "An open source design system that's fully customizable and agent ready",
+    "tags": [
+      "Design system",
+      "UI components"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 49,
+    "repo": "gastownhall/gastown",
+    "stars": "17k",
+    "forks": "1.6k",
+    "appearances": 4,
+    "new": false,
+    "description": "Gas Town - multi-agent workspace manager",
+    "tags": [
+      "AI agent",
+      "AI workflow",
+      "Workflow automation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 50,
+    "repo": "crynta/terax-ai",
+    "stars": "8.5k",
+    "forks": "978",
+    "appearances": 1,
+    "new": true,
+    "description": "Lightweight (7MB) Terminal-first AI-native dev workspace",
+    "tags": [
+      "AI agent",
+      "Local LLM"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 51,
+    "repo": "msitarzewski/agency-agents",
+    "stars": "130.5k",
+    "forks": "21.4k",
+    "appearances": 2,
+    "new": false,
+    "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+    "tags": [
+      "AI agent"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 52,
+    "repo": "OthmanAdi/planning-with-files",
+    "stars": "25.3k",
+    "forks": "2.2k",
+    "appearances": 1,
+    "new": true,
+    "description": "Persistent file-based planning for AI coding agents and long-running agentic tasks. Crash-proof markdown plans that survive context loss and /clear, plus a deterministic completion gate and multi-agent shared state on disk. Manus-style. Works with Claude Code, Codex CLI, Cursor, Kiro, OpenCode and 60+ agents via the SKILL.md standard.",
+    "tags": [
+      "AI agent",
+      "AI workflow"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 7,
+    "rank": 53,
+    "repo": "anthropics/claude-code",
+    "stars": "138.2k",
+    "forks": "22.3k",
+    "appearances": 3,
+    "new": false,
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. Ad space available Your brand here In front of 125K+ developers every month Want to advertise your product to high-intent tech audiences at a simple, flat rate? Advertise on Trendshift Live // Mentions",
+    "tags": [
+      "AI agent",
+      "AI coding assistant"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 1,
+    "repo": "MadsLorentzen/ai-job-search",
+    "stars": "19.1k",
+    "forks": "5.7k",
+    "appearances": 1,
+    "new": true,
+    "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
+    "tags": [
+      "AI agent",
+      "AI workflow",
+      "Workflow automation",
+      "Resume building"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 2,
+    "repo": "SmartlyDressedGames/U3-SDK",
+    "stars": "2.1k",
+    "forks": "263",
+    "appearances": 1,
+    "new": false,
+    "description": "Source code for Unturned, a free open-world zombie survival sandbox game.",
+    "tags": [
+      "Game development"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 3,
+    "repo": "addyosmani/agent-skills",
+    "stars": "76.3k",
+    "forks": "8.3k",
+    "appearances": 1,
+    "new": true,
+    "description": "Production-grade engineering skills for AI coding agents.",
+    "tags": [
+      "AI agent",
+      "AI coding assistant",
+      "AI skills"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 4,
+    "repo": "VoltAgent/awesome-design-md",
+    "stars": "100.2k",
+    "forks": "11.7k",
+    "appearances": 1,
+    "new": true,
+    "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+    "tags": [
+      "AI coding assistant",
+      "Design system",
+      "Curated list"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 5,
+    "repo": "iOfficeAI/OfficeCLI",
+    "stars": "13.5k",
+    "forks": "934",
+    "appearances": 1,
+    "new": true,
+    "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+    "tags": [
+      "AI agent",
+      "MCP",
+      "Document processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 6,
+    "repo": "wonderwhy-er/DesktopCommanderMCP",
+    "stars": "6.6k",
+    "forks": "783",
+    "appearances": 1,
+    "new": false,
+    "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+    "tags": [
+      "AI agent",
+      "MCP"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 7,
+    "repo": "anthropics/claude-cookbooks",
+    "stars": "47.4k",
+    "forks": "5.6k",
+    "appearances": 1,
+    "new": false,
+    "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+    "tags": [
+      "RAG",
+      "Programming examples"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 8,
+    "repo": "vxcontrol/pentagi",
+    "stars": "19.5k",
+    "forks": "2.7k",
+    "appearances": 1,
+    "new": false,
+    "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+    "tags": [
+      "AI agent",
+      "Pentesting",
+      "Self-hosted"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 9,
+    "repo": "unclecode/crawl4ai",
+    "stars": "72.1k",
+    "forks": "7.4k",
+    "appearances": 1,
+    "new": false,
+    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+    "tags": [
+      "Headless browser",
+      "Web scraping"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 10,
+    "repo": "imthenachoman/How-To-Secure-A-Linux-Server",
+    "stars": "29.2k",
+    "forks": "1.9k",
+    "appearances": 1,
+    "new": false,
+    "description": "An evolving how-to guide for securing a Linux server.",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 11,
+    "repo": "huxingyi/autoremesher",
+    "stars": "2.4k",
+    "forks": "172",
+    "appearances": 1,
+    "new": false,
+    "description": "Automatic quad remeshing tool",
+    "tags": [
+      "3D generation"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 12,
+    "repo": "bradautomates/claude-video",
+    "stars": "6.7k",
+    "forks": "775",
+    "appearances": 1,
+    "new": true,
+    "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
+    "tags": [
+      "Computer vision",
+      "AI video generation",
+      "AI workflow"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 13,
+    "repo": "prisma/prisma",
+    "stars": "47.4k",
+    "forks": "2.3k",
+    "appearances": 1,
+    "new": false,
+    "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
+    "tags": [],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 14,
+    "repo": "kyutai-labs/pocket-tts",
+    "stars": "7k",
+    "forks": "688",
+    "appearances": 1,
+    "new": true,
+    "description": "A TTS that fits in your CPU (and pocket)",
+    "tags": [
+      "AI voice",
+      "Text to speech",
+      "Audio processing"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  },
+  {
+    "range_days": 1,
+    "rank": 15,
+    "repo": "asgeirtj/system_prompts_leaks",
+    "stars": "55.4k",
+    "forks": "9.1k",
+    "appearances": 1,
+    "new": false,
+    "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly. Ad space available Your brand here In front of 125K+ developers every month Want to advertise your product to high-intent tech audiences at a simple, flat rate? Advertise on Trendshift Live // Mentions",
+    "tags": [
+      "Chatbot"
+    ],
+    "url": "https://trendshift.io/github-trending-repositories?trending-range=1&trending-limit=100"
+  }
+]
