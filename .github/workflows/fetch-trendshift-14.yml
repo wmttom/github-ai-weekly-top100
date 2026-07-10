@@ -28,15 +28,12 @@ jobs:
           BASE='https://trendshift.io/github-trending-repositories?trending-range={}&trending-limit=100'
           HEADERS={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}
           repo_re=re.compile(r'^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$')
-          stats_re=re.compile(r'^([0-9]+(?:\.[0-9]+)?[kKmM]?)\s+([0-9]+(?:\.[0-9]+)?[kKmM]?)$')
-          count_re=re.compile(r'^Featured on GitHub Trending\s+(\d+)\s+times\s+(?:over past\s+(\d+)\s+days|of today)\.$')
+          num_re=re.compile(r'^[0-9]+(?:\.[0-9]+)?[kKmM]?$')
           rank_re=re.compile(r'^\d+$')
 
           def parse_range(days):
               url=BASE.format(days)
-              r=requests.get(url,headers=HEADERS,timeout=120)
-              r.raise_for_status()
-              html=r.text
+              r=requests.get(url,headers=HEADERS,timeout=120); r.raise_for_status(); html=r.text
               Path(f'tmp/trendshift/{days}.html').write_text(html,encoding='utf-8')
               soup=BeautifulSoup(html,'html.parser')
               for tag in soup(['script','style','noscript','svg']): tag.decompose()
@@ -48,29 +45,30 @@ jobs:
               start=lines.index('The repositories have continued to trend on GitHub Trending')+1
               rows=[]; i=start
               while i<len(lines):
-                  if not repo_re.match(lines[i]) or i+1>=len(lines) or not stats_re.match(lines[i+1]): i+=1; continue
-                  repo=lines[i]; mstats=stats_re.match(lines[i+1]); j=i+2; mcount=None
-                  while j<min(len(lines),i+8):
-                      mcount=count_re.match(lines[j])
-                      if mcount: break
-                      j+=1
-                  if not mcount: i+=1; continue
-                  new_flag=False; mentioned=None; k=j+1
-                  while k<len(lines) and k<i+12:
-                      if lines[k].startswith('New '): new_flag=True
-                      if lines[k]=='Mentioned on': mentioned=k; break
-                      if repo_re.match(lines[k]): break
-                      k+=1
-                  desc=''; tags=[]; p=(mentioned+1) if mentioned is not None else j+1
-                  while p<len(lines):
-                      line=lines[p]
+                  if not repo_re.match(lines[i]): i+=1; continue
+                  if i+6>=len(lines) or not num_re.match(lines[i+1]) or not num_re.match(lines[i+2]): i+=1; continue
+                  repo=lines[i]; stars=lines[i+1]; forks=lines[i+2]; j=i+3
+                  if lines[j] != 'Featured on GitHub Trending': i+=1; continue
+                  if not rank_re.match(lines[j+1]) or lines[j+2] != 'times': i+=1; continue
+                  appearances=int(lines[j+1]); period=lines[j+3]; k=j+4
+                  expected=('of today.' if days==1 else f'over past {days} days.')
+                  if period != expected: i+=1; continue
+                  new_flag=False
+                  if k+1<len(lines) and lines[k]=='New' and rank_re.match(lines[k+1]): new_flag=True; k+=2
+                  if k<len(lines) and lines[k]=='Mentioned on': k+=1
+                  desc_parts=[]; tags=[]
+                  while k<len(lines):
+                      line=lines[k]
                       if repo_re.match(line): break
-                      if rank_re.match(line) and p+1<len(lines) and repo_re.match(lines[p+1]): break
-                      if line.startswith('#'): tags.extend([t.strip() for t in re.findall(r'#\s*([^#]+?)(?=\s+#|$)',line)])
-                      elif line!='Mentioned on' and not line.startswith('New ') and not count_re.match(line) and not stats_re.match(line) and not rank_re.match(line): desc=(desc+' '+line).strip()
-                      p+=1
-                  rows.append({'range_days':days,'rank':len(rows)+1,'repo':repo,'stars':mstats.group(1),'forks':mstats.group(2),'appearances':int(mcount.group(1)),'new':new_flag,'description':desc,'tags':tags,'url':url})
-                  i=p
+                      if rank_re.match(line) and k+1<len(lines) and repo_re.match(lines[k+1]): break
+                      if line=='#':
+                          if k+1<len(lines) and lines[k+1] != '#' and not repo_re.match(lines[k+1]):
+                              tags.append(lines[k+1]); k+=2; continue
+                          k+=1; continue
+                      if not rank_re.match(line): desc_parts.append(line)
+                      k+=1
+                  rows.append({'range_days':days,'rank':len(rows)+1,'repo':repo,'stars':stars,'forks':forks,'appearances':appearances,'new':new_flag,'description':' '.join(desc_parts).strip(),'tags':tags,'url':url})
+                  i=k
               return rows,len(html.encode('utf-8')),len(lines)
 
           all_rows=[]; status={}
@@ -82,7 +80,8 @@ jobs:
                   status[str(days)]={'ok':False,'rows':0,'error':repr(e),'traceback':traceback.format_exc()[-3000:]}
           Path('tmp/trendshift/ranges.json').write_text(json.dumps(all_rows,ensure_ascii=False,indent=2),encoding='utf-8')
           with open('tmp/trendshift/ranges.csv','w',newline='',encoding='utf-8') as f:
-              w=csv.DictWriter(f,fieldnames=['range_days','rank','repo','stars','forks','appearances','new','description','tags','url']); w.writeheader()
+              fields=['range_days','rank','repo','stars','forks','appearances','new','description','tags','url']
+              w=csv.DictWriter(f,fieldnames=fields); w.writeheader()
               for row in all_rows:
                   row=row.copy(); row['tags']=' | '.join(row['tags']); w.writerow(row)
           Path('tmp/trendshift/status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -94,5 +93,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add tmp/trendshift
-          git commit -m 'Temporary: fetch Trendshift 14/7/1-day data' || true
+          git commit -m 'Temporary: parse Trendshift 14/7/1-day data' || true
           git push
