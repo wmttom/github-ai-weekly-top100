@@ -1,0 +1,9 @@
+vercel-labs/agent-browser
+microsoft/agent-lightning
+BAI-LAB/MemoryOS
+memvid/memvid
+openclaw/mcporter
+IBM/mcp-context-forge
+MCP-UI-Org/mcp-ui
+HKUDS/OpenHarness
+Klavis-AI/klavis
