@@ -7,3 +7,7 @@ IBM/mcp-context-forge
 MCP-UI-Org/mcp-ui
 HKUDS/OpenHarness
 Klavis-AI/klavis
+rohitg00/agentmemory
+OpenMOSS/MOSS-TTS
+vercel-labs/agent-skills
+liangdabiao/Seedance2-Storyboard-Generator
