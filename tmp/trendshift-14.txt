@@ -1,0 +1,786 @@
+GitHub trending history — every repository that ever trended | Trendshift
+Reach 125K+ monthly visitors
+Advertise on Trendshift
+isaac-mason/packcat
+@isaac_mason_
+Live mentions
+Trending repositories
+Daily Weekly Monthly Yearly
+Live mentions Topics GitHub trending
+Repositories Developers
+Insights Stats
+Submit repository
+GitHub trending repositories
+The repositories have continued to trend on GitHub Trending
+asgeirtj/system_prompts_leaks
+55.4k 9.1k
+Featured on GitHub Trending 7 times over past 14 days.
+Mentioned on
+Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.
+# Chatbot
+usestrix/strix
+39.8k 4.1k
+Featured on GitHub Trending 7 times over past 14 days.
+Mentioned on
+Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.
+# AI agent # Pentesting
+msitarzewski/agency-agents
+130.5k 21.4k
+Featured on GitHub Trending 7 times over past 14 days.
+Mentioned on
+A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+# AI agent
+4
+addyosmani/agent-skills
+76.3k 8.3k
+Featured on GitHub Trending 5 times over past 14 days.
+New 2026
+Mentioned on
+Production-grade engineering skills for AI coding agents.
+# AI agent # AI coding assistant # AI skills
+5
+openai/codex-plugin-cc
+27.4k 1.7k
+Featured on GitHub Trending 5 times over past 14 days.
+New 2026
+Mentioned on
+Use Codex from Claude Code to review code or delegate tasks.
+# AI coding assistant
+6
+simplex-chat/simplex-chat
+18.4k 1.1k
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!
+7
+Zackriya-Solutions/meetily
+22.3k 2.3k
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.
+# AI agent # Audio processing # Self-hosted
+8
+MadsLorentzen/ai-job-search
+19.1k 5.7k
+Featured on GitHub Trending 3 times over past 14 days.
+New 2026
+Mentioned on
+AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.
+# AI agent # AI workflow # Workflow automation # Resume building
+9
+hasaneyldrm/exercises-dataset
+11.2k 1.3k
+Featured on GitHub Trending 3 times over past 14 days.
+New 2026
+Mentioned on
+A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.
+# Programming examples
+10
+ruvnet/RuView
+81.1k 10.9k
+Featured on GitHub Trending 5 times over past 14 days.
+Mentioned on
+π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.
+11
+ripienaar/free-for-dev
+129.3k 13.4k
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
+# Curated list
+12
+JuliusBrussee/caveman
+88.2k 5k
+Featured on GitHub Trending 4 times over past 14 days.
+New 2026
+Mentioned on
+🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
+# AI skills
+13
+xbtlin/ai-berkshire
+12.4k 1.7k
+Featured on GitHub Trending 4 times over past 14 days.
+New 2026
+Mentioned on
+AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis.
+# AI agent # Fintech
+14
+SmartlyDressedGames/U3-SDK
+2.1k 263
+Featured on GitHub Trending 2 times over past 14 days.
+Source code for Unturned, a free open-world zombie survival sandbox game.
+# Game development
+15
+HKUDS/Vibe-Trading
+19k 3.3k
+Featured on GitHub Trending 7 times over past 14 days.
+New 2026
+Mentioned on
+"Vibe-Trading: Your Personal Trading Agent"
+# AI agent # Workflow automation # Fintech
+16
+commaai/openpilot
+63.2k 11.1k
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.
+# Robotics
+17
+cupy/cupy
+12.1k 1.1k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+NumPy & SciPy for GPU
+# AI infrastructure
+18
+alibaba/page-agent
+25.7k 2.3k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+JavaScript in-page GUI agent. Control web interfaces with natural language.
+# AI agent
+19
+TencentCloud/TencentDB-Agent-Memory
+8.1k 752
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.
+# AI agent # AI memory
+20
+altic-dev/FluidVoice
+7k 443
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.
+# AI voice
+21
+prisma/prisma
+47.4k 2.3k
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB
+22
+Leonxlnx/taste-skill
+61.6k 4.1k
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop
+# AI agent # AI skills
+23
+VoltAgent/awesome-design-md
+100.2k 11.7k
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.
+# AI coding assistant # Design system # Curated list
+24
+elastic/elasticsearch
+77.5k 26k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Free and Open Source, Distributed, RESTful Search Engine
+# Vector database # Search
+25
+IceWhaleTech/CasaOS
+36.6k 2.1k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.
+# Self-hosted
+26
+iOfficeAI/OfficeCLI
+13.5k 934
+Featured on GitHub Trending 4 times over past 14 days.
+New 2026
+Mentioned on
+OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.
+# AI agent # MCP # Document processing
+27
+facebook/astryx
+7.5k 524
+Featured on GitHub Trending 4 times over past 14 days.
+New 2026
+Mentioned on
+An open source design system that's fully customizable and agent ready
+# Design system # UI components
+28
+ChromeDevTools/chrome-devtools-mcp
+46.8k 3.1k
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+Chrome DevTools for coding agents
+# AI agent # AI coding assistant # MCP
+29
+alirezarezvani/claude-skills
+22k 3k
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.
+# AI agent # AI coding assistant
+30
+actions/checkout
+8.4k 2.6k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+Action for checking out a repo
+# Workflow automation
+31
+mvanhorn/last30days-skill
+51.6k 4.4k
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary
+# AI agent # Web scraping
+32
+diegosouzapw/OmniRoute
+14.5k 2.2k
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.
+# AI infrastructure # Proxy
+33
+Robbyant/lingbot-map
+10.4k 1.1k
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+A feed-forward 3D foundation model for reconstructing scenes from streaming data
+# Computer vision # 3D generation # Data streaming
+34
+soxoj/maigret
+35.5k 2.7k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites
+# Web scraping
+35
+santifer/career-ops
+59.8k 12k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+Open-source AI job search: scan job portals, score listings A-F, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Gemini, Codex, OpenCode…)
+# AI agent # Web scraping # Resume building
+36
+browser-use/video-use
+16.4k 1.9k
+Featured on GitHub Trending 6 times over past 14 days.
+New 2026
+Mentioned on
+Edit videos with coding agents
+# AI video generation # Video editing
+37
+TencentCloud/CubeSandbox
+9.4k 814
+Featured on GitHub Trending 6 times over past 14 days.
+New 2026
+Mentioned on
+Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.
+# AI agent
+38
+obra/superpowers
+252.4k 22.6k
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+An agentic skills framework & software development methodology that works.
+# AI agent # AI coding assistant # AI skills
+39
+wonderwhy-er/DesktopCommanderMCP
+6.6k 783
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities
+# AI agent # MCP
+40
+rommapp/romm
+11k 564
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+A beautiful, powerful, self-hosted rom manager and player.
+# Self-hosted # Emulator
+41
+argoproj/argo-cd
+23.6k 7.4k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Declarative Continuous Deployment for Kubernetes
+# Cloud native
+42
+DeusData/codebase-memory-mcp
+29.4k 2.3k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.
+# AI coding assistant # AI infrastructure # MCP
+43
+google-labs-code/design.md
+25.7k 2k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
+# Design system
+44
+ogulcancelik/herdr
+15k 908
+Featured on GitHub Trending 6 times over past 14 days.
+New 2026
+Mentioned on
+agent multiplexer that lives in your terminal.
+45
+anthropics/claude-cookbooks
+47.4k 5.6k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.
+# RAG # Programming examples
+46
+microsoft/PowerToys
+136.9k 8.2k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows
+47
+ansible/ansible
+69.8k 24.1k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
+# Workflow automation
+48
+allenai/olmocr
+19.1k 1.6k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Toolkit for linearizing PDFs for LLM datasets/training
+# Document processing
+49
+AhmadIbrahiim/Website-downloader
+4.6k 1k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+💡 Download the complete source code of any website (including all assets). [ Javascripts, Stylesheets, Images ] using Node.js
+# Web scraping
+50
+harvard-edge/cs249r_book
+27.4k 3.3k
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+Machine Learning Systems
+# Programming examples
+51
+steipete/CodexBar
+17.6k 1.4k
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+Show usage stats for OpenAI Codex and Claude Code, without having to login.
+52
+logto-io/logto
+12.1k 804
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.
+# Authentication
+53
+vxcontrol/pentagi
+19.5k 2.7k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+Fully autonomous AI Agents system capable of performing complex penetration testing tasks
+# AI agent # Pentesting # Self-hosted
+54
+Mebus/cupp
+6.4k 2.1k
+Featured on GitHub Trending 2 times over past 14 days.
+Common User Passwords Profiler (CUPP)
+# Pentesting
+55
+hugohe3/ppt-master
+38.3k 3.3k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+AI generates a real, editable PowerPoint from any document — native shapes & animations, editable charts & tables you can change the data on, speaker notes voiced as audio narration, and the option to follow your own .pptx template, not slide images · by Hugo He
+# AI workflow # Document processing
+56
+dotnet/skills
+4.5k 338
+Featured on GitHub Trending 4 times over past 14 days.
+New 2026
+Mentioned on
+Repository for skills to assist AI coding agents with .NET and C#
+# AI agent # AI coding assistant # AI skills
+57
+unclecode/crawl4ai
+72.1k 7.4k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN
+# Headless browser # Web scraping
+58
+opendatalab/MinerU
+74.4k 6.3k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.
+# Document processing
+59
+JCodesMore/ai-website-cloner-template
+27.4k 3.9k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+Clone any website with one command using AI coding agents
+# AI coding assistant
+60
+togatoga/karukan
+676 42
+Featured on GitHub Trending 1 times over past 14 days.
+Japanese Input Method System for Linux, macOS, Neural Kana-Kanji Conversion Engine
+61
+bradautomates/claude-video
+6.7k 775
+Featured on GitHub Trending 5 times over past 14 days.
+New 2026
+Mentioned on
+Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.
+# Computer vision # AI video generation # AI workflow
+62
+alibaba/zvec
+14.7k 911
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+A lightweight, lightning-fast, in-process vector database
+# Vector database # Search
+63
+imthenachoman/How-To-Secure-A-Linux-Server
+29.2k 1.9k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+An evolving how-to guide for securing a Linux server.
+64
+affaan-m/ECC
+229.4k 35.4k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+# AI agent # AI coding assistant # AI skills
+65
+garrytan/gstack
+121.6k 18.4k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA
+# AI agent # AI workflow
+66
+google/agents-cli
+5k 550
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.
+# AI agent # AI coding assistant # AI skills
+67
+huxingyi/autoremesher
+2.4k 172
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+Automatic quad remeshing tool
+# 3D generation
+68
+pytorch/pytorch
+102.5k 28.3k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+Tensors and Dynamic neural networks in Python with strong GPU acceleration
+# AI infrastructure
+69
+hesreallyhim/awesome-claude-code
+50k 4.4k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins
+# AI agent # AI skills # Curated list
+70
+Unclecheng-li/VulnClaw
+2k 276
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。
+# AI agent # AI workflow # MCP # Pentesting
+71
+roboflow/supervision
+47.8k 4.3k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+We write your reusable computer vision tools. 💜
+# Computer vision
+72
+ByteByteGoHq/system-design-101
+82.9k 9.2k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.
+# Programming examples
+73
+NanmiCoder/MediaCrawler
+56.2k 11.3k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫
+# Headless browser # Web scraping
+74
+karakeep-app/karakeep
+27.3k 1.4k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search
+# NLP # Search # Self-hosted
+75
+Diolinux/PhotoGIMP
+15.5k 615
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+A Patch for GIMP 3+ for Photoshop Users
+# Image editing
+76
+kyutai-labs/pocket-tts
+7k 688
+Featured on GitHub Trending 3 times over past 14 days.
+New 2026
+Mentioned on
+A TTS that fits in your CPU (and pocket)
+# AI voice # Text to speech # Audio processing
+77
+agentskills/agentskills
+22.9k 1.5k
+Featured on GitHub Trending 3 times over past 14 days.
+Mentioned on
+Specification and documentation for Agent Skills
+# AI agent # AI skills
+78
+microsoft/AI-For-Beginners
+52.2k 10.5k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+12 Weeks, 24 Lessons, AI for All!
+# AI skills # Programming examples
+79
+0xNyk/council-of-high-intelligence
+3.5k 312
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+18 AI personas deliberate your hardest decisions across multiple LLM providers. Structured multi-round deliberation, confidence-weighted verdicts, genuine model diversity. Install as a Claude Code plugin — one command: /council
+# AI agent # AI workflow
+80
+apache/maven
+5.4k 2.9k
+Featured on GitHub Trending 1 times over past 14 days.
+Apache Maven core
+# Workflow automation
+81
+firecrawl/firecrawl
+149.3k 8.5k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+The API to search, scrape, and interact with the web at scale. 🔥
+# AI workflow # Web scraping
+82
+coreyhaines31/marketingskills
+37.6k 6.1k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.
+# AI agent # AI skills
+83
+Anil-matcha/Open-Generative-AI
+23.1k 4k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.
+# AI image generation # AI video generation # AI workflow # Digital human # Self-hosted
+84
+immich-app/immich
+107.5k 6.2k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+High performance self-hosted photo and video management solution.
+# Self-hosted # File management
+85
+refactoringhq/tolaria
+18.9k 1.3k
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+Desktop app to manage markdown knowledge bases
+86
+topoteretes/cognee
+27.7k 2.7k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.
+# AI agent # AI memory
+87
+Graphify-Labs/graphify
+82k 8.2k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.
+# AI agent # AI skills
+88
+anthropics/claude-code
+138.2k 22.3k
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
+# AI agent # AI coding assistant
+89
+CoplayDev/unity-mcp
+12.4k 1.3k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.
+# AI agent # MCP # Game development
+90
+luongnv89/claude-howto
+39.8k 4.8k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.
+# Programming examples
+91
+CoreBunch/Instatic
+3.1k 264
+Featured on GitHub Trending 2 times over past 14 days.
+New 2026
+Mentioned on
+Instatic is a modern self-hosted visual CMS - get it running in 1 minute
+# Self-hosted # Headless CMS
+92
+dbt-labs/dbt-core
+13.4k 2.5k
+Featured on GitHub Trending 1 times over past 14 days.
+dbt enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.
+# Workflow automation
+93
+langflow-ai/langflow
+152k 9.6k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Langflow is a powerful tool for building and deploying AI-powered agents and workflows.
+# AI agent # AI workflow
+94
+chthollyphile/folia-major
+1.3k 91
+Featured on GitHub Trending 1 times over past 14 days.
+专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方网易云播放器
+95
+sindresorhus/awesome
+485.2k 35.8k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+😎 Awesome lists about all kinds of interesting topics
+# Curated list
+96
+anomalyco/opencode
+185.7k 23.6k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+The open source coding agent.
+# AI agent # AI coding assistant
+97
+veracrypt/VeraCrypt
+10.8k 1.3k
+Featured on GitHub Trending 1 times over past 14 days.
+Mentioned on
+Disk encryption with strong security based on TrueCrypt
+98
+mattpocock/skills
+163.9k 14.3k
+Featured on GitHub Trending 1 times over past 14 days.
+New 2026
+Mentioned on
+Skills for Real Engineers. Straight from my .claude directory.
+# AI skills
+99
+gastownhall/gastown
+17k 1.6k
+Featured on GitHub Trending 4 times over past 14 days.
+Mentioned on
+Gas Town - multi-agent workspace manager
+# AI agent # AI workflow # Workflow automation
+100
+Fission-AI/OpenSpec
+60k 4.1k
+Featured on GitHub Trending 2 times over past 14 days.
+Mentioned on
+Spec-driven development (SDD) for AI coding assistants.
+# AI workflow # AI coding assistant
+Ad space available
+Your brand here
+In front of 125K+ developers every month
+Want to advertise your product to high-intent tech audiences at a simple, flat rate?
+Advertise on Trendshift
+Live // Mentions
+isaac-mason/packcat
+@isaac_mason_
+RhysSullivan/twitter-account-location-in-username
+@the_osps
+wonderwhy-er/DesktopCommanderMCP
+@Moxbyapp
+bradautomates/claude-video
+@Moxbyapp
+sotayamashita/dotfiles
+@sota0805
+View all mentions
+Trending // Daily
+1 # AI agent 1.9k stars
+2 # AI skills 877 stars
+3 # AI coding assistant 667 stars
+4 # Self-hosted 569 stars
+5 # AI workflow 486 stars
+6 # Curated list 449 stars
+7 # Workflow automation 332 stars
+8 # Local LLM 282 stars
+9 # MCP 260 stars
+10 # Programming examples 222 stars
+11 # Web scraping 217 stars
+12 # Document processing 203 stars
+13 # NLP 169 stars
+14 # RAG 166 stars
+15 # AI infrastructure 165 stars
+Browse all topics →
+Trending // Daily
+# AI agent 1.9k stars · # AI skills 877 stars · # AI coding assistant 667 stars · # Self-hosted 569 stars · # AI workflow 486 stars · # Curated list 449 stars · # Workflow automation 332 stars · # Local LLM 282 stars · # MCP 260 stars · # Programming examples 222 stars
+Footer
+Your go-to destination for discovering trending open-source projects and uncovering the insights that matter
+Legal
+Terms and conditions
+Privacy policy
+More
+Advertise
+onedump
+gosnakego
+Contact us
+Social
+X (Twitter)
+GitHub
+What they build speaks louder than words
+© 2026 Trendshift, created by Julian Li with ❤️
+Discover trends that matter
+Trending repositories
+Daily Weekly Monthly Yearly
+Live mentions Topics GitHub trending
+Repositories Developers
+Insights Stats
