@@ -1,4 +1,4 @@
-name: Temporary fetch Trendshift 14-day
+name: Temporary fetch Trendshift ranges
 
 on:
   push:
@@ -14,63 +14,109 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch exact Trendshift 14-day page
+      - name: Fetch and parse exact Trendshift range pages
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p tmp
-          URL='https://trendshift.io/github-trending-repositories?trending-range=14&trending-limit=100'
-          curl --fail --location --compressed --retry 3 --retry-all-errors \
-            --connect-timeout 20 --max-time 120 \
-            -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36' \
-            -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' \
-            "$URL" -o tmp/trendshift-14.html
+          mkdir -p tmp/trendshift
+          python -m pip install --quiet beautifulsoup4 requests
           python - <<'PY'
-          from html.parser import HTMLParser
+          import csv, json, re, requests
           from pathlib import Path
+          from bs4 import BeautifulSoup
 
-          class TextParser(HTMLParser):
-              def __init__(self):
-                  super().__init__()
-                  self.parts=[]
-                  self.skip=0
-              def handle_starttag(self, tag, attrs):
-                  if tag in {'script','style','noscript','svg'}:
-                      self.skip += 1
-                  if tag in {'p','div','li','h1','h2','h3','h4','br','article','section'} and not self.skip:
-                      self.parts.append('\n')
-              def handle_endtag(self, tag):
-                  if tag in {'script','style','noscript','svg'} and self.skip:
-                      self.skip -= 1
-                  if tag in {'p','div','li','h1','h2','h3','h4','article','section'} and not self.skip:
-                      self.parts.append('\n')
-              def handle_data(self, data):
-                  if not self.skip:
-                      text=' '.join(data.split())
-                      if text:
-                          self.parts.append(text+' ')
+          BASE='https://trendshift.io/github-trending-repositories?trending-range={}&trending-limit=100'
+          HEADERS={
+              'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36',
+              'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          }
+          repo_re=re.compile(r'^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$')
+          stats_re=re.compile(r'^([0-9]+(?:\.[0-9]+)?[kKmM]?)\s+([0-9]+(?:\.[0-9]+)?[kKmM]?)$')
+          count_re=re.compile(r'^Featured on GitHub Trending\s+(\d+)\s+times\s+(?:over past\s+(\d+)\s+days|of today)\.$')
+          rank_re=re.compile(r'^\d+$')
 
-          raw=Path('tmp/trendshift-14.html').read_text(encoding='utf-8', errors='replace')
-          parser=TextParser(); parser.feed(raw)
-          lines=[]
-          for line in ''.join(parser.parts).splitlines():
-              line=' '.join(line.split())
-              if line and (not lines or line != lines[-1]):
-                  lines.append(line)
-          text='\n'.join(lines)+'\n'
-          Path('tmp/trendshift-14.txt').write_text(text, encoding='utf-8')
-          ok=('past 14 days' in text and 'GitHub trending repositories' in text and len(text) > 5000)
-          Path('tmp/trendshift-14-status.txt').write_text(
-              f'ok={str(ok).lower()}\nhtml_bytes={len(raw.encode("utf-8"))}\ntext_chars={len(text)}\n',
-              encoding='utf-8')
-          if not ok:
-              raise SystemExit('Fetched response did not contain a valid 14-day Trendshift ranking')
+          def parse_range(days:int):
+              url=BASE.format(days)
+              r=requests.get(url,headers=HEADERS,timeout=120)
+              r.raise_for_status()
+              html=r.text
+              Path(f'tmp/trendshift/{days}.html').write_text(html,encoding='utf-8')
+              soup=BeautifulSoup(html,'html.parser')
+              for tag in soup(['script','style','noscript','svg']):
+                  tag.decompose()
+              lines=[]
+              for x in soup.get_text('\n',strip=True).splitlines():
+                  x=' '.join(x.split())
+                  if x and (not lines or x!=lines[-1]): lines.append(x)
+              Path(f'tmp/trendshift/{days}.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+              try:
+                  start=lines.index('The repositories have continued to trend on GitHub Trending')+1
+              except ValueError:
+                  raise RuntimeError(f'Range {days}: expected Trendshift heading not found')
+              rows=[]; i=start
+              while i < len(lines):
+                  if not repo_re.match(lines[i]):
+                      i+=1; continue
+                  repo=lines[i]
+                  if i+1>=len(lines) or not stats_re.match(lines[i+1]):
+                      i+=1; continue
+                  mstats=stats_re.match(lines[i+1])
+                  j=i+2; mcount=None
+                  while j<min(len(lines),i+8):
+                      mcount=count_re.match(lines[j])
+                      if mcount: break
+                      j+=1
+                  if not mcount:
+                      i+=1; continue
+                  new_flag=False; mentioned=None; k=j+1
+                  while k<len(lines) and k<i+12:
+                      if lines[k].startswith('New '): new_flag=True
+                      if lines[k]=='Mentioned on': mentioned=k; break
+                      if repo_re.match(lines[k]): break
+                      k+=1
+                  desc=''; tags=[]
+                  p=(mentioned+1) if mentioned is not None else (j+1)
+                  while p<len(lines):
+                      line=lines[p]
+                      if repo_re.match(line): break
+                      if rank_re.match(line) and p+1<len(lines) and repo_re.match(lines[p+1]): break
+                      if line.startswith('#'):
+                          tags.extend([t.strip() for t in re.findall(r'#\s*([^#]+?)(?=\s+#|$)',line)])
+                      elif line!='Mentioned on' and not line.startswith('New ') and not count_re.match(line) and not stats_re.match(line):
+                          if not rank_re.match(line):
+                              desc = (desc+' '+line).strip()
+                      p+=1
+                  rows.append({
+                      'range_days':days,'rank':len(rows)+1,'repo':repo,
+                      'stars':mstats.group(1),'forks':mstats.group(2),
+                      'appearances':int(mcount.group(1)),'new':new_flag,
+                      'description':desc,'tags':tags,'url':url,
+                  })
+                  i=p
+              minimum=20 if days==1 else 50
+              if len(rows)<minimum:
+                  raise RuntimeError(f'Range {days}: parsed only {len(rows)} repositories')
+              return rows, len(html.encode('utf-8'))
+
+          all_rows=[]; status={}
+          for days in (14,7,1):
+              rows,size=parse_range(days)
+              all_rows.extend(rows)
+              status[str(days)]={'ok':True,'rows':len(rows),'html_bytes':size}
+          Path('tmp/trendshift/ranges.json').write_text(json.dumps(all_rows,ensure_ascii=False,indent=2),encoding='utf-8')
+          with open('tmp/trendshift/ranges.csv','w',newline='',encoding='utf-8') as f:
+              w=csv.DictWriter(f,fieldnames=['range_days','rank','repo','stars','forks','appearances','new','description','tags','url'])
+              w.writeheader()
+              for row in all_rows:
+                  row=row.copy(); row['tags']=' | '.join(row['tags']); w.writerow(row)
+          Path('tmp/trendshift/status.json').write_text(json.dumps(status,indent=2),encoding='utf-8')
+          print(status)
           PY
       - name: Commit fetched data
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add tmp/trendshift-14.html tmp/trendshift-14.txt tmp/trendshift-14-status.txt
-          git commit -m 'Temporary: fetch Trendshift 14-day data'
+          git add tmp/trendshift
+          git commit -m 'Temporary: fetch Trendshift 14/7/1-day data'
           git push
