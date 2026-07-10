@@ -1,0 +1,101 @@
+排名,项目,热度分,对比上周排名变动,项目分类,项目 License,项目简介
+1,usestrix/strix,132000,新上榜,AI 安全 / 渗透测试 Agent,未知 / 未声明,strix 面向 AI 安全与自动化攻防，核心是Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.；适合安全审计、漏洞分析、渗透测试和防御流程自动化。
+2,msitarzewski/agency-agents,131300,上升53,AI Agent / 工作流编排,MIT,"agency-agents 面向 AI 应用与自动化任务，核心是A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whims…；适合工具集成、内部系统和快速原型。"
+3,HKUDS/Vibe-Trading,130600,上升76,量化 / 金融 AI 代理,未知 / 未声明,"Vibe-Trading 面向金融研究、预测和投研自动化，核心是""Vibe-Trading: Your Personal Trading Agent""；适合个股研究、复盘、策略实验和投资分析。"
+4,browser-use/video-use,129900,新上榜,AI 视频生成 / 自动剪辑,未知 / 未声明,video-use 面向 AI 视频和多媒体生产，核心是Edit videos with coding agents；适合短视频、营销素材、演示视频和内容工厂。
+5,JuliusBrussee/caveman,129200,新上榜,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,caveman 面向 AI 编码与工程协作，核心是🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking li…；适合代码生成、重构、调试、审查和团队研发提效。
+6,santifer/career-ops,128500,上升46,AI 求职 / 简历与职业运营,未知 / 未声明,"career-ops 面向求职和招聘流程自动化，核心是AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch…；适合岗位匹配、简历优化、候选人评估和批量申请。"
+7,obra/superpowers,127800,上升22,AI 编码助手 / Claude Code 能力增强,MIT,superpowers 面向 AI 编码与工程协作，核心是An agentic skills framework & software development methodology that works.；适合代码生成、重构、调试、审查和团队研发提效。
+8,ChromeDevTools/chrome-devtools-mcp,127100,上升90,MCP Server / MCP 工具链,Apache-2.0,chrome-devtools-mcp 面向 MCP 工具链和 agent 能力扩展，核心是Chrome DevTools for coding agents；适合企业工具层、浏览器代理和自动化系统。
+9,affaan-m/ECC,126400,上升16,Agent 记忆 / 长上下文记忆,未知 / 未声明,"ECC 面向 agent 记忆与上下文管理，核心是The agent harness performance optimization system. Skills, instincts, memory, security, and research-f…；适合长期助理、代码库记忆、客户交互和持续项目协作。"
+10,agentskills/agentskills,125700,新上榜,Agent 技能包 / Prompt 与工具集合,未知 / 未声明,agentskills 面向 AI 编码与工程协作，核心是Specification and documentation for Agent Skills；适合代码生成、重构、调试、审查和团队研发提效。
+11,openai/codex-plugin-cc,125000,新上榜,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,codex-plugin-cc 面向 AI 编码与工程协作，核心是Use Codex from Claude Code to review code or delegate tasks.；适合代码生成、重构、调试、审查和团队研发提效。
+12,langflow-ai/langflow,124300,新上榜,AI Agent / 工作流编排,未知 / 未声明,langflow 面向 AI 应用与自动化任务，核心是Langflow is a powerful tool for building and deploying AI-powered agents and workflows.；适合工具集成、内部系统和快速原型。
+13,xbtlin/ai-berkshire,123600,下降7,量化 / 金融 AI 代理,未知 / 未声明,ai-berkshire 面向金融研究、预测和投研自动化，核心是AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value inves…；适合个股研究、复盘、策略实验和投资分析。
+14,altic-dev/FluidVoice,122900,新上榜,语音 / TTS / STT,未知 / 未声明,FluidVoice 面向语音生成、识别与音频交互，核心是Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model - Loca…；适合配音、播客、数字人、会议转写和语音助手。
+15,commaai/openpilot,122200,新上榜,机器人 / Embodied AI,未知 / 未声明,"openpilot 面向视觉、多模态或具身智能，核心是openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on …；适合 OCR、视觉问答、机器人训练和多模态应用。"
+16,DeusData/codebase-memory-mcp,121500,下降5,MCP / 代码知识图谱,未知 / 未声明,codebase-memory-mcp 面向 MCP 工具链和 agent 能力扩展，核心是High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — a…；适合企业工具层、浏览器代理和自动化系统。
+17,google-labs-code/design.md,120800,下降15,AI 编码助手 / 设计系统,未知 / 未声明,design.md 面向 AI 编码与工程协作，核心是A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a per…；适合代码生成、重构、调试、审查和团队研发提效。
+18,diegosouzapw/OmniRoute,120100,新上榜,MCP Server / MCP 工具链,未知 / 未声明,"OmniRoute 面向 MCP 工具链和 agent 能力扩展，核心是Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Code…；适合企业工具层、浏览器代理和自动化系统。"
+19,garrytan/gstack,119400,下降14,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,"gstack 面向 AI 编码与工程协作，核心是Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager…；适合代码生成、重构、调试、审查和团队研发提效。"
+20,Robbyant/lingbot-map,118700,新上榜,视觉 / 3D / 多模态,未知 / 未声明,lingbot-map 面向视觉、多模态或具身智能，核心是A feed-forward 3D foundation model for reconstructing scenes from streaming data；适合 OCR、视觉问答、机器人训练和多模态应用。
+21,JCodesMore/ai-website-cloner-template,118000,下降13,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,ai-website-cloner-template 面向 AI 编码与工程协作，核心是Clone any website with one command using AI coding agents；适合代码生成、重构、调试、审查和团队研发提效。
+22,opendatalab/MinerU,117300,新上榜,文档解析 / PDF 与结构化抽取,未知 / 未声明,MinerU 面向 RAG、文档解析和知识检索，核心是Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic w…；适合知识库问答、研究检索和内部助手。
+23,allenai/olmocr,116600,新上榜,视觉 / OCR / 多模态,未知 / 未声明,olmocr 面向视觉、多模态或具身智能，核心是Toolkit for linearizing PDFs for LLM datasets/training；适合 OCR、视觉问答、机器人训练和多模态应用。
+24,Unclecheng-li/VulnClaw,115900,新上榜,AI 安全 / 渗透测试 Agent,未知 / 未声明,VulnClaw 面向 AI 安全与自动化攻防，核心是基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。；适合安全审计、漏洞分析、渗透测试和防御流程自动化。
+25,hugohe3/ppt-master,115200,新上榜,AI 自动化流程 / 内容或任务流水线,未知 / 未声明,"ppt-master 面向 AI 应用与自动化任务，核心是AI generates a real, editable PowerPoint from any document — native shapes & animations, speaker notes…；适合工具集成、内部系统和快速原型。"
+26,google/agents-cli,114500,新上榜,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,"agents-cli 面向 AI 编码与工程协作，核心是The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deployin…；适合代码生成、重构、调试、审查和团队研发提效。"
+27,0xNyk/council-of-high-intelligence,113800,新上榜,AI 基础设施 / 运行与平台层,未知 / 未声明,"council-of-high-intelligence 面向 AI 基础设施与运行层，核心是18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Ka…；适合原型验证、统一接入、平台治理和生产化部署。"
+28,roboflow/supervision,113100,上升20,视觉 / OCR / 多模态,MIT,supervision 面向视觉、多模态或具身智能，核心是We write your reusable computer vision tools. 💜；适合 OCR、视觉问答、机器人训练和多模态应用。
+29,topoteretes/cognee,112400,新上榜,Agent 记忆 / 长上下文记忆,未知 / 未声明,cognee 面向 agent 记忆与上下文管理，核心是Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memo…；适合长期助理、代码库记忆、客户交互和持续项目协作。
+30,Anil-matcha/Open-Generative-AI,111700,新上榜,AI 视频生成 / 自动剪辑,未知 / 未声明,Open-Generative-AI 面向 AI 视频和多媒体生产，核心是Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ mode…；适合短视频、营销素材、演示视频和内容工厂。
+31,anomalyco/opencode,111000,新上榜,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,opencode 面向 AI 编码与工程协作，核心是The open source coding agent.；适合代码生成、重构、调试、审查和团队研发提效。
+32,Fission-AI/OpenSpec,110300,新上榜,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,OpenSpec 面向 AI 编码与工程协作，核心是Spec-driven development (SDD) for AI coding assistants.；适合代码生成、重构、调试、审查和团队研发提效。
+33,TencentCloud/CubeSandbox,109600,新上榜,AI Agent / 工作流编排,未知 / 未声明,"CubeSandbox 面向 AI 应用与自动化任务，核心是Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.；适合工具集成、内部系统和快速原型。"
+34,calesthio/OpenMontage,108900,下降33,AI 视频生成 / Agent 工作流,未知 / 未声明,"OpenMontage 面向 AI 视频和多媒体生产，核心是World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills.…；适合短视频、营销素材、演示视频和内容工厂。"
+35,mukul975/Anthropic-Cybersecurity-Skills,108200,下降32,AI 安全 / 渗透测试 Agent,Apache-2.0,"Anthropic-Cybersecurity-Skills 面向 AI 安全与自动化攻防，核心是754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0…；适合安全审计、漏洞分析、渗透测试和防御流程自动化。"
+36,palmier-io/palmier-pro,107500,下降32,AI 视频生成 / 视频编辑,未知 / 未声明,palmier-pro 面向 AI 视频和多媒体生产，核心是macOS video editor built for AI；适合短视频、营销素材、演示视频和内容工厂。
+37,ZhuLinsen/daily_stock_analysis,106800,下降30,量化 / 金融 AI 代理,MIT,daily_stock_analysis 面向金融研究、预测和投研自动化，核心是LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with …；适合个股研究、复盘、策略实验和投资分析。
+38,jamiepine/voicebox,106100,下降29,语音 / TTS / STT,MIT,"voicebox 面向语音生成、识别与音频交互，核心是The open-source AI voice studio. Clone, dictate, create.；适合配音、播客、数字人、会议转写和语音助手。"
+39,headroomlabs-ai/headroom,105400,新上榜,MCP Server / MCP 工具链,未知 / 未声明,"headroom 面向 MCP 工具链和 agent 能力扩展，核心是Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, sam…；适合企业工具层、浏览器代理和自动化系统。"
+40,kunchenguid/no-mistakes,104700,下降17,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,no-mistakes 面向 AI 编码与工程协作，核心是git push no-mistakes；适合代码生成、重构、调试、审查和团队研发提效。
+41,interviewstreet/hiring-agent,104000,下降29,AI 求职 / 简历与职业运营,未知 / 未声明,hiring-agent 面向求职和招聘流程自动化，核心是AI agent to evaluate and score resumes.；适合岗位匹配、简历优化、候选人评估和批量申请。
+42,bytedance/deer-flow,103300,新上榜,AI 工作流 / Agent 编排,未知 / 未声明,"deer-flow 面向 AI 应用与自动化任务，核心是An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of s…；适合工具集成、内部系统和快速原型。"
+43,revfactory/harness,102600,下降29,Agent 技能包 / Prompt 与工具集合,未知 / 未声明,"harness 面向 AI 编码与工程协作，核心是A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the s…；适合代码生成、重构、调试、审查和团队研发提效。"
+44,koala73/worldmonitor,101900,下降31,AI 基础设施 / 运行与平台层,NOASSERTION,"worldmonitor 面向 AI 基础设施与运行层，核心是Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and inf…；适合原型验证、统一接入、平台治理和生产化部署。"
+45,aws/agent-toolkit-for-aws,101200,下降29,MCP Server / MCP 工具链,未知 / 未声明,"agent-toolkit-for-aws 面向 MCP 工具链和 agent 能力扩展，核心是Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS；适合企业工具层、浏览器代理和自动化系统。"
+46,stablyai/orca,100500,下降26,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,orca 面向 AI 编码与工程协作，核心是Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscr…；适合代码生成、重构、调试、审查和团队研发提效。
+47,heygen-com/hyperframes,99800,下降28,AI 视频生成 / 自动剪辑,未知 / 未声明,hyperframes 面向 AI 视频和多媒体生产，核心是Write HTML. Render video. Built for agents.；适合短视频、营销素材、演示视频和内容工厂。
+48,shanraisshan/claude-code-best-practice,99100,下降33,AI 编码助手 / Claude Code 能力增强,MIT,claude-code-best-practice 面向 AI 编码与工程协作，核心是from vibe coding to agentic engineering - practice makes claude perfect；适合代码生成、重构、调试、审查和团队研发提效。
+49,google-research/timesfm,98400,新上榜,时间序列 / 预测基础模型,未知 / 未声明,timesfm 面向金融研究、预测和投研自动化，核心是TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Googl…；适合个股研究、复盘、策略实验和投资分析。
+50,NousResearch/hermes-agent,97700,下降28,通用 AI Agent / 自主执行框架,Apache-2.0,hermes-agent 面向 AI 应用与自动化任务，核心是The agent that grows with you；适合工具集成、内部系统和快速原型。
+51,alibaba/page-agent,97000,下降34,AI Agent / 工作流编排,MIT,page-agent 面向 AI 应用与自动化任务，核心是JavaScript in-page GUI agent. Control web interfaces with natural language.；适合工具集成、内部系统和快速原型。
+52,alchaincyf/zhangxuefeng-skill,96300,上升4,Agent 技能包 / Prompt 与工具集合,未知 / 未声明,zhangxuefeng-skill 面向 AI 编码与工程协作，核心是张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。；适合代码生成、重构、调试、审查和团队研发提效。
+53,mattpocock/skills,95600,下降32,Agent 技能包 / Prompt 与工具集合,未知 / 未声明,skills 面向 AI 编码与工程协作，核心是Skills for Real Engineers. Straight from my .claude directory.；适合代码生成、重构、调试、审查和团队研发提效。
+54,Kilo-Org/kilocode,94900,新上榜,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,"kilocode 面向 AI 编码与工程协作，核心是Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most pop…；适合代码生成、重构、调试、审查和团队研发提效。"
+55,withastro/flue,94200,下降31,AI Agent / 工作流编排,未知 / 未声明,flue 面向 AI 应用与自动化任务，核心是The sandbox agent framework.；适合工具集成、内部系统和快速原型。
+56,firecrawl/firecrawl,93500,新上榜,RAG / 知识库 / 文档解析,未知 / 未声明,"firecrawl 面向 RAG、文档解析和知识检索，核心是The API to search, scrape, and interact with the web at scale. 🔥；适合知识库问答、研究检索和内部助手。"
+57,lyogavin/airllm,92800,下降31,AI 基础设施 / 运行与平台层,未知 / 未声明,airllm 面向 AI 基础设施与运行层，核心是AirLLM 70B inference with single 4GB GPU；适合原型验证、统一接入、平台治理和生产化部署。
+58,anthropics/claude-plugins-official,92100,下降40,AI 编码助手 / Claude 插件生态,未知 / 未声明,claude-plugins-official 面向 AI 编码与工程协作，核心是claude-plugins-official 是 Anthropic 管理的 Claude Code 插件目录，用于发现和复用高质量工具与工作流；适合团队统一插件来源、扩展 coding agent 能…；适合代码生成、重构、调试、审查和团队研发提效。
+59,1jehuang/jcode,91400,下降32,AI 编码助手 / Coding Harness,未知 / 未声明,jcode 是面向代码代理的轻量 harness，为模型提供仓库上下文、工具调用和任务执行入口；适合本地编码、自动修复、实验性 coding agent 和工程流程集成。
+60,addyosmani/agent-skills,90700,下降32,AI 编码助手 / Agent Skills,未知 / 未声明,agent-skills 提供面向生产工程的可复用 coding agent 技能，覆盖设计、实现、调试和质量控制；适合团队技能库、代码审查、重构和开发流程标准化。
+61,NVIDIA/SkillSpector,90000,下降31,AI 安全 / Agent Skill 扫描,未知 / 未声明,SkillSpector 扫描 AI agent skills 中的恶意模式、漏洞和供应链风险；适合团队在引入 Claude/Codex 技能前进行安全审查、策略检测和治理。
+62,zai-org/GLM-5,89300,下降31,NLP / Agentic Coding 模型,未知 / 未声明,GLM-5 面向从代码生成走向 agentic engineering 的模型与工具生态，强调复杂编码任务和代理执行；适合模型评测、coding agent、中文研发助手和工程自动化实验。
+63,kenn-io/agentsview,88600,下降31,AI 可观测 / Coding Agent 分析,未知 / 未声明,agentsview 在本地搜索并分析 Claude Code、Codex 等多种 coding agent 的会话、token 使用和执行表现；适合开发者复盘、成本分析、质量观测和团队使用洞察。
+64,BuilderIO/agent-native,87900,下降31,AI Agent / Agent-Native 应用框架,未知 / 未声明,agent-native 提供构建原生面向 agent 应用的框架思路，让界面、工具和业务动作可被模型直接理解与调用；适合 Agent SaaS、生成式 UI 和自动化产品。
+65,yifanfeng97/Hyper-Extract,87200,下降31,RAG / 知识图谱抽取,未知 / 未声明,Hyper-Extract 使用 LLM 将非结构化文本转换为图、超图和时空结构；适合知识图谱构建、复杂关系抽取、研究资料结构化和 RAG 数据准备。
+66,alibaba/zvec,86500,下降31,向量数据库 / RAG 基础设施,未知 / 未声明,zvec 是轻量、快速的进程内向量数据库，用于在应用内部完成向量写入和相似度搜索；适合本地 RAG、语义检索、嵌入缓存和低运维知识应用。
+67,OpenBMB/VoxCPM,85800,下降31,语音 / TTS / 音色克隆,Apache-2.0,VoxCPM2 是无 tokenizer 的多语言 TTS 模型，支持创意音色设计与高保真克隆；适合数字人配音、语音助手、多语言内容和个性化语音产品。
+68,shiyu-coder/Kronos,85100,下降31,量化 / 金融基础模型,未知 / 未声明,Kronos 是面向金融市场“语言”的基础模型，用时序建模支持行情理解和预测；适合量化研究、市场状态分析、策略特征生成和金融模型实验。
+69,Lightricks/LTX-2,84400,下降31,AI 视频生成 / 音视频模型,未知 / 未声明,LTX-2 提供音视频生成模型的官方 Python 推理与 LoRA 训练工具；适合生成式视频实验、定制微调、创意内容制作和音视频一体化研究。
+70,phuryn/pm-skills,83700,下降31,Agent 技能包 / Prompt 与工具集合,未知 / 未声明,pm-skills 将产品发现、战略、执行和复盘方法封装为可复用的 agent skills，解决产品团队提示词与流程分散的问题；适合产品经理、创业团队和 AI 工作流标准化。
+71,maziyarpanahi/openmed,83000,下降31,医疗 / 健康 AI,未知 / 未声明,openmed 面向开源医疗 AI 应用，帮助开发者处理医学文本、健康问答和临床资料；适合医疗知识检索、医学 NLP、健康助手和合规原型验证。
+72,mvanhorn/last30days-skill,82300,下降31,Agent 抓取 / 外部信息收集,未知 / 未声明,last30days-skill 聚合 Reddit、X、YouTube、Hacker News 等近期信息并交给 agent 总结，解决热点资料分散的问题；适合趋势调研、市场监测和周期性研究报告。
+73,RyanCodrai/turbovec,81600,下降31,RAG / 知识库 / 文档解析,未知 / 未声明,turbovec 是基于 Rust 的高性能向量索引，面向本地语义检索和 RAG；适合知识库、嵌入检索、低延迟搜索和轻量 AI 服务。
+74,MemPalace/mempalace,80900,下降31,Agent 记忆 / 长上下文记忆,未知 / 未声明,mempalace 提供可自托管的 AI 长期记忆层，用于保存偏好、事实和任务状态；适合长期助理、跨会话协作、客户关系和项目知识沉淀。
+75,opencv/opencv,80200,下降31,视觉 / OCR / 多模态,Apache-2.0,opencv 面向视觉 / OCR / 多模态，用于图像、视频帧、OCR 和多模态内容处理，主要解决视觉信息难结构化进入模型的问题，适合识别、视觉问答和多模态应用。
+76,CopilotKit/CopilotKit,79500,下降31,AI Agent / 工作流编排,未知 / 未声明,CopilotKit 提供面向 agent 与生成式 UI 的前端组件和运行能力，解决 AI 助手嵌入产品时交互与状态同步复杂的问题；适合 Web、移动端和业务 Copilot。
+77,google/skills,78800,下降31,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,google/skills 将 Google 产品和技术能力封装为可被 agent 调用的技能，解决开发者重复编写接入流程的问题；适合云服务、数据工具和团队技能库。
+78,Leonxlnx/taste-skill,78100,下降31,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,taste-skill 为 coding agent 增加设计审美和界面质量约束，减少千篇一律的生成结果；适合前端开发、设计系统落地、页面重构和 UI 质量提升。
+79,Panniantong/Agent-Reach,77400,下降30,Agent 抓取 / 外部信息收集,未知 / 未声明,Agent-Reach 为 agent 提供跨 Twitter、Reddit、YouTube、GitHub 等平台的读取与搜索能力，解决外部信息触达困难的问题；适合研究、舆情、线索发现和内容监测。
+80,danielmiessler/Personal_AI_Infrastructure,76700,下降30,AI 基础设施 / 运行与平台层,未知 / 未声明,Personal_AI_Infrastructure 提供个人 AI 基础设施的组织方法，将模型、工具、记忆和自动化连接起来；适合个人知识系统、研究助理和可持续的 AI 工作台。
+81,lfnovo/open-notebook,76000,下降30,RAG / 知识库 / 文档解析,未知 / 未声明,open-notebook 提供 NotebookLM 类的开源研究工作台，将资料导入、问答、笔记和内容生成结合；适合个人知识库、论文阅读和研究资料分析。
+82,aaif-goose/goose,75300,下降29,通用 AI Agent / 自主执行框架,未知 / 未声明,goose 是可扩展的开源本地 agent，可读取文件、执行命令和调用工具完成任务；适合开发自动化、个人助理、脚本执行和本地工作流。
+83,yikart/AiToEarn,74600,下降29,AI Agent / 工作流编排,未知 / 未声明,AiToEarn 面向 AI 应用与自动化任务，核心是AiToEarn 面向用 AI 自动化内容、研究和运营任务，帮助将模型输出连接到实际交付；适合个人项目、营销流程和轻量业务自动化。；适合工具集成、内部系统和快速原型。
+84,hexo-ai/sia,73900,下降27,AI Agent / 工作流编排,未知 / 未声明,sia 是自改进 AI 框架，用于让模型或 agent 根据评测反馈持续优化；适合任务性能迭代、自动评测、提示优化和研究实验。
+85,microsoft/markitdown,73200,下降27,RAG / 知识库 / 文档解析,MIT,markitdown 将 PDF、Office、图片等文件转换为 Markdown，解决复杂资料难进入 LLM 和 RAG 流程的问题；适合文档问答、知识库清洗和内容抽取。
+86,harry0703/MoneyPrinterTurbo,72500,下降27,AI 视频生成 / 自动剪辑,MIT,MoneyPrinterTurbo 把文案、配音、素材和剪辑串成 AI 短视频流水线；适合自媒体、营销视频、批量内容生产和快速原型。
+87,nesquena/hermes-webui,71800,下降27,自托管 AI 助手 / 本地代理,未知 / 未声明,hermes-webui 为 Hermes Agent 提供可自托管的网页和移动端界面，解决本地 agent 缺少易用控制台的问题；适合个人助理、内网部署和跨设备使用。
+88,D4Vinci/Scrapling,71100,下降27,Agent 抓取 / 外部信息收集,未知 / 未声明,Scrapling 是面向复杂网页的自适应抓取框架，可输出适合模型处理的数据；适合 RAG 数据采集、竞品监控、研究准备和网页自动化。
+89,supermemoryai/supermemory,70400,下降27,Agent 记忆 / 长上下文记忆,Apache-2.0,supermemory 提供高速、可本地运行的记忆与上下文引擎，解决 AI 应用无法持续保存历史知识的问题；适合个人助理、客户交互和项目协作。
+90,PaddlePaddle/PaddleOCR,69700,下降27,视觉 / OCR / 多模态,Apache-2.0,PaddleOCR 将图片和 PDF 转换为结构化文本与版面信息，解决扫描件难进入 AI 流程的问题；适合票据、合同、表格、文档理解和多模态 RAG。
+91,anthropics/claude-code,69000,下降27,AI 编码助手 / Claude Code 能力增强,MIT,claude-code 是运行在终端中的 coding agent，可理解代码库并执行修改、测试与重构；适合真实仓库开发、问题修复、代码审查和工程提效。
+92,cursor/plugins,68300,下降27,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,cursor/plugins 提供 Cursor 插件规范与官方插件，解决 AI IDE 能力扩展和团队流程复用问题；适合开发工具集成、工程规范和 coding agent 增强。
+93,EveryInc/compound-engineering-plugin,67600,下降27,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,compound-engineering-plugin 将规划、实现、评审和知识沉淀串成复利式研发流程；适合 Claude Code、Codex、Cursor 等工具中的团队工程协作。
+94,github/spec-kit,66900,下降27,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,spec-kit 用规格驱动方法连接需求、设计、实现和验证，减少 coding agent 在复杂任务中的偏航；适合产品开发、代码生成和团队规范化交付。
+95,Andyyyy64/whichllm,66200,下降27,本地 LLM / 本地推理,未知 / 未声明,whichllm 根据硬件条件与近期实测结果推荐可运行的本地模型，解决本地 LLM 选型困难的问题；适合离线助手、边缘设备和低成本推理。
+96,NVIDIA/cosmos,65500,下降27,机器人 / Embodied AI,未知 / 未声明,NVIDIA Cosmos 提供世界模型、数据集和工具，支持物理 AI 与机器人开发；适合机器人训练、自动驾驶、仿真和具身智能研究。
+97,p-e-w/heretic,64800,下降27,NLP / LLM 训练与轻量模型,未知 / 未声明,heretic 用自动化方法修改本地语言模型的限制行为，面向模型研究与可控实验；适合安全研究、行为分析和本地模型定制，使用时需关注合规风险。
+98,Open-LLM-VTuber/Open-LLM-VTuber,64100,下降27,数字人 / 陪伴型 AI,未知 / 未声明,Open-LLM-VTuber 将 LLM、语音输入输出、打断和 Live2D 角色结合；适合虚拟主播、数字人、陪伴助手和实时语音互动。
+99,666ghj/MiroFish,63400,下降27,AI Agent / 工作流编排,未知 / 未声明,MiroFish 是用于多 agent 群体模拟与预测的引擎，通过角色互动探索复杂系统结果；适合舆情推演、策略模拟、研究实验和群体智能应用。
+100,github/copilot-sdk,62700,下降27,AI 编码助手 / Claude Code 能力增强,未知 / 未声明,copilot-sdk 让应用和服务集成 GitHub Copilot Agent 能力，解决 coding agent 嵌入业务工具的工程问题；适合 IDE、研发平台和自动化开发服务。
