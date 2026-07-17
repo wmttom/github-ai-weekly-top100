@@ -22,7 +22,7 @@ jobs:
           UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0 Safari/537.36'
           declare -A urls
           urls[monthly]='https://trendshift.io/monthly'
-          urls[weekly]='https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100'
+          urls[weekly]='https://trendshift.io/github-trending-repositories?trending-limit=100&trending-range=7'
           urls[daily]='https://trendshift.io/'
           for key in monthly weekly daily; do
             url="${urls[$key]}"
@@ -33,6 +33,8 @@ jobs:
               --user-agent "$UA" \
               --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
               --header 'Accept-Language: en-US,en;q=0.9' \
+              --header 'Cache-Control: no-cache' \
+              --header 'Pragma: no-cache' \
               --dump-header "trendshift-output/${key}.headers" \
               --output "trendshift-output/${key}.html" \
               "$url"
@@ -43,7 +45,7 @@ jobs:
       - name: Upload raw pages
         uses: actions/upload-artifact@v4
         with:
-          name: trendshift-month-week-day-20260717
+          name: trendshift-month-week-day-normalized-20260717
           path: trendshift-output/
           if-no-files-found: error
           retention-days: 1
