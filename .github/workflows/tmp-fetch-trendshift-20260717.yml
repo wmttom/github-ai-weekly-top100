@@ -1,0 +1,49 @@
+name: Temporary Trendshift fetch 20260717
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/tmp-fetch-trendshift-20260717.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Fetch Trendshift monthly weekly daily
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p trendshift-output
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0 Safari/537.36'
+          declare -A urls
+          urls[monthly]='https://trendshift.io/monthly'
+          urls[weekly]='https://trendshift.io/github-trending-repositories?trending-range=7&trending-limit=100'
+          urls[daily]='https://trendshift.io/'
+          for key in monthly weekly daily; do
+            url="${urls[$key]}"
+            echo "Fetching ${key}: ${url}"
+            curl --fail --location --compressed \
+              --retry 5 --retry-delay 3 --retry-all-errors \
+              --connect-timeout 30 --max-time 180 \
+              --user-agent "$UA" \
+              --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
+              --header 'Accept-Language: en-US,en;q=0.9' \
+              --dump-header "trendshift-output/${key}.headers" \
+              --output "trendshift-output/${key}.html" \
+              "$url"
+            test -s "trendshift-output/${key}.html"
+            wc -c "trendshift-output/${key}.html"
+          done
+
+      - name: Upload raw pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: trendshift-month-week-day-20260717
+          path: trendshift-output/
+          if-no-files-found: error
+          retention-days: 1
