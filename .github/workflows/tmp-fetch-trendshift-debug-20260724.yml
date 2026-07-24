@@ -1,0 +1,73 @@
+name: Temporary Trendshift diagnostics 20260724
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/tmp-fetch-trendshift-debug-20260724.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Install parser dependency
+        run: python -m pip install --quiet beautifulsoup4
+
+      - name: Fetch pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0 Safari/537.36'
+          curl --fail --location --compressed --retry 5 --retry-all-errors --connect-timeout 30 --max-time 180 --user-agent "$UA" -o out/monthly.html 'https://trendshift.io/monthly'
+          curl --fail --location --compressed --retry 5 --retry-all-errors --connect-timeout 30 --max-time 180 --user-agent "$UA" -o out/weekly.html 'https://trendshift.io/github-trending-repositories?trending-limit=100&trending-range=7'
+          curl --fail --location --compressed --retry 5 --retry-all-errors --connect-timeout 30 --max-time 180 --user-agent "$UA" -o out/daily.html 'https://trendshift.io/'
+
+      - name: Inspect HTML structure
+        shell: bash
+        run: |
+          python - <<'PY'
+          from bs4 import BeautifulSoup
+          from pathlib import Path
+          import json
+          root = Path('out')
+          result = {}
+          for period in ('monthly','weekly','daily'):
+              html = (root / f'{period}.html').read_text(encoding='utf-8', errors='replace')
+              soup = BeautifulSoup(html, 'html.parser')
+              anchors = []
+              for a in soup.find_all('a', href=True):
+                  href = a['href']
+                  text = ' '.join(a.get_text(' ', strip=True).split())
+                  if href.startswith('/repositories/'):
+                      anchors.append({'href': href, 'text': text, 'classes': a.get('class', [])})
+              scripts = []
+              for sc in soup.find_all('script'):
+                  typ = sc.get('type')
+                  txt = sc.string or sc.get_text() or ''
+                  if 'itemListElement' in txt or '/repositories/' in txt:
+                      scripts.append({'type': typ, 'length': len(txt), 'prefix': txt[:1000]})
+              result[period] = {
+                  'html_bytes': len(html.encode('utf-8')),
+                  'title': soup.title.get_text(' ', strip=True) if soup.title else '',
+                  'repo_anchor_count': len(anchors),
+                  'repo_anchors_first_30': anchors[:30],
+                  'matching_scripts': scripts[:10],
+                  'body_text_prefix': ' '.join(soup.get_text(' ', strip=True).split())[:5000],
+              }
+          (root / 'diagnostics.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+          print({k: v['repo_anchor_count'] for k,v in result.items()})
+          PY
+
+      - name: Upload diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trendshift-diagnostics-20260724
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
