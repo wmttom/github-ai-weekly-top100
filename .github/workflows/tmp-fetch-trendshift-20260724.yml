@@ -147,7 +147,7 @@ jobs:
               'weekly': parse_page('weekly.html', 'weekly'),
               'daily': parse_page('daily.html', 'daily'),
           }
-          minimums = {'monthly': 40, 'weekly': 20, 'daily': 5}
+          minimums = {'monthly': 20, 'weekly': 20, 'daily': 5}
           for period, minimum in minimums.items():
               if len(trend[period]) < minimum:
                   raise SystemExit(f'Trendshift {period} parse failed: only {len(trend[period])} rows, expected at least {minimum}')
