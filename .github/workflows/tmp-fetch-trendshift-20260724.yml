@@ -1,0 +1,233 @@
+name: Temporary Trendshift fetch 20260724
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/tmp-fetch-trendshift-20260724.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install parser dependencies
+        run: python -m pip install --quiet beautifulsoup4 requests
+
+      - name: Fetch Trendshift monthly weekly daily
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p trendshift-output
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0 Safari/537.36'
+          declare -A urls
+          urls[monthly]='https://trendshift.io/monthly'
+          urls[weekly]='https://trendshift.io/github-trending-repositories?trending-limit=100&trending-range=7'
+          urls[daily]='https://trendshift.io/'
+          for key in monthly weekly daily; do
+            url="${urls[$key]}"
+            echo "Fetching ${key}: ${url}"
+            curl --fail --location --compressed \
+              --retry 5 --retry-delay 3 --retry-all-errors \
+              --connect-timeout 30 --max-time 180 \
+              --user-agent "$UA" \
+              --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
+              --header 'Accept-Language: en-US,en;q=0.9' \
+              --header 'Cache-Control: no-cache' \
+              --header 'Pragma: no-cache' \
+              --dump-header "trendshift-output/${key}.headers" \
+              --output "trendshift-output/${key}.html" \
+              "$url"
+            test -s "trendshift-output/${key}.html"
+            wc -c "trendshift-output/${key}.html"
+          done
+
+      - name: Parse Trendshift and fetch GitHub metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+          from bs4 import BeautifulSoup
+          from pathlib import Path
+          import csv, json, os, re, time
+          import requests
+
+          root = Path('trendshift-output')
+
+          def nval(s: str) -> int:
+              s = s.strip().lower().replace(',', '')
+              mult = 1
+              if s.endswith('k'):
+                  mult, s = 1000, s[:-1]
+              elif s.endswith('m'):
+                  mult, s = 1000000, s[:-1]
+              try:
+                  return int(float(s) * mult)
+              except Exception:
+                  return 0
+
+          def parse_page(filename: str, period: str):
+              html = (root / filename).read_text(encoding='utf-8', errors='replace')
+              soup = BeautifulSoup(html, 'html.parser')
+              ldmap = {}
+              for sc in soup.find_all('script', {'type': 'application/ld+json'}):
+                  try:
+                      data = json.loads(sc.string or sc.get_text())
+                  except Exception:
+                      continue
+                  if not isinstance(data, dict):
+                      continue
+                  for entry in data.get('itemListElement', []):
+                      item = entry.get('item', {})
+                      name = item.get('name')
+                      if name:
+                          ldmap[name] = {
+                              'created_at_trendshift': item.get('dateCreated'),
+                              'modified_at_trendshift': item.get('dateModified'),
+                              'language_trendshift': item.get('programmingLanguage'),
+                          }
+              cards = []
+              for div in soup.find_all('div'):
+                  cls = div.get('class', [])
+                  if not ('hover:bg-accent' in cls and 'group' in cls and 'relative' in cls and 'flex' in cls and 'flex-col' in cls):
+                      continue
+                  repo_a = None
+                  for a in div.find_all('a', href=True):
+                      text = ' '.join(a.get_text(' ', strip=True).split())
+                      if a['href'].startswith('/repositories/') and '/' in text and not text.startswith('#'):
+                          repo_a = a
+                          break
+                  if repo_a is None:
+                      continue
+                  repo = ' '.join(repo_a.get_text(' ', strip=True).split())
+                  stats = div.find('div', class_=lambda c: c and 'tabular-nums' in c)
+                  stars = forks = 0
+                  if stats:
+                      starspan = stats.find('span', class_=lambda c: c and 'text-foreground' in c and 'font-medium' in c)
+                      if starspan:
+                          stars = nval(starspan.get_text(' ', strip=True))
+                      spans = stats.find_all('span', recursive=False)
+                      if len(spans) > 1:
+                          forks = nval(spans[1].get_text(' ', strip=True))
+                  desc_el = div.find('p', class_=lambda c: c and 'leading-5' in c)
+                  description = ' '.join(desc_el.get_text(' ', strip=True).split()) if desc_el else ''
+                  topics = []
+                  for a in div.find_all('a', href=True):
+                      if a['href'].startswith('/topics/'):
+                          topic = ' '.join(a.get_text(' ', strip=True).replace('#', '').split())
+                          if topic and topic not in topics:
+                              topics.append(topic)
+                  full = ' '.join(div.get_text(' ', strip=True).split())
+                  match = re.search(r'Featured on GitHub Trending\s+(\d+)\s+times?', full)
+                  record = {
+                      'period': period,
+                      'rank': len(cards) + 1,
+                      'repo': repo,
+                      'stars_trendshift': stars,
+                      'forks_trendshift': forks,
+                      'featured_times': int(match.group(1)) if match else 0,
+                      'description_trendshift': description,
+                      'topics_trendshift': topics,
+                      'new_badge': bool(div.find(attrs={'aria-label': re.compile(r'Repository created in')})),
+                      'trendshift_url': 'https://trendshift.io' + repo_a['href'],
+                  }
+                  record.update(ldmap.get(repo, {}))
+                  cards.append(record)
+              return cards
+
+          trend = {
+              'monthly': parse_page('monthly.html', 'monthly'),
+              'weekly': parse_page('weekly.html', 'weekly'),
+              'daily': parse_page('daily.html', 'daily'),
+          }
+          minimums = {'monthly': 40, 'weekly': 20, 'daily': 5}
+          for period, minimum in minimums.items():
+              if len(trend[period]) < minimum:
+                  raise SystemExit(f'Trendshift {period} parse failed: only {len(trend[period])} rows, expected at least {minimum}')
+          (root / 'trendshift-parsed.json').write_text(json.dumps(trend, ensure_ascii=False, indent=2), encoding='utf-8')
+          (root / 'validation.json').write_text(json.dumps({k: len(v) for k, v in trend.items()}, indent=2), encoding='utf-8')
+
+          repos = []
+          for period in ('monthly', 'weekly', 'daily'):
+              repos.extend(row['repo'] for row in trend[period])
+          previous_path = Path('2026年07月17日.csv')
+          if not previous_path.exists():
+              raise SystemExit('Missing previous ranking file: 2026年07月17日.csv')
+          with previous_path.open(encoding='utf-8-sig', newline='') as handle:
+              previous = list(csv.DictReader(handle))
+          if len(previous) != 100:
+              raise SystemExit(f'Previous ranking has {len(previous)} rows instead of 100')
+          repos.extend(row['项目'] for row in previous)
+          (root / 'previous-ranking.json').write_text(json.dumps(previous, ensure_ascii=False, indent=2), encoding='utf-8')
+
+          unique = []
+          seen = set()
+          for repo in repos:
+              key = repo.lower().strip()
+              if '/' not in repo or key in seen:
+                  continue
+              seen.add(key)
+              unique.append(repo.strip())
+
+          session = requests.Session()
+          session.headers.update({
+              'Authorization': f'Bearer {os.environ["GH_TOKEN"]}',
+              'Accept': 'application/vnd.github+json',
+              'X-GitHub-Api-Version': '2022-11-28',
+              'User-Agent': 'github-ai-weekly-top100',
+          })
+          metadata = {}
+          for idx, repo in enumerate(unique, 1):
+              response = session.get(f'https://api.github.com/repos/{repo}', timeout=30)
+              if response.status_code == 200:
+                  data = response.json()
+                  license_obj = data.get('license') or {}
+                  metadata[repo.lower()] = {
+                      'requested_repo': repo,
+                      'full_name': data.get('full_name') or repo,
+                      'description': data.get('description') or '',
+                      'topics': data.get('topics') or [],
+                      'created_at': data.get('created_at'),
+                      'updated_at': data.get('updated_at'),
+                      'pushed_at': data.get('pushed_at'),
+                      'stargazers_count': data.get('stargazers_count') or 0,
+                      'forks_count': data.get('forks_count') or 0,
+                      'open_issues_count': data.get('open_issues_count') or 0,
+                      'language': data.get('language'),
+                      'archived': bool(data.get('archived')),
+                      'disabled': bool(data.get('disabled')),
+                      'fork': bool(data.get('fork')),
+                      'license_spdx': license_obj.get('spdx_id'),
+                      'license_name': license_obj.get('name'),
+                      'html_url': data.get('html_url'),
+                      'default_branch': data.get('default_branch'),
+                  }
+              else:
+                  metadata[repo.lower()] = {
+                      'requested_repo': repo,
+                      'error_status': response.status_code,
+                      'error': response.text[:500],
+                  }
+              if idx % 40 == 0:
+                  print(f'Fetched metadata for {idx}/{len(unique)} repositories')
+                  time.sleep(1)
+          (root / 'github-metadata.json').write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
+          print({key: len(value) for key, value in trend.items()})
+          print('Unique candidate repositories:', len(unique))
+          print('Metadata records:', len(metadata))
+          PY
+
+      - name: Upload parsed data and metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: trendshift-ranked-inputs-20260724
+          path: trendshift-output/
+          if-no-files-found: error
+          retention-days: 1
