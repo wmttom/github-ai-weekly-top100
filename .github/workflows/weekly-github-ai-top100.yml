@@ -1,11 +1,6 @@
 name: Weekly GitHub AI Top100
 
 on:
-  schedule:
-    # Asia/Shanghai Friday 10:00 = UTC Friday 02:00.
-    # Added after the 2026-07-31 slot, so the first scheduled execution is
-    # Friday, 2026-08-07 at 10:00 Asia/Shanghai.
-    - cron: '0 2 * * 5'
   workflow_dispatch:
 
 permissions:
