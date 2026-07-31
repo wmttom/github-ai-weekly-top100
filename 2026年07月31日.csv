@@ -1,0 +1,101 @@
+排名,项目,热度分,对比上周排名变动,项目分类,项目 License,项目简介
+1,block/buzz,132000,上升2,AI Agent / 协作通信,Apache-2.0,buzz 是面向多 agent 的自托管协作通信平台，用于让多个代理共享消息、状态和任务上下文；适合构建 agent 团队、内部协作助手和需要持续通信的自动化系统。
+2,different-ai/openwork,127327,新上榜,AI Agent / 协作工作台,未知 / 未声明,OpenWork 是跨平台开源 AI 工作台，可把技能、MCP、Google Workspace 和 Microsoft 365 能力统一分发给 Claude Code、Codex、Cursor 等代理；适合团队共享自动化能力、管理权限连接，并复用跨工具、跨设备的知识工作流程。
+3,citrolabs/ego-lite,121487,上升1,浏览器自动化 / Web Agent,MIT,ego-lite 是让用户与 AI agent 并行操作的浏览器，减少自动化任务与人工浏览相互打断的问题；适合网页研究、表单处理、浏览器代理和人机共同完成在线工作。
+4,alibaba/open-code-review,116938,上升2,AI 编码助手 / 自动代码审查,Apache-2.0,open-code-review 将确定性代码规则与 LLM agent 结合，生成精确到行的审查意见，并覆盖空指针、线程安全、XSS 和 SQL 注入等问题；适合 PR 审查、质量门禁和企业研发流程。
+5,affaan-m/ECC,116916,上升84,Agent 记忆 / Harness 优化,MIT,ECC 将技能、经验、长期记忆、安全检查和研究优先方法组合成 agent harness 优化体系；适合 Claude Code、Codex、OpenCode 与 Cursor 的长期项目协作、上下文治理和工程质量提升。
+6,stablyai/orca,115367,上升4,AI 编码助手 / 多 Agent 工作台,MIT,Orca 是管理并行 coding agents 的桌面与移动工作台，可使用用户自己的模型订阅运行多名代理；适合任务分派、进度观察、多仓库并行开发和人机协同交付。
+7,mvanhorn/last30days-skill,114726,新上榜,Agent 搜索 / 趋势研究,MIT,last30days-skill 会让 agent 跨 Reddit、X、YouTube、Hacker News、Polymarket 和网页检索近 30 天信息并综合结论；适合市场趋势调研、产品情报、热点验证和周期性研究报告。
+8,mattpocock/skills,114237,上升5,AI 编码助手 / Agent Skills,MIT,mattpocock/skills 收录作者在真实工程中使用的 Claude Code 与 Codex 技能，把开发方法和质量标准封装为可复用指令；适合 TypeScript 开发、代码审查、调试、重构和团队技能库建设。
+9,virgiliojr94/book-to-skill,104205,新上榜,Agent Skills / 文档知识转化,MIT,book-to-skill 将技术书籍 PDF 自动拆解并转换成 Claude Code 可调用的技能与参考资料，解决长文档难直接进入工作流的问题；适合技术学习、团队知识库、编码规范沉淀和边工作边查询。
+10,pingdotgg/t3code,104003,新上榜,AI 编码助手 / 多 Agent GUI,MIT,T3 Code 为 Codex、Claude、Cursor 和 OpenCode 提供轻量 Web 与桌面图形界面，统一启动和管理 coding agent 会话；适合不习惯纯终端的开发者、多代理切换和本地研发工作台。
+11,MadsLorentzen/ai-job-search,103725,上升10,AI 求职 / 简历与职业运营,MIT,ai-job-search 是基于 Claude Code 的求职自动化框架，可按个人资料评估岗位、定制简历和求职信并准备面试；适合求职者批量筛选职位、维护申请材料和形成可复用的职业运营流程。
+12,diegosouzapw/OmniRoute,102704,下降11,LLM 网关 / 路由与代理层,MIT,OmniRoute 将大量模型供应商统一到一个 API 入口，并为 Claude Code、Codex 等工具提供免费与低成本模型路由；适合多模型切换、故障回退、额度管理和开发环境统一接入。
+13,1jehuang/jcode,101005,下降4,AI 编码助手 / Coding Agent Harness,MIT,jcode 是面向代码任务的 agent harness，为模型提供仓库上下文、工具调用和终端执行能力；适合本地编码、自动修复、代码导航、测试运行和实验性 agentic engineering。
+14,emilkowalski/skills,98206,上升10,AI 编码助手 / UI Agent Skills,MIT,emilkowalski/skills 将作者关于交互与界面设计的工程经验封装为可被 coding agent 调用的技能；适合前端实现、动效设计、界面质量检查和帮助 Claude Code、Codex 生成更成熟的 UI。
+15,ChromeDevTools/chrome-devtools-mcp,97911,上升83,MCP Server / MCP 工具链,Apache-2.0,chrome-devtools-mcp 面向 MCP 工具链和 agent 能力扩展，核心是Chrome DevTools for coding agents；适合企业工具层、浏览器代理和自动化系统。
+16,pbakaus/impeccable,95827,新上榜,AI 编码助手 / 设计系统,Apache-2.0,Impeccable 为 coding agent 提供面向产品设计的语言、规则和质量标准，减少模板化界面与低质量视觉输出；适合 Claude Code、Codex 等生成前端页面、组件重构和设计审查。
+17,bradautomates/claude-video,95165,上升50,视频理解 / 多模态 Agent,MIT,claude-video 让 Claude 下载视频、抽取关键帧、转写音频并组合为可分析上下文；适合视频摘要、课程与会议内容理解、素材检索和让 coding agent 处理视频资料。
+18,usestrix/strix,95096,上升7,AI 安全 / 渗透测试 Agent,Apache-2.0,Strix 使用 AI agent 自动发现并协助修复应用漏洞，将侦察、测试、证据整理和修复建议连接起来；适合获授权环境中的安全审计、渗透测试、持续漏洞验证和开发阶段安全检查。
+19,Nutlope/hallmark,94894,上升21,AI 编码助手 / 设计质量技能,MIT,hallmark 是用于 Claude Code、Cursor 和 Codex 的界面设计技能，专门识别并抑制模板化、千篇一律的“AI 味”视觉输出；适合前端页面生成、设计审查、组件重构和提升 coding agent 的产品审美。
+20,xai-org/grok-build,93860,上升9,AI 编码助手 / Coding Agent Harness,Apache-2.0,grok-build 是 SpaceXAI 推出的 coding agent harness 与全屏终端界面，支持鼠标交互和扩展能力；适合在终端中完成仓库理解、代码修改、命令执行和可定制的 agentic engineering 工作流。
+21,obra/superpowers,93080,上升35,AI 编码助手 / Claude Code 能力增强,MIT,superpowers 面向 AI 编码与工程协作，核心是An agentic skills framework & software development methodology that works.；适合代码生成、重构、调试、审查和团队研发提效。
+22,JustVugg/colibri,92736,上升15,本地 LLM / 高效推理,Apache-2.0,colibri 用纯 C 和磁盘流式加载专家的方式，在约 25GB 内存的消费级设备上运行超大 MoE 模型；适合本地大模型实验、低成本推理、离线助手和研究模型在受限硬件上的可行性。
+23,AminBlg/SimpleEnglish,91772,新上榜,Agent Skills / 技术写作,MIT,SimpleEnglish 将 ASD-STE100 简化技术英语规则封装为 agent skill，帮助 LLM 写出更明确、可翻译和可维护的说明文档；适合产品手册、运维文档、航空制造等受控语言场景。
+24,openai/codex-security,90647,新上榜,AI 安全 / Codex Security,Apache-2.0,codex-security 提供 Codex Security CLI 与 TypeScript SDK，用 agent 发现、验证并协助修复代码安全问题；适合仓库安全扫描、漏洞复核、修复建议生成和研发流水线安全门禁。
+25,iOfficeAI/OfficeCLI,90594,上升11,文档处理 / Office Agent,Apache-2.0,OfficeCLI 为 AI agent 提供无需安装 Office 的 Word、Excel 和 PowerPoint 读取、编辑与自动化能力，并以单文件命令行工具运行；适合办公文档批处理、报告生成、表格修改和企业流程集成。
+26,microsoft/VibeVoice,89776,新上榜,语音 / TTS / STT,MIT,VibeVoice 是面向长文本和多说话人的开源语音模型，重点支持自然对话与长音频生成；适合播客、数字人、教育音频、内容配音和语音助手原型。
+27,Graphify-Labs/graphify,87813,上升16,RAG / 多模态知识图谱,Apache-2.0,graphify 可把代码、数据库结构、脚本、文档、论文、图片和视频转成可查询知识图谱，并作为 coding agent 技能使用；适合跨代码与数据资产检索、影响分析和复杂项目理解。
+28,digimata/quill,87497,新上榜,语音 / 本地会议转写,MIT,quill 是 macOS 本地会议录音与转写工具，可分别记录麦克风和系统音频并在设备上生成带说话人标签的文本；适合敏感会议、访谈纪要、离线转写和个人知识沉淀。
+29,u-ichi/reviewable-html-workbench,87401,新上榜,AI 编码助手 / 可审阅文档,MIT,reviewable-html-workbench 是 Claude Code 与 Codex CLI 插件，可生成带预览、行内评论和修改回路的 HTML 文档；适合需求稿、方案页、报告和网页原型的人机协同评审。
+30,microsoft/agent-governance-toolkit,87196,新上榜,AI 治理 / Agent 安全,MIT,agent-governance-toolkit 提供策略执行、零信任身份、沙箱隔离和可靠性评测能力，解决 agent 上线后的权限与失控风险；适合企业代理平台、合规控制、执行审计和生产治理。
+31,langchain-ai/openwiki,86056,上升1,RAG / 代码库文档 Agent,MIT,openwiki 是自动编写和维护代码库 agent 文档的命令行工具，可持续整理架构、模块与开发约定；适合大型仓库知识导航、新成员上手、coding agent 上下文准备和文档同步。
+32,QwenAudio/qwen-audio-agent,85480,新上榜,语音 / 实时 Voice Agent,Apache-2.0,qwen-audio-agent 是让语音 agent 持续对话并并行执行任务的实时运行时，覆盖音频输入、模型推理和回复播放；适合实时客服、语音助手、数字人和免手操作应用。
+33,palmier-io/palmier-pro,83774,上升1,AI 视频生成 / 视频编辑,GPL-3.0,palmier-pro 是为 AI 工作流设计的 macOS 视频编辑器，把模型生成素材、时间线编辑和 MCP 工具调用结合起来；适合 AI 视频创作者、自动剪辑、本地后期和 agent 驱动的内容生产。
+34,MoonshotAI/FlashKDA,83662,新上榜,AI 基础设施 / 推理内核,MIT,FlashKDA 为 Kimi Delta Attention 提供高性能计算内核，重点优化注意力算子的吞吐与延迟；适合大模型推理框架、GPU 性能调优和新型注意力机制研究。
+35,vudovn/ag-kit,83587,新上榜,Agent Skills / 工程工具包,MIT,AG Kit 为 Google Antigravity 提供规则、技能、专业子代理、持久记忆、MCP、编排和危险命令防护的一体化工作区；适合团队建立可复用的 agent 工程规范与生产检查流程。
+36,hkc5/cursor-bridge,83487,新上榜,LLM 网关 / Claude Code 代理,MIT,cursor-bridge 用单个 Rust 程序把 Claude Code 请求桥接到 Cursor 订阅，减少多套客户端配置和接入成本；适合个人开发环境中的模型复用、代理转发和快速 coding agent 配置。
+37,herdrdev/herdr,82962,上升29,AI Agent / 多 Agent 终端编排,Apache-2.0,herdr 是运行在终端中的 agent 多路复用器，用于同时启动、切换和观察多个代理会话；适合并行 coding agents、研究任务分工和多项目自动化管理。
+38,StarTrail-org/PixelRAG,82313,新上榜,RAG / 像素级文档检索,Apache-2.0,PixelRAG 以像素级视觉表示替代传统网页解析，将页面截图与视觉内容构建为可扩展检索索引；适合复杂网页、图文混排文档、多模态搜索和视觉 RAG。
+39,ayghri/i-have-adhd,81715,下降23,AI 编码助手 / 输出优化技能,MIT,i-have-adhd 是面向 coding agent 的输出优化技能，要求模型先给结论并减少冗长铺垫；适合需要快速定位答案、降低信息负担和改善 Claude Code 等工具可读性的开发者。
+40,ericosiu/ai-marketing-skills,80591,新上榜,Agent Skills / 营销自动化,MIT,ai-marketing-skills 将增长实验、销售漏斗、内容运营、外联、SEO 和财务分析封装为可复用 agent skills；适合营销团队建立 AI SOP、活动策划和数据驱动增长工作流。
+41,drumih/turbo-fieldfare,79042,新上榜,本地 LLM / 低内存推理,Apache-2.0,turbo-fieldfare 面向 Apple Silicon 的低内存模型推理，可在约 2GB 内存中运行 Gemma 4 26B-A4B；适合本地助手、离线实验、边缘设备和低成本大模型验证。
+42,agentscope-ai/QwenPaw,79023,新上榜,自托管 AI 助手 / 多渠道 Agent,Apache-2.0,QwenPaw 是易安装、可本地或云端部署的个人 AI 助手，支持多种聊天渠道与可扩展技能；适合个人工作台、群聊机器人、私有知识助手和跨端自动化。
+43,RyanCodrai/turbovec,78581,下降5,向量数据库 / RAG 基础设施,MIT,turbovec 面向向量数据库 / RAG 基础设施场景，核心能力是：A vector index built on TurboQuant， written in Rust with Python bindings；重点提供低延迟向量索引和语义相似度搜索，适合本地 RAG、嵌入检索、推荐和轻量知识应用。
+44,rohitg00/agentmemory,78498,新上榜,Agent 记忆 / 长上下文记忆,Apache-2.0,agentmemory 为 coding agents 提供持久记忆、时间上下文和历史检索，帮助代理跨会话保存事实、任务和项目状态；适合长期开发、个人助理和持续协作工作流。
+45,JuliusBrussee/caveman,78000,上升9,AI 编码助手 / 上下文压缩,MIT,caveman 通过更精简的表达和上下文组织方式降低 Claude Code 的 token 消耗，同时保留任务所需信息；适合长会话、复杂仓库、成本敏感开发和减少重复解释。
+46,koala73/worldmonitor,77000,下降44,监控 / 趋势跟踪代理,未知 / 未声明,worldmonitor 汇聚新闻、地缘事件和基础设施状态，并用 AI 形成实时态势看板；适合 OSINT、风险监测、市场情报、全球事件跟踪和管理层简报。
+47,tirth8205/code-review-graph,76505,下降42,MCP / 代码知识图谱,MIT,code-review-graph 在本地为代码库建立持久知识图谱，并通过 MCP 与 CLI 提供低延迟查询；适合大型仓库代码审查、依赖与影响分析，以及减少 coding agent 的上下文和工具调用。
+48,earthtojake/text-to-cad,76011,下降40,3D / CAD / 机器人 Agent Skills,MIT,text-to-cad 将 CAD、机器人和硬件设计方法封装为 agent skills，让模型生成和修改 STEP、STL、URDF 等工程资产；适合机械原型、机器人建模、参数化设计和硬件研发辅助。
+49,msitarzewski/agency-agents,75352,下降37,AI Agent / 工作流编排,MIT,agency-agents 提供覆盖前端、产品、设计、营销、社区和质量保障的专业 agent 角色，可按任务组合成虚拟团队；适合复杂项目拆解、多角色协作和业务流程自动化。
+50,Robbyant/lingbot-map,75077,下降43,视觉 / 3D / 多模态,Apache-2.0,lingbot-map 面向视觉、多模态或具身智能，核心是A feed-forward 3D foundation model for reconstructing scenes from streaming data；适合 OCR、视觉问答、机器人训练和多模态应用。
+51,KnockOutEZ/wigolo,75022,下降37,Agent 搜索 / MCP 抓取,未知 / 未声明,wigolo 为 coding agent 提供本地优先的搜索、抓取、爬取和研究能力，并通过 MCP 接入且无需云端 API；适合代码调研、RAG 数据采集、网页资料汇总和隐私敏感的研究任务。
+52,jamiepine/voicebox,74543,下降37,语音 / TTS / 音色克隆,MIT,voicebox 是可自托管的 AI 语音工作室，支持音色克隆、口述输入和语音内容生成；适合播客、视频配音、数字人、无障碍语音输入和不希望将音频交给云端的场景。
+53,apache/ossie,74520,下降35,AI 数据治理 / 语义元数据,Apache-2.0,Apache Ossie 致力于统一分析、AI 与 BI 平台之间的语义元数据交换，提供厂商中立的单一事实来源；适合企业指标治理、语义层互操作、数据目录和 AI 分析系统集成。
+54,ibelick/ui-skills,74033,下降34,AI 编码助手 / UI Agent Skills,MIT,ui-skills 为设计工程师和 coding agent 提供可复用的界面实现技能，帮助模型理解布局、组件、交互与视觉质量要求；适合前端生成、设计系统落地、页面审查和 UI 重构。
+55,agegr/pi-web,73703,下降33,AI 编码助手 / Coding Agent Web UI,MIT,pi-web 为 pi coding agent 提供浏览器界面，让用户无需纯终端即可查看会话、提交任务和跟踪执行；适合本地 coding agent、远程开发和轻量团队工作台。
+56,github/copilot-sdk,73036,下降29,AI 编码助手 / Copilot SDK,MIT,copilot-sdk 让开发者把 GitHub Copilot Agent 嵌入多平台应用和服务，复用其代码理解与任务执行能力；适合 IDE 插件、内部研发平台、代码审查和工程自动化产品。
+57,tradesdontlie/tradingview-mcp,71906,下降26,量化 / 金融 MCP,未知 / 未声明,tradingview-mcp 将 Claude Code 连接到 TradingView Desktop，支持对当前图表进行 AI 辅助分析和工作流操作；适合个人技术分析、图表研究和交易复盘，不替代投资判断。
+58,AlexsJones/llmfit,71560,下降23,本地 LLM / 模型选型,MIT,llmfit 根据本机硬件和模型要求快速判断哪些本地 LLM 能运行，并比较不同模型与供应商；适合本地模型选型、设备容量规划和离线 AI 环境搭建。
+59,ifixai-ai/iFixAi,71419,下降26,AI 安全 / LLM 评测与治理,Apache-2.0,iFixAi 通过多项自动检查评估 AI 系统的幻觉、操纵、欺骗、提示注入和治理风险，并输出分级结果；适合上线前 LLM 评测、合规检查、红队测试和持续质量门禁。
+60,img2threejs/img2threejs,70901,下降21,3D 生成 / 图像到 Three.js,Apache-2.0,img2threejs 根据参考图片生成仅由代码构建、可动画且经过质量检查的 Three.js 三维对象；适合网页 3D 原型、产品展示、程序化建模和图像到场景的 agent 工作流。
+61,HKUDS/DeepTutor,70571,下降20,教育 / 个性化学习 Agent,Apache-2.0,DeepTutor 是面向终身学习的个性化教学 agent，将资料检索、知识讲解、练习生成和学习反馈组合成持续辅导流程；适合课程助教、自适应学习、研究型问答和个人知识训练。
+62,MoonshotAI/kimi-cli,70187,下降32,AI 编码助手 / CLI Agent,Apache-2.0,Kimi CLI 是运行在终端中的 coding agent，可理解项目上下文、调用工具并完成代码任务；适合仓库开发、脚本处理、命令执行和中文研发工作流。
+63,Vincentwei1021/video-shotcraft,69598,下降18,AI 视频生成 / Agent Skills,Apache-2.0,video-shotcraft 面向AI 视频生成 / Agent Skills场景，核心能力是：AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 106 shot recipe cards…；重点解决该类 AI 能力接入、执行或复用成本高的问题，适合AI 原型、内部工具、系统集成和业务落地。
+64,headroomlabs-ai/headroom,69575,下降16,Agent 上下文压缩 / AI 基础设施,Apache-2.0,headroom 面向Agent 上下文压缩 / AI 基础设施场景，核心能力是：Compress tool outputs， logs， files， and RAG chunks before they reach the LLM. 20% fewer tokens for cod…；重点在工具输出与长文进入模型前压缩信息并保留关键语义，适合长链路 agent、RAG、日志分析和 token 成本治理。
+65,facebook/astryx,69410,下降16,AI 编码助手 / Agent 设计系统,MIT,astryx 是可定制且面向 agent 的开源设计系统，让 coding agent 能复用统一的组件、样式与视觉规范；适合生成式前端、品牌一致性控制、设计到代码协作和企业 UI 基础设施。
+66,petergyang/no-ai-slop,69111,下降19,AI 写作 / 质量控制,MIT,no-ai-slop 检测并移除写作中常见的模板化、空泛和重复 AI 表达；适合文章润色、营销文案、报告编辑和建立团队生成内容质量标准。
+67,MartinDelophy/ai-video-editor,68923,下降16,AI 视频生成 / 本地编辑器,MIT,ai-video-editor 是本地优先的浏览器视频编辑器，集成 ONNX 配音、Whisper 字幕、数字人和多轨导出；适合隐私敏感的短视频、字幕、配音和轻量内容生产。
+68,earendil-works/pi,68758,下降16,AI 编码助手 / Agent 工具包,MIT,pi 提供统一 LLM API、agent loop、终端界面和 coding agent CLI，把模型、工具与代码库上下文连接起来；适合本地编程助手、脚本自动化、模型切换和自定义 agent 实验。
+69,github/spec-kit,68264,下降14,AI 编码助手 / 规格驱动开发,MIT,spec-kit 用规格驱动开发把需求、设计、任务拆分、实现和验证连接起来，减少 coding agent 在复杂项目中偏航；适合新功能开发、多人协作、代码生成和可审查的工程交付。
+70,Dicklesworthstone/destructive_command_guard,67777,下降13,AI 安全 / Agent 命令防护,未知 / 未声明,destructive_command_guard 在 coding agent 执行前拦截高风险 Git 与 shell 命令，降低误删文件、覆盖分支和破坏环境的风险；适合 Claude Code、Codex 等自动执行工具的本地安全门禁。
+71,coreyhaines31/marketingskills,67612,下降13,Agent 技能包 / 营销自动化,MIT,marketingskills 将转化率优化、文案、SEO、分析和增长工程方法封装为 Claude Code 与 AI agent 技能；适合营销审计、落地页优化、内容规划和数据驱动增长工作流。
+72,google-labs-code/stitch-skills,67604,下降13,AI 编码助手 / UI Agent Skills,Apache-2.0,stitch-skills 为 Stitch MCP Server 提供符合开放 Agent Skills 标准的设计与前端技能，可被 Gemini CLI、Claude Code、Cursor 等调用；适合从设计意图生成页面、复用 UI 工作流和团队设计规范。
+73,PrismML-Eng/Bonsai-demo,67440,下降13,本地 LLM / 低比特多模态推理,Apache-2.0,Bonsai-demo 用于在 Mac、Windows、Linux 或 CPU 上运行 1-bit 与 ternary Bonsai 模型，支持视觉输入、长上下文、推理和 MCP 工具调用；适合本地多模态助手、低内存推理和边缘模型实验。
+74,farion1231/cc-switch,67432,下降13,AI 编码助手 / 多 Agent 管理,MIT,cc-switch 是跨平台桌面工具，用于统一管理 Claude Code、Codex、OpenCode、OpenClaw、Gemini CLI 和 Hermes Agent；适合多模型切换、配置管理和开发者 agent 工作台。
+75,ColeMurray/background-agents,67102,下降12,AI 编码助手 / 后台 Agent,MIT,background-agents 提供可在后台持续运行的开源 coding agent 系统，让长耗时开发任务与前台工作并行；适合批量代码修改、测试执行、仓库维护和异步研发自动化。
+76,anthropics/skills,66168,下降14,Agent 技能规范 / 工具集合,未知 / 未声明,anthropics/skills 提供公开的 Agent Skills 规范、示例与可移植能力封装方式，帮助不同 agent 复用任务方法；适合团队技能库、工具调用标准化、Claude Code 扩展和跨平台工作流。
+77,addyosmani/agent-skills,65987,下降12,AI 编码助手 / Agent Skills,MIT,agent-skills 提供面向生产工程的可复用 coding agent 技能，覆盖设计、实现、调试和质量控制；适合团队技能库、代码审查、重构和开发流程标准化。
+78,Leonxlnx/taste-skill,65681,下降14,AI 编码助手 / Claude Code 能力增强,MIT,taste-skill 为 coding agent 增加设计审美和界面质量约束，减少千篇一律的生成结果；适合前端开发、设计系统落地、页面重构和 UI 质量提升。
+79,ZhuLinsen/daily_stock_analysis,65626,下降8,量化 / 金融 AI 代理,MIT,daily_stock_analysis 汇总 A 股、港股和美股行情、实时新闻与技术指标，并由 LLM 生成分析看板和自动推送；适合每日复盘、个股跟踪、市场简报和低成本定时投研。
+80,alibaba/page-agent,65485,下降11,浏览器自动化 / Web Agent,MIT,page-agent 是运行在网页内部的 GUI agent，可用自然语言完成点击、填表和导航，无需传统无头浏览器；适合 SaaS Copilot、企业表单、网页测试、运营流程和可访问性增强。
+81,liaohch3/claude-tap,65297,下降8,AI 可观测 / Coding Agent 流量分析,MIT,claude-tap 面向AI 可观测 / Coding Agent 流量分析场景，核心能力是：Intercept and inspect Coding Agent API traffic from Claude Code， Codex CLI， Gemini CLI， Cursor CLI， Op…；重点解决该类 AI 能力接入、执行或复用成本高的问题，适合AI 原型、内部工具、系统集成和业务落地。
+82,openai/codex-plugin-cc,65140,下降29,AI 编码助手 / Codex 与 Claude 协作,Apache-2.0,codex-plugin-cc 面向 AI 编码与工程协作，核心是Use Codex from Claude Code to review code or delegate tasks.；适合代码生成、重构、调试、审查和团队研发提效。
+83,google-labs-code/design.md,64991,下降11,AI 编码助手 / 设计系统,Apache-2.0,design.md 定义让 coding agent 持久理解品牌视觉与设计系统的结构化格式；适合把颜色、字体、组件和设计原则交给 Claude Code、Codex 等代理，减少生成界面的风格漂移。
+84,xbtlin/ai-berkshire,64967,下降9,量化 / 金融 AI 代理,MIT,ai-berkshire 将巴菲特、芒格、段永平和李录等价值投资框架组织为 Claude Code 多 agent 研究流程，通过并行分析与交叉质疑评估公司；适合基本面研究、投资备忘录和长期价值判断。
+85,calesthio/OpenMontage,64849,下降15,AI 视频生成 / Agent 工作流,AGPL-3.0,OpenMontage 是面向 agent 的开源视频制作系统，把脚本规划、素材处理、剪辑、配音和导出组织为多条可调用流水线；适合让 coding agent 完成短视频、营销片和批量内容生产。
+86,JCodesMore/ai-website-cloner-template,64802,下降10,AI 编码助手 / 网站克隆,MIT,ai-website-cloner-template 让 coding agent 通过命令分析并重建网站结构与界面；适合前端原型、落地页迁移和网页生成，但实际使用需遵守目标站点的版权、商标与授权要求。
+87,DeusData/codebase-memory-mcp,64794,下降10,MCP / 代码知识图谱,MIT,codebase-memory-mcp 将多语言代码库快速索引为持久知识图谱，并通过 MCP 提供低延迟查询；适合大型仓库理解、跨会话代码记忆、依赖与影响分析，以及减少 coding agent 的 token 和工具调用。
+88,tutti-os/tutti,64465,下降9,AI Agent / 协作开发平台,Apache-2.0,Tutti 是面向人类与 AI agents 协同构建项目的平台，强调共享工作空间与任务配合；适合 agent 辅助开发、多人协作和实验性人机共创流程。
+89,handy-computer/transcribe.cpp,63978,下降8,语音 / 本地 STT,MIT,transcribe.cpp 使用 ggml 在本地运行多种语音转文字模型，提供轻量、跨平台的离线推理；适合会议转写、字幕、语音检索和隐私敏感的音频处理。
+90,hugohe3/ppt-master,63970,下降8,文档生成 / PPT Agent,MIT,ppt-master 可从文档生成包含原生形状、动画和演讲备注的可编辑 PowerPoint，而不是仅输出图片；适合工作汇报、课程课件、销售方案和企业演示材料自动化。
+91,anthropics/claude-plugins-official,63805,下降8,AI 编码助手 / Claude 插件生态,Apache-2.0,claude-plugins-official 是 Anthropic 管理的 Claude Code 高质量插件目录，用于发现和复用工具、命令与工作流；适合团队统一插件来源、扩展 coding agent 能力和沉淀工程流程。
+92,TencentCloud/CubeSandbox,63484,下降8,Agent 沙箱 / AI 基础设施,未知 / 未声明,CubeSandbox 提供即时、并发、轻量且隔离的 agent 执行环境，解决自动运行代码和工具时的安全与资源控制问题；适合 coding agent、浏览器任务、评测和企业自动化。
+93,shanraisshan/claude-code-best-practice,63319,下降8,AI 编码助手 / Claude Code 能力增强,MIT,claude-code-best-practice 面向 AI 编码与工程协作，核心是from vibe coding to agentic engineering - practice makes claude perfect；适合代码生成、重构、调试、审查和团队研发提效。
+94,heygen-com/hyperframes,63311,下降8,AI 视频生成 / 自动剪辑,Apache-2.0,hyperframes 面向 AI 视频和多媒体生产，核心是Write HTML. Render video. Built for agents.；适合短视频、营销素材、演示视频和内容工厂。
+95,altic-dev/FluidVoice,63146,下降8,语音 / 本地听写,GPL-3.0,FluidVoice 是 macOS 本地听写工具，结合设备端语音识别和定制 AI 增强，在保护隐私的同时改善转写质量；适合会议记录、写作输入、无障碍操作和不便上传音频的办公场景。
+96,HKUDS/Vibe-Trading,62824,下降8,量化 / 金融 AI 代理,MIT,Vibe-Trading 是面向个人投资研究的交易 agent，将市场数据、新闻检索、策略分析和报告生成串成工作流；适合个股研究、日常复盘、策略实验和金融分析自动化。
+97,DietrichGebert/ponytail,62118,下降19,AI 编码助手 / 代码质量技能,MIT,ponytail 是让 coding agent 优先减少代码、避免过度设计的工程技能，强调用更小实现解决问题；适合代码审查、重构、技术债控制和约束 AI 生成不必要的复杂结构。
+98,elder-plinius/T3MP3ST,62024,下降8,AI 安全 / 自动红队 Agent,AGPL-3.0,T3MP3ST 是多 agent 协同的自主红队平台，用于组织攻击面分析、任务分工和安全验证；适合获授权环境中的渗透测试、攻防演练、模型安全研究和自动化安全评估。
+99,h4ckf0r0day/obscura,62008,下降7,浏览器自动化 / Web Agent,Apache-2.0,obscura 是为 AI agent 和网页抓取设计的无头浏览器，提供可自动化的页面访问与交互环境；适合 Web agent、表单操作、测试代理和复杂网页数据采集。
+100,Fission-AI/OpenSpec,62000,下降7,AI 编码助手 / Claude Code 能力增强,MIT,OpenSpec 面向 AI 编码与工程协作，核心是Spec-driven development (SDD) for AI coding assistants.；适合代码生成、重构、调试、审查和团队研发提效。
