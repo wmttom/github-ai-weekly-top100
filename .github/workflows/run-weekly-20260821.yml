@@ -1,3 +1,4 @@
+# trigger: 2026-08-21 official Trendshift weekly and daily pages
 name: One-off GitHub AI Top100 2026-08-21
 
 on:
@@ -67,6 +68,7 @@ jobs:
           python - <<'PY'
           import csv
           import os
+          import re
           from pathlib import Path
 
           expected = ['排名', '项目', '热度分', '对比上周排名变动', '项目分类', '项目 License', '项目简介']
@@ -87,7 +89,6 @@ jobs:
               raise SystemExit('duplicate repositories detected')
           if any(a <= b for a, b in zip(scores, scores[1:])):
               raise SystemExit('hotness scores are not strictly descending')
-          import re
           if any(not re.fullmatch(r'(新上榜|持平|上升\d+|下降\d+)', value) for value in movements):
               raise SystemExit('invalid week-over-week movement value')
           if any(len(row['项目简介']) > 300 for row in rows):
