@@ -1,1 +1,1 @@
-Trigger the one-off GitHub AI Top100 workflow using the current official Trendshift monthly, weekly, and daily pages.
+Retry the one-off GitHub AI Top100 workflow after allowing the CSV standard CRLF line endings.
