@@ -1,12 +1,8 @@
-# trigger: 2026-08-21 official Trendshift weekly and daily pages
 name: One-off GitHub AI Top100 2026-08-21
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/run-weekly-20260821.yml'
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
@@ -17,6 +13,7 @@ concurrency:
 
 jobs:
   generate-and-publish:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'run-weekly-20260821'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
@@ -24,9 +21,10 @@ jobs:
       OUTPUT_FILE: 2026年08月21日.csv
 
     steps:
-      - name: Check out repository
+      - name: Check out main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Set up Python
@@ -96,15 +94,14 @@ jobs:
           print(f'Validated {path}: 100 unique active AI repositories')
           PY
 
-      - name: Commit ranking and remove one-off workflow
+      - name: Commit and push ranking to main
         shell: bash
         run: |
           set -euo pipefail
+          git checkout -- scripts/generate_weekly_ranking.py
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git checkout -- scripts/generate_weekly_ranking.py
           git add -- "$OUTPUT_FILE"
-          git rm -- '.github/workflows/run-weekly-20260821.yml'
           git diff --cached --check
           git commit -m 'Add weekly GitHub AI Top100 ranking: 2026年08月21日'
           git push origin HEAD:main
