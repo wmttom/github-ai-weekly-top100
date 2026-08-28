@@ -14,7 +14,7 @@ from urllib3.util.retry import Retry
 
 TZ = ZoneInfo("Asia/Shanghai")
 COLS = ["排名","项目","热度分","对比上周排名变动","项目分类","项目 License","项目简介"]
-URLS = {"monthly":"https://trendshift.io/monthly","weekly":"https://trendshift.io/github-trending-repositories?trending-limit=100&trending-range=7","daily":"https://trendshift.io/"}
+URLS = {"monthly":"https://trendshift.io/monthly","weekly":"https://trendshift.io/weekly","daily":"https://trendshift.io/"}
 MINS = {"monthly":20,"weekly":20,"daily":5}
 WEIGHTS = {"monthly":42000,"weekly":72000,"daily":30000}
 ALIASES = {"chopratejas/headroom":"headroomlabs-ai/headroom","alishahry1/free-claude-code":"Alishahryar1/free-claude-code"}

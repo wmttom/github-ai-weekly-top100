@@ -149,3 +149,12 @@ CSV 表头固定为：
 - 不要把 1 年以上的老项目简单拉进前排
 - 对于用户明确补充的 today / weekly 趋势数据，优先级应提高
 - 在正式写入前，先确保榜单项目唯一、排名连续、字段完整
+
+
+## Canonical Trendshift pages verified on 2026-08-28
+
+- Monthly: `https://trendshift.io/monthly`
+- Weekly: `https://trendshift.io/weekly`
+- Daily: `https://trendshift.io/`
+
+The parameterized `trending-range=7` and `trending-range=1` URLs are no longer used by the scheduled ranking task. Each canonical page must still be fetched in real time and pass the existing fail-closed retry and parse validation rules.
