@@ -1,1 +1,1 @@
-Retry the 2026-08-28 GitHub AI Top100 run with canonical GitHub repository name validation.
+Persist the verified 2026-08-28 Trendshift monthly, weekly, and daily canonical page configuration.
