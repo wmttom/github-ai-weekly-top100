@@ -70,16 +70,14 @@ jobs:
           }
           run_dir = Path(os.environ['RUNNER_TEMP']) / f"trendshift-{os.environ['RUN_DATE']}"
           run_dir.mkdir(parents=True, exist_ok=True)
-          source_summary = {}
+          summary = {}
 
           for period, url in urls.items():
               attempts = []
-              success = False
               for attempt in range(1, 4):
                   started = time.time()
                   try:
-                      session = mod.session()
-                      response = session.get(url, timeout=(30, 180))
+                      response = mod.session().get(url, timeout=(30, 180))
                       response.raise_for_status()
                       if len(response.content) < 40000:
                           raise RuntimeError(f'response too small: {len(response.content)} bytes')
@@ -94,13 +92,7 @@ jobs:
                           'rows': len(rows),
                           'elapsed_seconds': round(time.time() - started, 2),
                       })
-                      source_summary[period] = {
-                          'url': url,
-                          'success': True,
-                          'attempts': attempts,
-                          'rows': len(rows),
-                      }
-                      success = True
+                      summary[period] = {'url': url, 'success': True, 'attempts': attempts, 'rows': len(rows)}
                       break
                   except Exception as exc:
                       attempts.append({
@@ -111,27 +103,19 @@ jobs:
                       })
                       if attempt < 3:
                           time.sleep(60)
-              if not success:
-                  source_summary[period] = {
-                      'url': url,
-                      'success': False,
-                      'attempts': attempts,
-                  }
-                  (run_dir / 'source-summary.json').write_text(
-                      json.dumps(source_summary, ensure_ascii=False, indent=2),
-                      encoding='utf-8',
-                  )
+              else:
+                  summary[period] = {'url': url, 'success': False, 'attempts': attempts}
+                  (run_dir / 'source-summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8')
                   raise SystemExit(f'Trendshift {period} failed after 3 attempts: {attempts[-1]}')
 
-          summary_path = run_dir / 'source-summary.json'
-          summary_path.write_text(json.dumps(source_summary, ensure_ascii=False, indent=2), encoding='utf-8')
-          print(json.dumps(source_summary, ensure_ascii=False, indent=2))
+          (run_dir / 'source-summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(json.dumps(summary, ensure_ascii=False, indent=2))
           with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as handle:
               handle.write(f'TREND_DIR={run_dir}\n')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as handle:
               handle.write('## Trendshift realtime sources\n\n')
               for period in ('monthly', 'weekly', 'daily'):
-                  item = source_summary[period]
+                  item = summary[period]
                   handle.write(f"- {period}: success, attempts={len(item['attempts'])}, rows={item['rows']}, url={item['url']}\n")
           PY
 
@@ -178,8 +162,14 @@ jobs:
           if any(not row['项目简介'].strip() or len(row['项目简介']) > 300 for row in rows):
               raise SystemExit('invalid project description length')
 
-          meta_path = Path(os.environ['TREND_DIR']) / 'github-metadata.json'
-          metadata = json.loads(meta_path.read_text(encoding='utf-8'))
+          raw_metadata = json.loads((Path(os.environ['TREND_DIR']) / 'github-metadata.json').read_text(encoding='utf-8'))
+          metadata = {}
+          for requested_name, item in raw_metadata.items():
+              metadata[requested_name.lower()] = item
+              canonical = item.get('full_name')
+              if canonical:
+                  metadata[canonical.lower()] = item
+
           now = datetime.now(timezone.utc)
           for row in rows:
               repo = row['项目']
