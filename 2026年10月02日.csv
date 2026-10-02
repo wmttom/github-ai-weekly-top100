@@ -1,0 +1,101 @@
+﻿排名,项目,热度分,对比上周排名变动,项目分类,项目 License,项目简介
+1,Niko1221/Strata,132000,新上榜,本地 LLM / 高效推理,MIT,Strata 面向消费级硬件本地推理，支持 Qwen3.8-Flash-Next、一键安装和 OpenAI/Anthropic 兼容本地 API；适合私有推理、离线助手与低成本 AI 应用。
+2,ifixai-ai/iFixAi,131293,新上榜,AI 安全 / Agent 安全治理,Apache-2.0,iFixAi 提供独立 AI Agent 审计与诊断，检查 Agent 是否按预期执行并识别幻觉、提示注入及治理风险；适合上线前评测、安全审计与合规治理。
+3,mvschwarz/openrig,130586,新上榜,AI Agent / 工作流编排,Apache-2.0,openrig 将 Claude Code、Codex、Pi 等 coding agent 组织成持久化团队，共享角色、上下文与任务归属；适合并行研发、长任务协作和多 Agent 编排。
+4,DietrichGebert/ponytail,129879,上升23,AI 编码助手 / Agent Skills,MIT,ponytail 面向 coding agent 与工程协作，项目核心能力为“Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+5,stablyai/orca,129172,持平,AI 编码助手 / Agent Skills,MIT,"orca 面向 coding agent 与工程协作，项目核心能力为“Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote…”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。"
+6,NVIDIA/OpenShell,128465,新上榜,AI 安全 / Agent 安全治理,Apache-2.0,OpenShell 是 NVIDIA 面向自主 Agent 的安全私有运行时，为工具执行和 Agent 工作负载提供受控环境；适合企业 Agent 隔离、私有部署和生产自动化。
+7,debpalash/VoiceStudio,127758,上升17,语音 / TTS / STT,AGPL-3.0,VoiceStudio 是全本地开源语音工作室，覆盖声音克隆、语音设计、视频配音、听写、转写与有声书制作；适合隐私敏感的 TTS/STT 和多语言内容生产。
+8,Louis-CFM/coucou,127051,新上榜,AI 编码助手 / Agent Skills,MIT,coucou 常驻桌面屏幕顶部，实时观察 Claude Code、Gemini CLI、Antigravity 等 coding agent 的会话状态；适合多 Agent 开发时的轻量监控与状态提醒。
+9,mattpocock/skills,126343,上升22,AI 编码助手 / Agent Skills,MIT,skills 面向 coding agent 与工程协作，项目核心能力为“Skills for Real Engineers. Straight from my .agents directory”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+10,Taichu-AI/ZDTaichu5.0-9B,125636,上升37,本地 LLM / 高效推理,Apache-2.0,ZDTaichu5.0-9B 是 Taichu-AI 发布的 9B 级模型项目，可作为本地或私有环境中的模型能力底座；适合多模态研究、模型评测和轻量私有化推理。
+11,KKKKhazix/AIHOT,124929,新上榜,Agent 搜索 / 趋势研究,MIT,AIHOT 是可自定义信源和精选标准的 AI 热点聚合与日报框架，可自动发现行业热点并生成摘要；适合垂直行业情报站、竞品监测和周期性研究简报。
+12,yetone/magpie,124222,上升36,LLM 网关 / 路由与代理层,MIT,magpie 将不同 coding agent 与模型组合集中到一个入口，可让 Codex、Claude Code 等切换到多种模型；适合本地多模型路由和 coding-agent 模型管理。
+13,vectorize-io/hindsight,123515,下降7,Agent 记忆 / 长上下文记忆,MIT,Hindsight 提供可学习的 Agent Memory，让 Agent 从历史交互中形成持续记忆并改进后续行为；适合长期助理、业务 Agent 和跨会话上下文治理。
+14,t8y2/dbx,122808,新上榜,MCP Server / MCP 工具链,Apache-2.0,dbx 是轻量跨平台数据库客户端，覆盖 100+ 数据库并集成 AI 助手、MCP Server、CLI 与 Docker；适合让 Agent 连接数据库、查询数据和执行数据运维。
+15,ThinkWatchProject/ThinkWatch-Lite,122101,新上榜,LLM 网关 / 路由与代理层,MIT,ThinkWatch-Lite 是本地 LLM 网关，可为 Claude Code、Codex 等客户端切换上游、保护密钥、约束高风险工具调用并追踪请求；适合模型路由与调用治理。
+16,paperclipai/paperclip,121394,上升28,AI Agent / 工作流编排,MIT,paperclip 面向多步骤 agent 与业务流程编排，项目核心能力为“The open-source app everyone uses to manage agents at work”；主要解决规划、工具调用、状态管理和结果交付难串联，适合自动研究、业务自动化和多 agent 协作。
+17,spinabot/brigade,120687,新上榜,AI Agent / 工作流编排,MIT,Brigade 是自托管多 Agent 运行与协作系统，强调持续工作流和企业级组织能力；适合业务自动化、Agent 团队和长期任务执行。
+18,VectifyAI/PageIndex,119980,新上榜,RAG / 知识库 / 文档解析,MIT,PageIndex 提供无需传统向量库的文档索引与推理式 RAG，让 Agent 通过结构化索引定位长文档信息；适合研究资料、企业文档和复杂 PDF 问答。
+19,deepseek-ai/deepseek-harness,119273,下降12,AI 编码助手 / Agent Skills,MIT,deepseek-harness 面向 coding agent 与工程协作，项目核心能力为“DeepSeek Harness: Everything is a Plugin”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+20,tt-a1i/archify,118566,上升6,AI 编码助手 / Agent Skills,MIT,"archify 面向 coding agent 与工程协作，项目核心能力为“Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp e…”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。"
+21,rehan-remade/universal-modder,117859,新上榜,AI 编码助手 / Agent Skills,MIT,universal-modder 为 Claude Code 提供游戏模组分析、工具接入和多媒体资产生成能力；适合 AI 辅助 mod 开发、游戏内容制作和自动化测试。
+22,vincentsch/explainroo,117152,新上榜,AI 视频生成 / 多媒体工作流,MIT,explainroo 让 Agent 用本地语音、词级对齐和 Canvas 渲染把脚本自动生成解说视频或产品演示；适合教程、产品 Demo 和自动化短视频生产。
+23,Panniantong/Agent-Reach,116444,上升75,Agent 搜索 / 趋势研究,MIT,"Agent-Reach 面向 agent 的外部信息检索与趋势研究，项目核心能力为“Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees”；主要解决近期信息分散在多个平台且人工验证成本高，适合市场调研、竞品监测、热点验证和周期性研究报告。"
+24,odysseus-dev/odysseus,115737,新上榜,AI Agent / 工作流编排,AGPL-3.0,odysseus 是自托管 AI 工作区，为 Agent、模型和日常工作提供统一私有化界面；适合个人知识工作、团队 AI 工作台和自托管 Agent 应用。
+25,feder-cr/dots,115030,新上榜,浏览器自动化 / Web Agent,MIT,dots 是带自有浏览器的开源 Web Agent，强调稳定网页访问与自动化执行；适合网页研究、数据采集、表单操作和长期浏览器任务。
+26,archestra-ai/OpenAPPA,114323,新上榜,AI 安全 / Agent 安全治理,MIT,OpenAPPA 为 Agent 应用提供确定性安全护栏，在尽量不破坏工作流的前提下约束高风险行为；适合工具权限控制、策略执行和生产 Agent 安全治理。
+27,facebookresearch/context-language-models,113616,新上榜,AI 基础设施 / 运行与平台层,未知 / 未声明,context-language-models 是 Meta/Facebook Research 的 Context Language Models 官方实现，用于研究外部上下文增强语言模型；适合模型研究、上下文建模和实验验证。
+28,deepopen-com/deepopen,112909,新上榜,本地 LLM / 高效推理,Apache-2.0,DeepOpen 是面向结构化选择、评分与是非判断的非自回归 System 1 决策引擎，强调多语言和低延迟；适合 Agent 路由、分类及前置决策。
+29,tigerless-labs/autoharness,112202,新上榜,AI 编码助手 / Agent Skills,MIT,autoharness 从真实 Claude Code 会话中自动提炼、更新和淘汰 Agent Skills，让技能层随使用持续学习；适合个人开发流程沉淀和团队技能复用。
+30,bojieli/greenbubbles,111495,新上榜,Agent 记忆 / 长上下文记忆,MIT,greenbubbles 在 macOS 本地把个人微信历史安全提供给 AI Agent，形成可实时访问的私有对话数据桥；适合个人记忆检索、关系上下文和本地知识助手。
+31,lexmount/moli,110788,新上榜,浏览器自动化 / Web Agent,Apache-2.0,moli 是用 Rust 构建的轻量高速 headless browser，面向 AI Agent 优化兼容性与自动化能力；适合 Web Agent、云浏览器、抓取和自动测试。
+32,nanaism/yomiyasu,110081,新上榜,NLP / AI 写作,MIT,yomiyasu 是日语 Agent Skill，用于识别并改写 AI 生成文本中的不自然表达，使输出更接近自然日语；适合日语文案润色、编辑和写作助手。
+33,Innei/lody-ios,109374,新上榜,AI 编码助手 / Agent Skills,未知 / 未声明,lody-ios 是 Lody 的原生 iOS 客户端，支持聊天、会话管理和 coding-agent 协作；适合在 iPhone 上查看、延续和协调代码 Agent 工作。
+34,tigerless-labs/cost-xray,108667,新上榜,AI 可观测 / LLM 评测,MIT,cost-xray 可观察 Claude Code 与 Codex 实际发送到模型 API 的内容与各部分成本，覆盖 token 和缓存开销；适合 coding-agent 成本分析、请求审计和 LLM 可观测。
+35,earendil-works/pi,107960,新上榜,AI 编码助手 / Agent Skills,MIT,pi 提供统一 LLM API、Agent loop、TUI 和 coding-agent CLI，是面向开发者的轻量 Agent 工具包；适合终端 Agent、代码助手和自定义多模型工作流。
+36,pbakaus/impeccable,107253,新上榜,AI 编码助手 / Agent Skills,Apache-2.0,impeccable 为 AI coding/design harness 提供设计语言和可复用规则，帮助 Agent 生成更一致的界面与视觉结果；适合前端生成、设计评审和 UI Agent。
+37,monid-ai/monid,106545,新上榜,MCP Server / MCP 工具链,MIT,monid 面向 Agent 工具提供统一接入层，集中管理不同工具和开发者能力；适合 Agent 工具路由、能力市场和可扩展工具连接。
+38,NandhaKishorM/laya,105838,下降37,本地 LLM / 高效推理,Apache-2.0,laya 是面向低延迟结构化决策的非自回归 System 1 模型，可对文本直接执行选择、评分和是非判断；适合 Agent 路由、分类、规则前置决策和本地低延迟推理。
+39,google/ax,105131,下降37,AI Agent / 工作流编排,Apache-2.0,ax 是 Google 的开源 Agentic 编排运行时，用于组织模型、工具和多步骤执行流程；适合构建通用 Agent、自动化工作流和可扩展的 Agent 应用底座。
+40,browser-use/jev-ultrafast,104424,下降37,浏览器自动化 / Web Agent,MIT,jev-ultrafast 面向浏览器与网页任务自动化，核心能力是提供面向该场景的开源能力；主要解决模型理解网页后仍难稳定点击、填表和导航，适合网页研究、表单处理、自动测试和运营自动化。
+41,dream-num/univer,103717,下降37,办公 AI / Agent 工具,Apache-2.0,Univer 提供面向 AI Agent 的 Office 运行时，统一处理表格、文档、幻灯片、画布、关系表和 PDF；适合办公自动化、文档 Agent 和企业生产力工作流。
+42,jaredpalmer/kev,103010,下降34,本地 LLM / 高效推理,Apache-2.0,kev 是基于 Qwen3.5/3.8 构建的 Jev-like 小型决策模型，可自行训练并在本地设备运行；适合 Mac 本地分类、路由、结构化决策和低成本 Agent 前置判断。
+43,zai-org/ZCode,102303,下降34,AI 编码助手 / Agent Skills,Apache-2.0,ZCode 是 Z.ai 开源的 coding agent harness，强调可扩展的代码 Agent 运行与工具接入；适合代码生成、仓库操作、开发自动化和自定义工程 Agent。
+44,jev-chat/jev-chat-jarvis,101596,下降34,垂直 AI 应用 / 对话辅助,MIT,jev-chat-jarvis 是移动端对话副驾，可在聊天应用中理解上下文、生成候选回复并由用户决定是否发送；适合社交沟通辅助、回复建议和移动端私有 AI 助手。
+45,mizorewww/laya-mlx,100889,下降34,本地 LLM / 高效推理,Apache-2.0,laya-mlx 为 Laya 决策模型提供 Apple Silicon 原生 MLX 推理，短决策可达到毫秒级延迟；适合 Mac 本地 Agent 路由、分类和低延迟结构化判断。
+46,rocketride-org/rocketride-server,100182,下降34,AI Agent / 工作流编排,MIT,rocketride-server 是高性能 AI pipeline engine，支持多模型提供商、向量数据库、可扩展节点和 Agent 编排；适合在 IDE 中构建、调试和部署生产级 LLM 工作流。
+47,arcboxlabs/arcbox,99475,下降34,AI 安全 / Agent 安全治理,Apache-2.0,"arcbox 面向 AI 安全与自动化防护，项目核心能力为“Run AI agents on real and isolated machines — own kernel, filesystem, and network — with <100ms boot. Local first, OCI compatible, pure Rust”；主要解决agent 执行、代码与技能引入中的风险难及时识别，适合安全审计、漏洞分析、权限控制和运行治理。"
+48,farion1231/cc-switch,98768,下降34,AI 编码助手 / Agent Skills,MIT,cc-switch 是跨平台 AI coding 工具管理器，可统一切换 Claude Code、Codex、OpenCode、OpenClaw 等 Agent 与模型配置；适合多 coding-agent 环境和模型供应商切换。
+49,Nasiko-Labs/nasiko,98061,下降34,AI 可观测 / LLM 评测,未知 / 未声明,Nasiko 是 AI Agent 的开发者控制平面，覆盖多 Agent、MCP、运行治理与可观测能力；适合管理 Agent 运行状态、工具接入、安全边界和生产环境运维。
+50,Albert-Weasker/niubigeo,97354,下降34,AI 基础设施 / 运行与平台层,Apache-2.0,niubigeo 面向 AI 应用运行、工具链和平台基础设施，项目核心能力为“Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO opt…”；主要解决模型、工具、数据和运行环境接入分散，适合AI 平台、应用底座和生产化部署。
+51,anthropics/financial-services,96646,下降34,量化 / 金融 AI 代理,Apache-2.0,financial-services 是 Anthropic 面向金融服务场景的开源 Agent/MCP 项目，提供可复用的金融工作流能力；适合金融研究、分析自动化和企业金融 Agent 集成。
+52,CopilotKit/openmuse,95939,下降34,AI Agent / 工作流编排,MIT,OpenMuse 是带浏览器、终端和文件能力的持续工作型个人 Agent，基于 CopilotKit 与 AG-UI；适合长任务执行、个人工作自动化和多工具 Agent。
+53,shengjidaguai-china/goutoujunshi,95232,下降34,垂直 AI 应用 / 关系助手,MIT,goutoujunshi 是中文关系沟通 Agent，结合心理、法律、婚姻家庭等知识分析关系并给出可执行建议；适合情感沟通辅助和关系决策支持。
+54,BuilderIO/agent-native,94525,下降34,AI Agent / 工作流编排,未知 / 未声明,agent-native 是用于构建 Agentic 应用的开源框架，帮助应用把 Agent 作为原生交互与执行单元；适合开发多步骤 AI 应用和 Agent 驱动产品。
+55,browser-use/video-use,93818,下降34,AI 视频生成 / 多媒体工作流,MIT,video-use 面向视频生成、理解与自动化制作，项目核心能力为“Edit videos with coding agents”；主要解决从脚本、素材到成片的链路长且后期成本高，适合短视频、营销素材、演示视频和多媒体内容生产。
+56,agent-substrate/substrate,93111,下降34,AI 基础设施 / 运行与平台层,Apache-2.0,Agent Substrate 提供 Agent 运行的核心系统层，为模型、工具和执行环境提供基础底座；适合自研 Agent 平台、运行时和可扩展自动化基础设施。
+57,ayghri/i-have-adhd,92404,下降34,AI 编码助手 / Agent Skills,MIT,i-have-adhd 面向 coding agent 与工程协作，项目核心能力为“A skill to stop your coding agent from burying the answer. ADHD-friendly output”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+58,alibaba/open-code-review,91697,下降33,AI 编码助手 / Agent Skills,Apache-2.0,"open-code-review 面向 coding agent 与工程协作，项目核心能力为“Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comm…”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。"
+59,affaan-m/ECC,90990,下降31,Agent 记忆 / 长上下文记忆,MIT,"ECC 面向 agent 长期记忆与上下文治理，项目核心能力为“The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Openco…”；主要解决跨会话任务容易遗忘且长上下文成本持续增长，适合长期助理、代码库记忆和项目协作。"
+60,cloudflare/security-audit-skill,90283,下降31,AI 安全 / Agent 安全治理,MIT,"security-audit-skill 面向 AI 安全与自动化防护，项目核心能力为“A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings”；主要解决agent 执行、代码与技能引入中的风险难及时识别，适合安全审计、漏洞分析、权限控制和运行治理。"
+61,hypit-ai/hypit,89576,下降31,AI 视频生成 / 多媒体工作流,未知 / 未声明,"hypit 面向视频生成、理解与自动化制作，项目核心能力为“Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command…”；主要解决从脚本、素材到成片的链路长且后期成本高，适合短视频、营销素材、演示视频和多媒体内容生产。"
+62,google/artemis,88869,下降30,AI 编码助手 / Agent Skills,Apache-2.0,"artemis 面向 coding agent 与工程协作，项目核心能力为“ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamle…”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。"
+63,blader/humanizer,88162,下降30,AI 编码助手 / Agent Skills,MIT,humanizer 面向 coding agent 与工程协作，项目核心能力为“Agent skill that removes signs of AI-generated writing from text”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+64,deeplethe/utopia,87455,下降30,机器人 / 3D / 具身智能,Apache-2.0,utopia 面向机器人、三维内容与物理 AI，项目核心能力为“World's first open-source enterprise world model”；主要解决感知、建模、仿真和动作控制工具链分散，适合机器人训练、三维建模和具身智能研究。
+65,Tencent/WeKnora,86747,下降30,RAG / 知识库 / 文档解析,未知 / 未声明,WeKnora 是腾讯开源的 LLM 知识平台，可把原始文档转成可查询 RAG、推理 Agent 和自维护 Wiki；适合企业知识库、文档问答和持续知识治理。
+66,JustVugg/colibri,86040,下降30,本地 LLM / 高效推理,Apache-2.0,"colibri 面向本地模型运行与高效推理，项目核心能力为“Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦”；主要解决云端依赖、隐私顾虑和低资源部署门槛高，适合离线助手、边缘设备和私有化部署。"
+67,THU-MAIC/OpenMAIC,85333,下降30,AI Agent / 工作流编排,MIT,"OpenMAIC 面向多步骤 agent 与业务流程编排，项目核心能力为“Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click”；主要解决规划、工具调用、状态管理和结果交付难串联，适合自动研究、业务自动化和多 agent 协作。"
+68,heygen-com/hyperframes,84626,下降30,AI 视频生成 / 多媒体工作流,Apache-2.0,hyperframes 面向视频生成、理解与自动化制作，项目核心能力为“Write HTML. Render video. Built for agents”；主要解决从脚本、素材到成片的链路长且后期成本高，适合短视频、营销素材、演示视频和多媒体内容生产。
+69,yi1108/printfilm,83919,下降30,AI 视频生成 / 多媒体工作流,MIT,PRINTFILM 是 AI 视频获客与短剧创作平台，覆盖生成、编辑和内容工作流；适合科普视频、短剧、营销素材与批量视频生产。
+70,allenpeng0705/EnvoyMesh,83212,下降30,AI 基础设施 / 运行与平台层,未知 / 未声明,EnvoyMesh 是面向自主 AI Agent 的去中心化 P2P 网络，提供自主管理身份、点对点通信和端侧任务协商；适合分布式 Agent 协作和本地优先智能网络。
+71,devdotfast/whiteboard,82505,下降30,AI 编码助手 / Agent Skills,MIT,whiteboard 是面向 AI 生成代码审查与软件设计的可视化画布，帮助开发者在修改前理解和评审方案；适合 coding agent 协作、架构讨论和代码审查。
+72,trailofbits/coop,81798,下降30,AI 安全 / Agent 安全治理,Apache-2.0,coop 为 Claude Code 和 Codex 提供隔离虚拟机执行环境，让 coding agent 在受控系统边界中运行；适合安全开发、Agent 沙箱和高风险代码执行隔离。
+73,Human-Agent-Society/reef,81091,下降30,本地 LLM / 高效推理,Apache-2.0,reef 面向本地模型运行与高效推理，项目核心能力为“Continual learning infra for self-improving agents”；主要解决云端依赖、隐私顾虑和低资源部署门槛高，适合离线助手、边缘设备和私有化部署。
+74,madhvantyagi/Gnos,80384,下降28,教育 AI / 个性化学习,MIT,Gnos 是教学型 AI harness，可设计课程、生成视频与模拟内容并跟踪学习风格；适合个性化辅导、课程生成和多模态学习助手。
+75,zenbu-labs/terminal-browser,79677,下降25,浏览器自动化 / Web Agent,MIT,terminal-browser 是运行在终端中的浏览器，并提供 Claude Code、Codex 等 Agent 集成能力；适合终端型 Web Agent、网页操作和 coding-agent 浏览器工具链。
+76,antibrow/antibrow,78970,下降25,浏览器自动化 / Web Agent,未知 / 未声明,antibrow 是兼容 Playwright API、支持 MCP 的浏览器自动化工具，提供跨平台本地运行和多配置能力；适合 Web Agent、自动化测试和需要稳定浏览器环境的 Agent。
+77,NVIDIA/Model-Optimizer,78263,下降25,AI 基础设施 / 运行与平台层,Apache-2.0,Model-Optimizer 汇集量化、蒸馏、剪枝、推测解码等模型优化技术，并衔接 TensorRT-LLM 等部署框架；适合模型压缩、推理加速和生产部署优化。
+78,alphaXiv/OpenResearch,77556,下降25,AI 编码助手 / Agent Skills,MIT,OpenResearch 面向 coding agent 与工程协作，项目核心能力为“Turn your coding agents into research agents”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+79,Tencent/BrowserSkill,76848,下降25,浏览器自动化 / Web Agent,MIT,"BrowserSkill 面向浏览器与网页任务自动化，项目核心能力为“Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI age…”；主要解决模型理解网页后仍难稳定点击、填表和导航，适合网页研究、表单处理、自动测试和运营自动化。"
+80,TencentCloud/Octop,76141,下降25,Agent 记忆 / 长上下文记忆,MIT,"Octop 面向 agent 长期记忆与上下文治理，项目核心能力为“A smarter, self-hosted AI assistant — multi-user, multi-agent”；主要解决跨会话任务容易遗忘且长上下文成本持续增长，适合长期助理、代码库记忆和项目协作。"
+81,bojieli/ai-infra-book,75434,下降25,RAG / 知识库 / 文档解析,Apache-2.0,ai-infra-book 面向 RAG、知识检索与文档结构化，核心能力是《深入理解 AI Infra：量化分析与系统设计》（李博杰 著）开源书稿：从硬件约束和模型架构出发，量化推导 LLM 推理与训练系统设计。含全书正文、PDF、配套计算工具与实验；主要解决网页、PDF、代码和企业资料难被模型可靠利用，适合企业知识库、文档问答和研究检索。
+82,Graphify-Labs/graphify,74727,下降25,Agent 记忆 / 长上下文记忆,Apache-2.0,"graphify 面向 agent 长期记忆与上下文治理，项目核心能力为“Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex…”；主要解决跨会话任务容易遗忘且长上下文成本持续增长，适合长期助理、代码库记忆和项目协作。"
+83,lnkiai/m3e-canvas,74020,下降25,浏览器自动化 / Web Agent,MIT,m3e-canvas 面向浏览器与网页任务自动化，项目核心能力为“Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts”；主要解决模型理解网页后仍难稳定点击、填表和导航，适合网页研究、表单处理、自动测试和运营自动化。
+84,wide-trace/open-higgsfield,73313,下降25,AI 视频生成 / 多媒体工作流,未知 / 未声明,"open-higgsfield 面向视频生成、理解与自动化制作，项目核心能力为“A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery”；主要解决从脚本、素材到成片的链路长且后期成本高，适合短视频、营销素材、演示视频和多媒体内容生产。"
+85,PrismML-Eng/Bonsai-demo,72606,下降25,本地 LLM / 高效推理,Apache-2.0,Bonsai-demo 面向本地模型运行与高效推理，项目核心能力为“Bonsai Demo”；主要解决云端依赖、隐私顾虑和低资源部署门槛高，适合离线助手、边缘设备和私有化部署。
+86,asciimoo/hister,71899,下降25,浏览器自动化 / Web Agent,AGPL-3.0,hister 面向浏览器与网页任务自动化，项目核心能力为“Your own search engine”；主要解决模型理解网页后仍难稳定点击、填表和导航，适合网页研究、表单处理、自动测试和运营自动化。
+87,miuuyy/codex-chatgpt-web,71192,下降25,浏览器自动化 / Web Agent,MIT,"codex-chatgpt-web 面向浏览器与网页任务自动化，项目核心能力为“Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without using Codex quota”；主要解决模型理解网页后仍难稳定点击、填表和导航，适合网页研究、表单处理、自动测试和运营自动化。"
+88,realZachi/pg-jev,70485,下降25,AI 基础设施 / 运行与平台层,未知 / 未声明,pg-jev 面向 AI 应用运行、工具链和平台基础设施，项目核心能力为“natural-language WHERE clauses for PostgreSQL using jev by TypeSafe AI”；主要解决模型、工具、数据和运行环境接入分散，适合AI 平台、应用底座和生产化部署。
+89,cathrynlavery/diagram-design,69778,下降25,AI 编码助手 / Agent Skills,MIT,"diagram-design 面向 coding agent 与工程协作，项目核心能力为“38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。"
+90,mksglu/context-mode,69071,下降25,Agent 记忆 / 长上下文记忆,未知 / 未声明,"context-mode 面向 agent 长期记忆与上下文治理，项目核心能力为“Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 plat…”；主要解决跨会话任务容易遗忘且长上下文成本持续增长，适合长期助理、代码库记忆和项目协作。"
+91,jo-inc/camofox-browser,68364,下降25,浏览器自动化 / Web Agent,MIT,"camofox-browser 面向浏览器与网页任务自动化，项目核心能力为“Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement”；主要解决模型理解网页后仍难稳定点击、填表和导航，适合网页研究、表单处理、自动测试和运营自动化。"
+92,Tencent/teamai-cli,67657,下降25,AI Agent / 工作流编排,未知 / 未声明,teamai-cli 面向多步骤 agent 与业务流程编排，项目核心能力为“Make Every Team AI Native”；主要解决规划、工具调用、状态管理和结果交付难串联，适合自动研究、业务自动化和多 agent 协作。
+93,experientiallabs/experiential,66949,下降25,LLM 网关 / 路由与代理层,Apache-2.0,"experiential 面向多模型统一接入与路由治理，项目核心能力为“Experiential is the open source, zero markup gateway for BYOK, self-hosted and 1000+ marketplace models. It learns from your traffic to cut costs, re…”；主要解决不同模型接口、额度、成本和故障回退难统一管理，适合企业模型网关、多模型切换和成本控制。"
+94,EvoMap/AutoResearch,66242,下降25,AI 编码助手 / Agent Skills,Apache-2.0,AutoResearch 面向 coding agent 与工程协作，项目核心能力为“AI/ML research agents from idea to paper-ready evidence. An EvoMap open-source project”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+95,k2-fsa/OmniVoice,65535,下降25,语音 / TTS / STT,Apache-2.0,OmniVoice 面向语音生成、识别与音频交互，项目核心能力为“High-Quality Voice Cloning TTS for 600+ Languages”；主要解决配音、转写和实时语音应用搭建成本高，适合播客、会议转写、数字人配音和语音助手。
+96,TencentCloud/CubeSandbox,64828,下降25,AI 安全 / Agent 安全治理,未知 / 未声明,"CubeSandbox 面向 AI 安全与自动化防护，项目核心能力为“Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents”；主要解决agent 执行、代码与技能引入中的风险难及时识别，适合安全审计、漏洞分析、权限控制和运行治理。"
+97,MadsLorentzen/ai-job-search,64121,下降24,AI 求职 / 招聘与职业运营,MIT,"ai-job-search 面向求职与招聘流程自动化，项目核心能力为“The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep…”；主要解决岗位筛选、材料定制和候选人评估重复耗时，适合岗位匹配、简历优化、招聘初筛和申请跟踪。"
+98,zvec-ai/zvec-grep,63414,下降24,MCP Server / MCP 工具链,Apache-2.0,"zvec-grep 面向 MCP 工具接入与 agent 能力扩展，项目核心能力为“Local-first search across your workspace, built for humans and AI agents”；主要解决模型连接外部工具、数据源和业务系统缺少统一接口，适合企业工具层、浏览器代理和自动化系统。"
+99,sapientinc/PRAXIST,62707,下降24,AI Agent / 工作流编排,未知 / 未声明,"PRAXIST 面向多步骤 agent 与业务流程编排，项目核心能力为“Autonomous research system for measurable, computer-executable research”；主要解决规划、工具调用、状态管理和结果交付难串联，适合自动研究、业务自动化和多 agent 协作。"
+100,humanlayer/skills,62000,下降24,AI 编码助手 / Agent Skills,MIT,skills 面向 coding agent 与工程协作，核心能力是提供面向该场景的开源能力；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
