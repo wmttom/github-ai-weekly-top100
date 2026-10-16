@@ -1,0 +1,1 @@
+AI project relevance policy: repositories must be AI-related; code activity in the previous 30 days; no resource lists.
