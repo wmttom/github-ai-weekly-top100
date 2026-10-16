@@ -1,0 +1,101 @@
+﻿排名,项目,热度分,对比上周排名变动,项目分类,项目 License,项目简介
+1,morluto/rea,100000,持平,AI Coding / 逆向 Agent,MIT,利用智能代理分析软件交互、应用行为和原生二进制，辅助逆向工程、兼容性排查与安全研究。
+2,wheresryan22/anatomy,78445,新上榜,Agent Skills / 技术可视化,MIT,面向 Claude Code 等代理的制图 Skill，可生成设备与复杂系统的等轴 SVG 结构图，并选配 WebGL 和三维效果。
+3,Ebony-Vinyl/dsh-our-free-model,72349,上升4,模型接入 / Coding Agent 插件,MIT,为 dsh 编码代理提供第三方模型接入插件，降低多模型试用与切换的配置成本；可用模型和额度以实际服务为准。
+4,storytold/photocraft,70389,下降2,AI 图像 / Agent 编辑工具,Apache-2.0,Rust 实现的图层式照片编辑器，支持 PSD 文件和命令、CLI、MCP 控制；可由 Agent 执行图像编辑流程。
+5,storytold/artcraft,66253,新上榜,AI 图像视频 / 多模态创作,Apache-2.0,集成图像与视频生成模型的可视化创作工作台，结合二维合成、三维场景与提示词迭代制作可控视觉素材。
+6,debpalash/VoiceStudio,62334,上升24,AI 语音 / 本地音频制作,AGPL-3.0,本地运行的语音合成、声音克隆、语音转写和视频配音工具，适合有隐私或按量费用限制的配音工作流。
+7,mattpocock/skills,58414,上升4,Agent Skills / 软件工程,MIT,提供可被编码代理直接使用的软件工程 Skills，帮助复用开发约定、实现步骤和代码质量实践。
+8,storytold/wordcraft,53842,新上榜,AI 办公 / Agent 文档编辑,Apache-2.0,用 Rust 构建的 Word 类文档编辑器，向 CLI 与 MCP 暴露可调用命令；适合由 Agent 自动修改、审阅和排版文档。
+9,vxcontrol/pentagi,49923,新上榜,AI 安全 / 自动渗透测试,MIT,多 Agent 自主渗透测试系统，将目标分析、工具调用和测试步骤串联，面向授权安全评估及攻防研究。
+10,perplexityai/SPACE,43391,新上榜,Agent 基础设施 / 安全沙箱,Apache-2.0,为代理代码执行提供可插拔的隔离沙箱运行环境，支持在受控边界内运行 Agent 与用户代码。
+11,GCWing/OpenBitFun,42520,新上榜,AI Coding / 通用 Agent 客户端,MIT,将 Rust 高性能代理运行时与桌面界面结合，兼顾编程任务与通用工作任务的 Agent 使用场景。
+12,Thysrael/Horizon,41650,新上榜,AI 信息研究 / 新闻简报,MIT,聚合新闻并使用 LLM 生成中英文摘要与定期简报，可连接消息机器人，适合个人情报雷达和主题追踪。
+13,ARahim3/DigUp,40779,新上榜,本地 AI 搜索 / 多模态检索,MIT,基于 EmbeddingGemma 进行端侧语义索引，检索电脑中的照片、PDF、音视频与代码，减少文件查找耗时。
+14,michael-denyer/pstack-claude,39908,新上榜,Agent Skills / 工作流规范,MIT,将结构化代理开发流程移植到 Claude Code、Codex、Copilot 等环境，帮助统一任务拆解、审查和交付步骤。
+15,yetone/magpie,39907,上升25,LLM 网关 / 模型切换,MIT,从桌面菜单统一切换多种 Coding Agent 使用的模型与提供商，减少 Codex、Claude Code 等工具间的配置重复。
+16,ifixai-ai/iFixAi,39690,上升15,AI 评测 / Agent 行为审计,Apache-2.0,检查 Agent 是否按预期完成工作，支持人工或代理发起的独立审计，面向自动化流程验收与治理。
+17,rootSunc/CNEquity,39037,新上榜,金融 AI / MCP 数据工具,Apache-2.0,面向中国 A 股的自托管数据底座，提供行情、公告、基本面等可溯源数据集及原生 MCP 接口，供投研 Agent 查询。
+18,xerj-org/xerj,38166,新上榜,RAG / Agent 语义检索,Apache-2.0,自动索引代码、日志、文档和 PDF，通过与 Elasticsearch 兼容的检索接口供 Agent 快速定位证据和上下文。
+19,Niko1221/Strata,36424,下降14,本地 LLM / 推理引擎,MIT,面向消费级硬件的 Qwen 模型部署方案，提供本地推理引擎和 OpenAI、Anthropic 兼容 API，适合私有化调用。
+20,SakanaAI/AI-Scientist-v3,35553,新上榜,AI 科研 / 科学 Agent,Apache-2.0,使用编码代理协作推进科学问题研究，将实验设计、代码执行和结果整理纳入自动化研究流程。
+21,lexmount/moli,34465,下降18,浏览器 Agent / 自动化引擎,Apache-2.0,Rust 构建的轻量无头浏览器运行层，为 AI Agent 提供网页导航、交互与自动化执行能力。
+22,mksglu/context-mode,34464,上升66,Agent 上下文 / Token 治理,未知 / 未声明,将工具输出隔离并保留会话记忆，通过 MCP 和 Hooks 改善 Coding Agent 的上下文占用与跨工具路由。
+23,K-Dense-AI/scientific-agent-skills,33811,新上榜,AI 科研 / Agent Skills,MIT,提供科学研究可执行 Skills 与数据库接入能力，覆盖生物、化学和药物研发，可接入 Claude Code、Codex 等代理。
+24,storytold/pdfcraft,33594,新上榜,AI 文档 / Agent PDF 工具,Apache-2.0,Rust 实现的 PDF 阅读编辑器，提供面向代理的自动化操作入口，可用于文件批注、编辑和文档处理流程。
+25,cathrynlavery/diagram-design,33158,下降15,Agent Skills / 设计制图,MIT,面向 Claude Code、Codex 等工具的图表设计 Skill，可输出多种 SVG 与 HTML 技术图表，改善文档和工程表达。
+26,storytold/filmcraft,32941,新上榜,AI 视频 / Agent 剪辑工具,Apache-2.0,Rust 实现的非线性视频编辑器，支持时间线剪辑和面向 Agent 的操作接口，适合自动化素材整理与粗剪。
+27,DuarteSantos8/openGym,32505,下降23,健康 AI / MCP 个人数据,AGPL-3.0,自托管健身与体重管理系统，记录训练计划、动作和进度，并通过 MCP 向个人助手提供受控数据访问。
+28,tester-army/e2e,31852,下降22,AI 测试 / 浏览器与移动端,Apache-2.0,通过自然语言 Agent 步骤执行 Web 和移动端端到端测试，记录操作并支持重放与断言，降低测试脚本维护成本。
+29,chenglou/handwired,31199,新上榜,AI 模型 / 神经网络编译,MIT,尝试将常规 JavaScript 逻辑转化为神经网络形式，为程序与可学习模型的结合提供实验性工具。
+30,storytold/lightcraft,30981,新上榜,AI 图像 / Agent RAW 编辑,Apache-2.0,跨平台非破坏性照片与 RAW 编辑器，支持 MCP 驱动的端到端操作，适合自动化摄影后期工作流。
+31,onehumanbeing/esp32-iphone-agent,30328,新上榜,Computer Use / 手机代理,MIT,利用 ESP32、AirPlay 画面与 USB HID 控制真实 iPhone，让视觉模型在物理设备上执行自动化操作。
+32,GanyuanRan/Autoloom,29457,新上榜,AI Coding / 工程治理,未知 / 未声明,将 Aegis 基线检查与变更证据融入 AI 编码执行过程，帮助开发团队审计改动理由和交付结果。
+33,affaan-m/ECC,27062,上升26,Coding Agent / Skills 与记忆,MIT,面向 Claude Code、Codex 等代理的执行框架优化工具，组织 Skills、记忆、安全策略和研究优先流程。
+34,bherbruck/solidcraft,26409,新上榜,AI 3D / MCP CAD 设计,Apache-2.0,基于 Rust 的参数化三维 CAD 工具，支持桌面、网页及 MCP 自动化，便于 Agent 执行建模和设计迭代。
+35,storytold/vectorcraft,25320,下降27,AI 图形 / Agent 矢量编辑,Apache-2.0,Rust 矢量图编辑器，通过命令 API 和 MCP Server 对外暴露绘制能力，支持 Agent 自动生成与修改 SVG。
+36,JuliusBrussee/caveman,25102,新上榜,Agent Skills / Token 优化,Apache-2.0,为编码代理提供压缩式交流 Skill 与代理层，实验性地减少冗余文本与 Token 消耗，适合研究成本优化。
+37,rehan-remade/universal-modder,24667,下降23,AI 游戏开发 / Agent 工具链,MIT,结合 Claude Code、游戏逆向与生成式素材工具，实现游戏 Mod 的分析、修改、资产生成和验证流程。
+38,odysseus-dev/odysseus,16546,下降29,通用 Agent / 自托管工作台,AGPL-3.0,提供自托管 AI 工作空间，用于组织代理执行、任务上下文和人机协作，适合部署个人或小团队助手。
+39,KingKongRobotics/jumper,16481,下降27,机器人 / 具身智能工具,Apache-2.0,围绕 22 自由度螃蟹机器人提供设计和 AI 助手工具，涉及外观、场景及运动相关资料与创作流程。
+40,nykooi1/vibe-wise,16459,下降27,AI Coding / 开发学习辅助,MIT,Claude Code 与 Codex 插件，旨在代理生成代码的同时帮助开发者理解实现过程和项目构建方法。
+41,Panniantong/Agent-Reach,16415,下降26,Agent 搜索 / 多平台检索,MIT,为代理提供社交媒体、视频平台、GitHub 等跨站检索能力，适合自动化研究、信息核对与内容监测。
+42,DietrichGebert/ponytail,16393,下降26,Agent Skills / 简化编码,MIT,通过工程约束提醒编码代理优先采用简洁方案，减少无必要的实现和维护成本。
+43,CopilotKit/OpenDots,16372,下降26,通用 Agent / 跨渠道协作,MIT,面向持续工作的 AI 同事，连接文本、语音通话与 Slack 等沟通入口，支持跨渠道推进任务。
+44,Louis-CFM/coucou,16350,下降26,Coding Agent / 运行与审批,MIT,在 Mac 刘海区和 iPhone 上展示编码代理状态并处理审批提醒，方便监控 Claude Code、Codex 等任务。
+45,tigerless-labs/autoharness,16328,下降26,Agent Skills / 自学习运行框架,MIT,从 Claude Code 的真实会话中提炼可复用 Skills，随使用动态更新和淘汰，减少手工维护知识的负担。
+46,mhtsec/ARTEX,16306,下降26,AI 安全 / 自主渗透测试,AGPL-3.0,自主渗透测试 Agent 系统，将攻防任务规划、测试工具调用与结果输出结合，用于授权安全研究。
+47,tigerless-labs/agent-memory,16285,下降26,Agent Memory / 本地长期记忆,MIT,以 Markdown 为记忆来源，结合本地检索和独立整理层，为 Claude Code 与 Codex 跨会话共享上下文。
+48,yi1108/printfilm,16263,下降26,AI 视频 / 短剧营销制作,MIT,围绕 AI 短视频营销与短剧创作提供生产工作台，覆盖生成素材到视频内容组织的流程。
+49,anthropics/knowledge-work-plugins,16241,下降26,办公 AI / Agent 插件,Apache-2.0,面向 Claude Cowork 的知识工作插件仓库，为办公、分析和专业工作流提供可安装扩展能力。
+50,zhongerxin/iPhone-use,16219,下降26,Computer Use / 移动端控制,MIT,通过 USB 让 Codex 操作真实 iPhone，提供安装引导、屏幕获取及 App 自动化能力。
+51,WhiteTowerAI/ohmygame,16176,下降25,AI 游戏开发 / 一人工作室,Apache-2.0,整合 AI 编码、场景画布及游戏制作流程，帮助个人开发者用统一工作台构建游戏原型。
+52,farion1231/cc-switch,16154,下降25,AI 开发 / 模型环境管理,MIT,用于 Claude Code、Codex 等编码代理的跨平台桌面配置管理和模型切换，减少多工具环境维护。
+53,leemysw/yovoice,16132,下降25,AI 语音 / 本地音频制作,Apache-2.0,本地运行的 TTS、声音克隆及 AI 音乐工作台，支持离线配音和多轨音频制作。
+54,stablyai/orca,16110,下降25,AI Coding / 多代理 IDE,MIT,桌面、移动与远程环境下管理并行编码代理，可复用现有模型订阅组织多人或多 Agent 开发。
+55,paperclipai/paperclip,16045,下降23,多 Agent / 企业协作编排,MIT,管理工作场景下多个代理的任务、状态与协作关系，为团队建立可观察的 AI 工作执行台。
+56,NVIDIA/OpenShell,16023,下降23,Agent 安全 / 私有运行时,Apache-2.0,面向自主代理提供安全、私有的运行环境，帮助隔离代码执行与工具操作。
+57,vectorize-io/hindsight,16002,下降23,Agent Memory / 学习型记忆,MIT,为长期代理任务构建可学习的记忆机制，使后续检索和回答能够复用过往交互中的有效信息。
+58,mvschwarz/openrig,15980,下降23,多 Agent / 编码团队协作,Apache-2.0,让 Claude Code、Codex、Pi 等代理组成持久团队，配置角色、共享上下文并分配工作所有权。
+59,tt-a1i/archify,15958,下降23,Agent Skills / 架构可视化,MIT,根据想法、项目计划或代码库生成交互式架构图，适合编码代理的设计沟通和系统梳理。
+60,t8y2/dbx,15936,下降23,AI 数据库 / MCP 工具,Apache-2.0,轻量跨平台数据库客户端，支持多种数据库、内置 AI 助手与 MCP Server，可用于智能数据查询。
+61,KKKKhazix/AIHOT,15914,下降23,AI 营销研究 / 热点简报,MIT,配置行业信源和筛选规则，自动收集热点并借助 LLM 生成日报，适合垂直领域内容监测。
+62,deepseek-ai/deepseek-harness,15893,下降23,AI Coding / 插件式 Agent,MIT,以插件为核心扩展机制的 DeepSeek 代理运行框架，面向工具集成与编码自动化流程。
+63,pbakaus/impeccable,15827,下降21,Agent Skills / UI 设计质量,Apache-2.0,为 AI 编码与设计代理提供视觉设计规范和可操作约束，改善自动生成界面的可用性与一致性。
+64,NandhaKishorM/laya,15806,下降21,AI 模型 / 轻量决策引擎,Apache-2.0,提供非自回归 System 1 文本决策模型，可执行类型选择、打分和是非判断，适合低延迟路由和分类。
+65,archestra-ai/OpenAPPA,15784,下降21,Agent 安全 / 确定性护栏,MIT,为 AI 代理执行加入可预测的规则校验和安全约束，减少仅依赖模型提示实现治理的脆弱性。
+66,Taichu-AI/ZDTaichu5.0-9B,15762,下降21,多模态模型 / 视觉与空间理解,Apache-2.0,9B 级多模态基础模型，处理图像、视频和空间关系，并提供 FP8、NVFP4 等版本，面向具身视觉与 Agent 研究。
+67,nanaism/yomiyasu,15740,下降21,Agent Skills / 日语文本润色,MIT,面向 AI 生成日语的文本修订 Skill，用于调整不自然表达和改善日语写作质量。
+68,rocketride-org/rocketride-server,15718,下降21,AI 基础设施 / LLM 工作流,MIT,C++ 核心的 AI 数据管道，整合模型供应商、向量数据库与代理编排，可从 IDE 调试、扩展并部署。
+69,jaredpalmer/kev,15697,下降21,AI 模型 / 决策模型训练,Apache-2.0,基于 Qwen 系列的 Jev 类决策模型研究与工具链，支持自训练和本地运行，用于快速判断任务。
+70,jev-chat/jev-chat-jarvis,15675,下降21,AI 办公 / 对话辅助决策,MIT,聊天辅助代理先判断意图与风险再生成待确认回复，适合消息处理、措辞和关系沟通决策。
+71,ayghri/i-have-adhd,15653,下降21,Agent Skills / 输出可读性,MIT,帮助编码代理采用更简明、重点突出的回答结构，减少过长说明对注意力和执行效率的影响。
+72,vincentsch/explainroo,15631,下降21,AI 视频 / 自动解说制作,MIT,将脚本、Kokoro 本地语音与 Whisper 字词时间信息组合，生成带解说的产品演示或教学 MP4。
+73,browser-use/video-use,15610,下降21,AI 视频 / Coding Agent 编辑,MIT,提供面向编码代理的视频编辑能力，让自动化脚本和代理任务参与视频素材处理。
+74,alibaba/open-code-review,15588,下降21,AI Coding / 代码审查,Apache-2.0,结合确定性规则和 LLM Agent 进行多语言代码审查，输出定位到具体代码行的质量与安全问题。
+75,Nasiko-Labs/nasiko,15566,下降21,Agent 基础设施 / 开放运行时,未知 / 未声明,面向 AI Agent 的开源运行时项目，适合研究自托管代理执行环境及其集成方式。
+76,Innei/lody-ios,15544,下降21,Coding Agent / 移动协作,未知 / 未声明,面向 Lody 的 iOS 原生客户端，提供聊天、会话与编码代理协作入口，支持移动端跟进研发任务。
+77,browser-use/jev-ultrafast,15523,下降21,浏览器 Agent / 高效执行,MIT,面向网页自动化的轻量智能代理方案，重点优化执行速度与成本，适合批量 Web 工作流。
+78,arcboxlabs/arcbox,15501,下降21,Agent 安全 / 微虚拟机沙箱,Apache-2.0,以 Rust 和隔离机器实例运行为基础，为 AI Agent 提供独立内核、文件系统与网络的执行环境。
+79,google/ax,15479,下降21,多 Agent / 编排运行时,Apache-2.0,Google 开源的 Agentic 编排运行时，用于组合代理、工具和多阶段任务执行流程。
+80,deepopen-com/deepopen,15435,下降20,AI 模型 / 快速结构化决策,Apache-2.0,提供多语言非自回归 System 1 决策引擎，针对结构化选择和判断场景降低生成式推理开销。
+81,Albert-Weasker/niubigeo,15414,下降20,AI 营销 / 品牌可见度分析,Apache-2.0,分析品牌在生成式 AI 回答中的呈现情况及竞争对手表现，面向 GEO 研究和营销优化报告。
+82,mizorewww/laya-mlx,15392,下降20,本地模型 / Apple MLX 决策,Apache-2.0,基于 MLX 在 Apple 芯片运行 Laya 类型化决策模型，适合低时延端侧路由、打分和分类。
+83,BuilderIO/agent-native,15370,下降20,Agent SDK / 应用开发框架,未知 / 未声明,面向 TypeScript 和 React 的 Agent 原生应用框架，用于将代理能力直接嵌入产品交互。
+84,hypit-ai/hypit,15348,下降20,AI 视频 / 内容营销自动化,未知 / 未声明,使用代理对热门视频进行文案、人像、画面素材的替换和批量变体生成，适合营销素材实验。
+85,CopilotKit/openmuse,15327,下降20,通用 Agent / 个人工作台,MIT,基于 CopilotKit 和 AG-UI 的个人代理工作台，提供浏览器、终端及文件处理能力，面向持续任务。
+86,heygen-com/hyperframes,15305,下降20,AI 视频 / HTML 渲染工作流,Apache-2.0,用 HTML 描述动画并渲染视频，面向 Agent 制作程序化视频片段和批量生成内容。
+87,JustVugg/colibri,15283,下降20,本地 LLM / MoE 推理,Apache-2.0,使用纯 C 推理引擎从磁盘按需加载混合专家模型，探索有限内存硬件运行大型 MoE 的方式。
+88,THU-MAIC/OpenMAIC,15261,下降20,教育 AI / 多 Agent 教室,MIT,将多个教学代理组织成互动学习课堂，帮助用户生成沉浸式课堂和模拟讨论体验。
+89,bojieli/greenbubbles,15239,下降20,Agent Memory / 微信数据连接,MIT,让个人 AI Agent 实时访问本机微信历史消息，支持围绕已有聊天资料构建可检索上下文。
+90,facebookresearch/context-language-models,15218,下降20,大模型研究 / 上下文治理,未知 / 未声明,研究模型主动维护外部上下文文件的机制，并提供相关实现资料，适合长期任务及多 Agent 记忆实验。
+91,agent-substrate/substrate,15196,下降20,Agent 基础设施 / 零信任沙箱,Apache-2.0,基于 Kubernetes 的大规模代理隔离运行时，以沙箱调度、身份、网络和存储边界支撑安全执行。
+92,monid-ai/monid,15174,下降20,MCP / Agent 工具网关,MIT,为 Agent 调用外部工具提供集中入口和路由机制，减少不同工具提供方的对接复杂度。
+93,zai-org/ZCode,15152,下降20,AI Coding / 代理运行框架,Apache-2.0,Z.ai 的可扩展编码 Agent 运行框架，适合构建面向开发任务的自动化执行和插件能力。
+94,deeplethe/utopia,15131,下降20,Agent Memory / 知识图谱,Apache-2.0,面向企业场景的世界模型与知识图谱基础设施，支持 GraphRAG、时间维度记录及代理长期知识管理。
+95,anthropics/financial-services,15109,下降20,金融 AI / 专业工作流 Agent,Apache-2.0,提供投行、股票研究、财富管理等场景的可部署 Agents、Skills 与数据连接器，工作结果保留人工审核。
+96,Graphify-Labs/graphify,15087,下降20,RAG / 代码知识图谱,Apache-2.0,通过 AST 解析代码、配置与文档，生成可追溯关系图并以 Agent Skill 提供结构化代码检索。
+97,blader/humanizer,15065,下降20,Agent Skills / AI 写作润色,MIT,用于修订 AI 生成文本的表达模式，弱化机械化措辞，支持写作与内容编辑代理。
+98,google/artemis,15044,下降20,Computer Use / Android 自动化,Apache-2.0,根据自然语言执行 Android 工作流并记录测试日志，可连接编码代理，用于移动端测试与操作自动化。
+99,Human-Agent-Society/reef,15022,下降20,Agent 基础设施 / 持续学习,Apache-2.0,探索代理持续自我改进的运行基础设施，涵盖反馈、迭代与模型能力演化的研究方向。
+100,devdotfast/whiteboard,15000,下降20,AI Coding / 可视化工程协作,MIT,让人和编码代理共享白板，关联代码、差异和架构图，帮助团队理解代理作出的设计决策。
