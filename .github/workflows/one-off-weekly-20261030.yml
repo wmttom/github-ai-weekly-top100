@@ -114,6 +114,7 @@ jobs:
           reject_re=re.compile(r"(?i)(awesome[- _]|curated.list|resource.collection|\breading.list\b|programming.course|\btutorial\b|learning.roadmap|\btextbook\b|\bcheatsheet\b|system.prompt.leaks|prompt.leak|\bvpn\b|\biptv\b|\bdebloat\b|ps5.executables|cloud.drive.download|baidu.netdisk.download)")
           code_re=re.compile(r"(?i)(\.(py|pyi|js|jsx|mjs|cjs|ts|tsx|rs|go|c|h|cc|cpp|hpp|java|kt|swift|rb|php|cs|sh|bash|zsh|fish|sql|ipynb|lua|jl|r|dart|ex|exs|vue|svelte|astro|html|css|scss|proto|wasm|zig|toml|yml|yaml|json|xml|gradle|cmake|dockerfile|nix|tf|mdx)$|(^|/)(skill\.md|agents\.md|dockerfile|makefile|cargo\.lock|requirements[^/]*\.txt|prompt[^/]*\.md)$)")
           def excluded(c):
+              if c.repo.lower() in {"anhao/ai-pose-gallery-zh","renhuai123/ziwei-doushu","knifelemon/filee"}: return True
               if original_excluded(c): return True
               desc=" ".join([c.repo,str(c.meta.get("description") or "")]+list(c.meta.get("topics") or []))
               if reject_re.search(desc): return True
@@ -159,6 +160,7 @@ jobs:
               audits[k]={"valid":True,"commit":first_code_sha}
               return True
           def license(c):
+              if c.repo.lower()=="nightly-labs/openbot":return "PolyForm Noncommercial 1.0.0"
               item=str(c.meta.get("license_spdx") or "").strip()
               return item if item and item.upper() not in ("NOASSERTION","OTHER","NONE","NULL") else "未知 / 未声明"
           def intro(c):
@@ -213,4 +215,4 @@ jobs:
           git add -- "$OUTPUT_FILE"
           git -c core.whitespace=cr-at-eol diff --cached --check
           git commit -m "Add weekly GitHub AI Top100 ranking: 2026年10月30日"
-          git push origin HEAD:refs/heads/"$CANDIDATE_BRANCH"
+          git push --force origin HEAD:refs/heads/"$CANDIDATE_BRANCH"
