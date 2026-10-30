@@ -1,0 +1,216 @@
+name: One-off GitHub AI Top100 2026-10-30
+on:
+  push:
+    branches:
+      - run-weekly-20261030
+permissions:
+  contents: write
+concurrency:
+  group: weekly-top100-20261030
+  cancel-in-progress: false
+jobs:
+  gather-validate-publish-candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    env:
+      TZ: Asia/Shanghai
+      OUTPUT_FILE: 2026年10月30日.csv
+      CANDIDATE_BRANCH: publish-weekly-20261030
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r scripts/requirements-weekly.txt
+      - name: Realtime fetch canonical Trendshift sources with strict retries
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import importlib.util, json, os, re, sys, time
+          from pathlib import Path
+          import requests
+          spec=importlib.util.spec_from_file_location("rankgen","scripts/generate_weekly_ranking.py")
+          mod=importlib.util.module_from_spec(spec)
+          sys.modules[spec.name]=mod
+          spec.loader.exec_module(mod)
+          target=Path(os.environ["RUNNER_TEMP"])/"trendshift-20261030"
+          target.mkdir(parents=True, exist_ok=True)
+          urls={"monthly":"https://trendshift.io/monthly","weekly":"https://trendshift.io/weekly","daily":"https://trendshift.io/"}
+          results={}
+          for period,url in urls.items():
+              attempts=[]
+              for n in range(1,4):
+                  start=time.monotonic()
+                  try:
+                      session=requests.Session()
+                      session.headers.update({"User-Agent":"Mozilla/5.0 (compatible; GitHubWeeklyTrends/1.0)","Cache-Control":"no-cache, no-store","Pragma":"no-cache","Accept":"text/html"})
+                      response=session.get(url,timeout=(25,120),allow_redirects=True)
+                      response.raise_for_status()
+                      if response.status_code!=200 or not response.url.startswith("https://trendshift.io/"):
+                          raise RuntimeError(f"unexpected HTTP={response.status_code} final_url={response.url}")
+                      if len(response.content)<40000:
+                          raise RuntimeError(f"HTML too short: {len(response.content)} bytes")
+                      p=target/f"{period}.html"
+                      p.write_bytes(response.content)
+                      rows=mod.parse(p,period)
+                      if len(rows)<mod.MINS[period] or any(not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+",r.repo) for r in rows):
+                          raise RuntimeError(f"invalid repository records: {len(rows)}")
+                      attempts.append({"try":n,"result":"ok","http":response.status_code,"count":len(rows),"bytes":len(response.content),"elapsed_s":round(time.monotonic()-start,2)})
+                      results[period]={"url":url,"success":True,"attempts":attempts,"count":len(rows)}
+                      break
+                  except Exception as exc:
+                      attempts.append({"try":n,"result":"failed","detail":str(exc),"elapsed_s":round(time.monotonic()-start,2)})
+                      if n<3:
+                          print(f"{period} attempt {n} failed; waiting 60 seconds before retry",flush=True)
+                          time.sleep(60)
+              else:
+                  results[period]={"url":url,"success":False,"attempts":attempts}
+                  print(json.dumps(results,ensure_ascii=False,indent=2),flush=True)
+                  raise SystemExit(f"ABORT: Trendshift {period} failed three verified live attempts. No ranking CSV will be produced.")
+          (target/"sources.json").write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding="utf-8")
+          print(json.dumps(results,ensure_ascii=False,indent=2),flush=True)
+          with open(os.environ["GITHUB_ENV"],"a",encoding="utf-8") as fh:
+              fh.write(f"TREND_DIR={target}\n")
+          PY
+
+      - name: Generate strict ranking and check recent code commits
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import csv, importlib.util, json, os, re, shutil, sys
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          from urllib.parse import quote
+          import requests
+          spec=importlib.util.spec_from_file_location("rankgen","scripts/generate_weekly_ranking.py")
+          mod=importlib.util.module_from_spec(spec)
+          sys.modules[spec.name]=mod
+          spec.loader.exec_module(mod)
+
+          source_dir=Path(os.environ["TREND_DIR"])
+          root=Path.cwd()
+          now=datetime.now(timezone.utc)
+          since=(now-timedelta(days=30)).replace(microsecond=0).isoformat().replace("+00:00","Z")
+          session=requests.Session()
+          session.headers.update({"Authorization":"Bearer "+os.environ["GITHUB_TOKEN"],"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28","User-Agent":"github-ai-weekly-top100"})
+          audits={}
+          original_ai=mod.ai
+          original_excluded=mod.excluded
+          original_valid=mod.valid
+          mod.WEIGHTS.update({"weekly":80000,"daily":45000,"monthly":27000})
+          mod.MINS.update({"monthly":20,"weekly":20,"daily":5})
+
+          ai_re=re.compile(r"(?i)(\bai\b|\bllm\b|agent|agentic|mcp|rag|claude|codex|copilot|\bgpt\b|gemini|qwen|deepseek|machine.learning|neural|inference|embedding|diffusion|language.model|generative|multimodal|computer.use|browser.agent|vibe.cod|text.to.speech|speech.to.text|whisper|语音模型|人工智能|智能体|大模型|机器学习|扩散模型|多模态|本地模型|代码代理|智能编程|知识图谱|知识库)")
+          reject_re=re.compile(r"(?i)(awesome[- _]|curated.list|resource.collection|\breading.list\b|programming.course|\btutorial\b|learning.roadmap|\btextbook\b|\bcheatsheet\b|system.prompt.leaks|prompt.leak|\bvpn\b|\biptv\b|\bdebloat\b|ps5.executables|cloud.drive.download|baidu.netdisk.download)")
+          code_re=re.compile(r"(?i)(\.(py|pyi|js|jsx|mjs|cjs|ts|tsx|rs|go|c|h|cc|cpp|hpp|java|kt|swift|rb|php|cs|sh|bash|zsh|fish|sql|ipynb|lua|jl|r|dart|ex|exs|vue|svelte|astro|html|css|scss|proto|wasm|zig|toml|yml|yaml|json|xml|gradle|cmake|dockerfile|nix|tf|mdx)$|(^|/)(skill\.md|agents\.md|dockerfile|makefile|cargo\.lock|requirements[^/]*\.txt|prompt[^/]*\.md)$)")
+          def excluded(c):
+              if original_excluded(c): return True
+              desc=" ".join([c.repo,str(c.meta.get("description") or "")]+list(c.meta.get("topics") or []))
+              if reject_re.search(desc): return True
+              for trend in c.trend.values():
+                  if reject_re.search(trend.desc): return True
+              return False
+          def ai(c):
+              evidence=" ".join([str(c.meta.get("description") or "")]+list(c.meta.get("topics") or [])+[r.desc+" "+" ".join(r.topics) for r in c.trend.values()])
+              return bool(ai_re.search(evidence)) or (original_ai(c) and bool(ai_re.search((c.prev or {}).get("项目简介",""))))
+          def valid(c,dt):
+              k=c.repo.lower()
+              if not original_valid(c,dt):
+                  audits[k]={"valid":False,"reason":"archived, disabled, fork, inactive pushed_at or old project missing trend"}
+                  return False
+              if c.meta.get("error_status") or not c.meta.get("full_name"):
+                  audits[k]={"valid":False,"reason":"missing valid GitHub metadata"}
+                  return False
+              url="https://api.github.com/repos/"+quote(c.repo,safe="/")+"/commits"
+              response=session.get(url,params={"since":since,"per_page":8},timeout=(20,60))
+              if response.status_code!=200:
+                  raise RuntimeError(f"GitHub commits API returned {response.status_code} for {c.repo}: {response.text[:220]}")
+              commits=response.json()
+              if not isinstance(commits,list):
+                  raise RuntimeError(f"bad recent commit payload for {c.repo}")
+              if not commits:
+                  audits[k]={"valid":False,"reason":"no actual default branch commits within 30 days"}
+                  return False
+              code_ok=False
+              first_code_sha=None
+              for commit in commits[:5]:
+                  sha=commit["sha"]
+                  detail=session.get(url+"/"+sha,timeout=(20,60))
+                  if detail.status_code!=200:
+                      raise RuntimeError(f"GitHub commit detail {detail.status_code} for {c.repo}@{sha}")
+                  files=detail.json().get("files") or []
+                  if any(code_re.search(str(f.get("filename") or "")) for f in files):
+                      code_ok=True
+                      first_code_sha=sha
+                      break
+              if not code_ok:
+                  audits[k]={"valid":False,"reason":"no code/config/agent-skill changes among newest five recent commits"}
+                  return False
+              audits[k]={"valid":True,"commit":first_code_sha}
+              return True
+          def license(c):
+              item=str(c.meta.get("license_spdx") or "").strip()
+              return item if item and item.upper() not in ("NOASSERTION","OTHER","NONE","NULL") else "未知 / 未声明"
+          def intro(c):
+              old=(c.prev or {}).get("项目简介","").strip()
+              if old and len(old)<=300: return old
+              return mod.clean(mod.default_intro(c),300)
+          mod.default_intro=mod.intro
+          mod.intro=intro
+          mod.ai=ai
+          mod.excluded=excluded
+          mod.valid=valid
+          mod.license=license
+          os.environ.pop("GITHUB_OUTPUT",None)
+          os.environ.pop("GITHUB_STEP_SUMMARY",None)
+          tmp=root/".weekly-20261030-staging.csv"
+          sys.argv=["generate_weekly_ranking.py","--repo-root",str(root),"--input-dir",str(source_dir),"--date","2026-10-30","--output",str(tmp)]
+          mod.main()
+          with tmp.open(encoding="utf-8-sig",newline="") as handle:
+              reader=csv.DictReader(handle)
+              columns=list(reader.fieldnames or [])
+              rows=list(reader)
+          required=["排名","项目","热度分","对比上周排名变动","项目分类","项目 License","项目简介"]
+          if columns!=required or len(rows)!=100:
+              raise RuntimeError(f"invalid columns/count: {columns}, {len(rows)}")
+          if [int(r["排名"]) for r in rows]!=list(range(1,101)):
+              raise RuntimeError("rank is not 1-100")
+          if len({r["项目"].lower() for r in rows})!=100:
+              raise RuntimeError("duplicate repository names")
+          if any(int(rows[i]["热度分"])<=int(rows[i+1]["热度分"]) for i in range(99)):
+              raise RuntimeError("scores not strictly descending")
+          if any(not re.fullmatch(r"(新上榜|持平|上升[1-9][0-9]*|下降[1-9][0-9]*)",r["对比上周排名变动"]) for r in rows):
+              raise RuntimeError("invalid rank changes")
+          if any(not r["项目简介"].strip() or len(r["项目简介"])>300 for r in rows):
+              raise RuntimeError("invalid Chinese summaries")
+          if any(not audits.get(r["项目"].lower(),{}).get("valid") for r in rows):
+              raise RuntimeError("unverified code activity")
+          out=root/os.environ["OUTPUT_FILE"]
+          shutil.move(str(tmp),str(out))
+          report={"previous":"2026年10月23日.csv","qualified_count":sum(1 for a in audits.values() if a["valid"]),"unqualified_count":sum(1 for a in audits.values() if not a["valid"]),"repositories":audits,"top10":[r["项目"] for r in rows[:10]],"rank100":rows[99]["项目"],"new":[r["项目"] for r in rows if r["对比上周排名变动"]=="新上榜"]}
+          (source_dir/"validation-report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
+          print(json.dumps({k:v for k,v in report.items() if k!="repositories"},ensure_ascii=False,indent=2))
+          print("STRICT VALIDATION SUCCESS: 100 unique, active, code-committing AI repositories; ranking and CSV verified")
+          PY
+
+      - name: Commit candidate CSV to publish branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s "$OUTPUT_FILE"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$OUTPUT_FILE"
+          git -c core.whitespace=cr-at-eol diff --cached --check
+          git commit -m "Add weekly GitHub AI Top100 ranking: 2026年10月30日"
+          git push origin HEAD:refs/heads/"$CANDIDATE_BRANCH"
