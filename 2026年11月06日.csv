@@ -3,7 +3,7 @@
 2,mattpocock/skills,125846,上升24,AI 编码助手 / Agent Skills,MIT,skills 面向 coding agent 与工程协作，项目核心能力为“Skills for Real Engineers. Straight from my .agents directory”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
 3,deepseek-ai/dsh-superagent-prototype,115594,新上榜,通用 Agent / 自主规划与执行,MIT,DeepSeek 的 SuperAgent 原型项目，探索更高自主性的智能体系统如何规划任务、协调工具并执行复杂流程，适合研究 Agent 架构及自动化任务运行机制。
 4,vercel-labs/agent-desktop,114781,新上榜,Computer Use / 桌面自动化,Apache-2.0,面向 AI Agent 的桌面 Computer Use 命令行工具，将桌面交互封装为可调用操作，方便智能体执行窗口导航与图形界面任务，适合桌面助手和自动化测试。
-5,pingdotgg/t3code,114255,上升14,AI 编码助手 / Agent Skills,MIT,t3code 面向 coding agent 与工程协作，核心能力是提供面向该场景的开源能力；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+5,pingdotgg/t3code,114255,上升14,AI Coding / 多代理开发工作台,MIT,面向 Claude Code、Codex、Cursor、OpenCode 等本地编程 Agent 的统一控制工作台，通过网页、Electron 桌面端及 iOS、Android 移动端管理会话与执行，适合跨设备进行 Agent 编程和远程研发。
 6,morluto/rea,113736,下降5,AI 逆向工程 / Coding Agent,MIT,使用 Agent 分析软件交互、应用行为和原生二进制，辅助理解未知程序内部机制，适合逆向研究、程序分析及复杂软件故障排查。
 7,ccch1mneyyy/dsh-Go,111913,新上榜,移动 Agent / 远程编程助手,AGPL-3.0,面向 DeepSeek Harness 的移动端 Agent 工具，支持手机本地使用智能编程能力并远程控制电脑上的工作区，适合移动办公及远程代码任务。
 8,heydamir/unslop,109188,新上榜,Agent Skills / 界面设计优化,CC-BY-4.0,为 Claude Code、Codex 提供界面设计改进 Skill，识别 AI 生成网页常见的模板化配色、发光效果和排版问题，再按设计审查流程逐步修正，适合网站和产品 UI 打磨。
@@ -33,7 +33,7 @@
 32,google/elephant-goldfish-model,67368,下降25,大语言模型 / 模型研究,Apache-2.0,elephant-goldfish-model 面向 coding agent 与工程协作，项目核心能力为“Open-source skills for designing and reviewing software with AI agents”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
 33,JetBrains/thinkrail,67150,下降25,AI 编码助手 / Agent Skills,Apache-2.0,"thinkrail 面向 coding agent 与工程协作，项目核心能力为“Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。"
 34,makecindy/cindy,67044,下降23,AI 编码助手 / Agent Skills,Apache-2.0,cindy 面向 coding agent 与工程协作，项目核心能力为“Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
-35,elayadesign/ai-design-skills,66981,下降29,AI 编码助手 / Agent Skills,MIT,ai-design-skills 面向 coding agent 与工程协作，核心能力是提供面向该场景的开源能力；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+35,elayadesign/ai-design-skills,66981,下降29,Agent Skills / 视觉设计与 Figma,MIT,提供可安装到 Claude Code、Codex、Cursor 等工具的设计 Skills，包括从需求分析到视觉系统的落地页生成，以及在 Figma 中管理变量、组件和自动布局，适合 AI 辅助产品设计。
 36,ai-job-search-dev/ai-job-search,66940,下降11,AI 求职 / 招聘与职业运营,MIT,"ai-job-search 面向求职与招聘流程自动化，项目核心能力为“The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep…”；主要解决岗位筛选、材料定制和候选人评估重复耗时，适合岗位匹配、简历优化、招聘初筛和申请跟踪。"
 37,nightly-labs/openbot,66827,下降25,浏览器自动化 / Web Agent,未知 / 未声明,"openbot 面向浏览器与网页任务自动化，项目核心能力为“A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browse…”；主要解决模型理解网页后仍难稳定点击、填表和导航，适合网页研究、表单处理、自动测试和运营自动化。"
 38,Niko1221/Strata,66811,下降14,本地 LLM / 高效推理,MIT,"Strata 面向本地模型运行与高效推理，项目核心能力为“Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optio…”；主要解决云端依赖、隐私顾虑和低资源部署门槛高，适合离线助手、边缘设备和私有化部署。"
@@ -90,7 +90,7 @@
 89,arcboxlabs/arcbox,62430,下降1,AI 安全 / Agent 安全治理,Apache-2.0,"arcbox 面向 AI 安全与自动化防护，项目核心能力为“Run AI agents on real and isolated machines — own kernel, filesystem, and network — with <100ms boot. Local first, OCI compatible, pure Rust”；主要解决agent 执行、代码与技能引入中的风险难及时识别，适合安全审计、漏洞分析、权限控制和运行治理。"
 90,BuilderIO/agent-native,62404,上升2,MCP Server / MCP 工具链,MIT,agent-native 面向 MCP 工具接入与 agent 能力扩展，项目核心能力为“A framework for building agentic apps”；主要解决模型连接外部工具、数据源和业务系统缺少统一接口，适合企业工具层、浏览器代理和自动化系统。
 91,blader/humanizer,62373,下降2,AI 编码助手 / Agent Skills,MIT,humanizer 面向 coding agent 与工程协作，项目核心能力为“Agent skill that removes signs of AI-generated writing from text”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
-92,Albert-Weasker/niubigeo,62345,上升2,AI 基础设施 / 运行与平台层,Apache-2.0,niubigeo 面向 AI 应用运行、工具链和平台基础设施，项目核心能力为“Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO opt…”；主要解决模型、工具、数据和运行环境接入分散，适合AI 平台、应用底座和生产化部署。
+92,Albert-Weasker/niubigeo,62345,上升2,营销 AI / GEO 与品牌可见度,Apache-2.0,面向生成式搜索优化（GEO）的自托管研究平台，可比较不同 AI 模型对品牌的回答、检查引用来源并复测竞争对手表现，适合营销团队评估 AI 搜索中的品牌曝光和证据质量。
 93,KingKongRobotics/jumper,62340,下降14,机器人 / 3D / 具身智能,Apache-2.0,jumper 面向机器人、三维内容与物理 AI，项目核心能力为“🦀 Jumper — an crab robot”；主要解决感知、建模、仿真和动作控制工具链分散，适合机器人训练、三维建模和具身智能研究。
 94,archestra-ai/OpenAPPA,62327,下降10,AI 安全 / Agent 安全治理,MIT,OpenAPPA 面向 AI 安全与自动化防护，项目核心能力为“Deterministic guardrails that don't break agents”；主要解决agent 执行、代码与技能引入中的风险难及时识别，适合安全审计、漏洞分析、权限控制和运行治理。
 95,CopilotKit/openmuse,62278,下降2,浏览器自动化 / Web Agent,MIT,"openmuse 面向浏览器与网页任务自动化，项目核心能力为“A personal agent with a browser, terminal, files, and work that keeps going built with CopilotKit and AG-UI”；主要解决模型理解网页后仍难稳定点击、填表和导航，适合网页研究、表单处理、自动测试和运营自动化。"
