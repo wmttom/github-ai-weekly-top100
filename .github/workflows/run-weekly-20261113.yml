@@ -1,0 +1,188 @@
+name: One-off AI Top100 2026-11-13
+
+on:
+  push:
+    branches: [run-weekly-20261113]
+    paths:
+      - '.github/workflows/run-weekly-20261113.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r scripts/requirements-weekly.txt
+      - name: Fetch official Trendshift and validate 100 real AI repos
+        id: generate
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, importlib.util, json, os, re, sys, time
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          import requests
+          
+          root = Path.cwd()
+          spec = importlib.util.spec_from_file_location("weekly_gen", root/"scripts/generate_weekly_ranking.py")
+          m = importlib.util.module_from_spec(spec); sys.modules[spec.name] = m; spec.loader.exec_module(m)
+          now = datetime.now(timezone.utc)
+          tz = ZoneInfo("Asia/Shanghai")
+          date_now = datetime.now(tz).date()
+          if date_now.isoformat() != "2026-11-13":
+              raise SystemExit(f"Unexpected Asia/Shanghai date {date_now}")
+          session = requests.Session()
+          session.headers.update({"User-Agent": "Mozilla/5.0 Chrome/136 Safari/537.36", "Accept":"text/html,application/xhtml+xml", "Cache-Control":"no-cache, no-store, must-revalidate", "Pragma":"no-cache"})
+          base = Path(os.environ.get("RUNNER_TEMP", "/tmp"))/"github-ai-top100-20261113"
+          base.mkdir(parents=True,exist_ok=True)
+          trend={}
+          status={}
+          for period,url in m.URLS.items():
+              attempts=[]
+              for attempt in range(1,4):
+                  try:
+                      started=time.monotonic()
+                      resp=session.get(url,timeout=(25,120),headers={"Cache-Control":"no-cache","Pragma":"no-cache"})
+                      resp.raise_for_status()
+                      if len(resp.content)<40000: raise RuntimeError(f"HTML too small: {len(resp.content)}")
+                      path=base/f"{period}.html"
+                      path.write_bytes(resp.content)
+                      entries=m.parse(path,period)
+                      if len(entries)<m.MINS[period]:raise RuntimeError(f"Insufficient ranking data {len(entries)}")
+                      attempts.append({"attempt":attempt,"status":resp.status_code,"size":len(resp.content),"entries":len(entries),"seconds":round(time.monotonic()-started,2),"ok":True})
+                      trend[period]=entries
+                      break
+                  except Exception as exc:
+                      attempts.append({"attempt":attempt,"ok":False,"error":repr(exc)})
+                      if "NameResolutionError" in repr(exc) and attempt==1:
+                          try:
+                              dr=session.get("https://dns.google/dns-query",params={"name":"trendshift.io","type":"A"},headers={"Accept":"application/dns-json"},timeout=15)
+                              print("DNS over HTTPS fallback:",dr.status_code,dr.text[:400],flush=True)
+                          except Exception as de:
+                              print("DoH lookup unavailable:",repr(de),flush=True)
+                      if attempt<3:time.sleep(60)
+              status[period]={"url":url,"attempts":attempts,"success":period in trend}
+              print("SOURCE",period,json.dumps(status[period],ensure_ascii=False),flush=True)
+              if period not in trend:
+                  raise SystemExit("STOP: Trendshift source invalid after three attempts: "+period+" "+json.dumps(attempts,ensure_ascii=False))
+          
+          print("ALL THREE LIVE SOURCES VERIFIED:",{p:len(v) for p,v in trend.items()},flush=True)
+          prevpath=m.previous(root,date_now)
+          print("PREVIOUS", prevpath.name if prevpath else "none",flush=True)
+          prevrows=m.readprev(prevpath)
+          prevmap={m.key(x["项目"]):x for x in prevrows}
+          tm={}; names={}
+          for period,records in trend.items():
+              for entry in records:
+                  k=m.key(entry.repo)
+                  tm.setdefault(k,{})[period]=entry
+                  names.setdefault(k,entry.repo)
+          keys=list(dict.fromkeys([*tm,*prevmap]))
+          repos=[names.get(k) or prevmap[k]["项目"] for k in keys]
+          token=os.environ.get("GITHUB_TOKEN","")
+          if not token:raise SystemExit("Missing GitHub token")
+          meta=m.meta(repos,token,base)
+          cands={}
+          for k in keys:
+              md=meta.get(k,{})
+              repo=m.norm(md.get("full_name") or names.get(k) or prevmap.get(k,{}).get("项目",""))
+              c=cands.setdefault(m.key(repo),m.Cand(repo))
+              c.trend.update(tm.get(k,{}))
+              if len(md)>=len(c.meta):c.meta=md
+              if prevmap.get(k):c.prev=prevmap[k]
+          print("TOTAL CANDIDATES",len(cands),flush=True)
+          api=m.session(token)
+          api.headers["Accept"]="application/vnd.github+json"
+          threshold=(now-timedelta(days=30)).isoformat().replace("+00:00","Z")
+          qualified=[]
+          rejected={}
+          def reject(c,reason):
+              rejected[c.repo]=reason
+              return False
+          for i,c in enumerate(cands.values(),1):
+              if c.meta.get("error_status") or not c.meta.get("created_at"):
+                  reject(c,"repository metadata unavailable");continue
+              if c.meta.get("archived") or c.meta.get("disabled") or c.meta.get("fork"):
+                  reject(c,"archived/disabled/fork");continue
+              if m.excluded(c) or not m.ai(c):
+                  reject(c,"non-AI or excluded material");continue
+              repo_name=c.repo.rsplit("/",1)[-1].lower()
+              if repo_name.startswith(("awesome","curated")) or repo_name in {"ai-infra-book","ai-book","courses","course","tutorials","learning-roadmap"} or repo_name.endswith(("-awesome","-course","-tutorials","-roadmap")):
+                  reject(c,"pure guide/list/book/learning materials");continue
+              if not m.valid(c,now):
+                  reject(c,"old or inactive");continue
+              # Validate actual code commits rather than relying on pushed_at timestamps.
+              try:
+                  u="https://api.github.com/repos/"+c.repo+"/commits"
+                  res=api.get(u,params={"since":threshold,"per_page":1},timeout=(20,60))
+                  if res.status_code!=200 or not isinstance(res.json(),list):
+                      reject(c,f"commits API status {res.status_code}");continue
+                  if not res.json():
+                      reject(c,"no commits in last 30 days");continue
+              except Exception as ex:
+                  reject(c,"commits API failed: "+str(ex)[:100]);continue
+              c.category=m.classify(c)
+              # License from current GitHub metadata only, not inherited from past CSV.
+              lic=c.meta.get("license_spdx")
+              c.license=lic if lic and lic.upper() not in {"NOASSERTION","OTHER","NONE","NULL"} else "未知 / 未声明"
+              c.raw=m.score(c,now)
+              c.intro=m.intro(c)
+              qualified.append(c)
+              if i%40==0:print("ACTIVITY-CHECK",i,len(cands),flush=True)
+          print("QUALIFIED",len(qualified),"REJECTED",len(rejected),flush=True)
+          print("REJECTED DETAIL",json.dumps(rejected,ensure_ascii=False),flush=True)
+          if len(qualified)<100:raise SystemExit(f"STOP: only {len(qualified)} qualified AI repos (<100); no CSV and no ranking commit")
+          qualified.sort(key=lambda c:(c.tier,c.raw,c.repo.lower()),reverse=True)
+          selected=qualified[:100]
+          heats=m.heats(selected)
+          rows=[]
+          for rank,(c,hot) in enumerate(zip(selected,heats),1):
+              rows.append(dict(zip(m.COLS,[rank,c.repo,hot,m.change(c,rank),c.category,c.license,c.intro])))
+          assert len(rows)==100
+          assert len(set(r["项目"].lower() for r in rows))==100
+          assert [r["排名"] for r in rows]==list(range(1,101))
+          assert all(rows[k]["热度分"]>rows[k+1]["热度分"] for k in range(99))
+          assert all(len(r["项目简介"])<=300 for r in rows)
+          assert all(re.fullmatch(r"(新上榜|上升[1-9]\d*|下降[1-9]\d*|持平)",r["对比上周排名变动"]) for r in rows)
+          filename=f"{date_now:%Y年%m月%d日}.csv"
+          out=root/filename
+          with out.open("w",encoding="utf-8-sig",newline="") as f:
+              writer=csv.DictWriter(f,fieldnames=m.COLS);writer.writeheader();writer.writerows(rows)
+          with out.open(encoding="utf-8-sig",newline="") as f:
+              rr=list(csv.DictReader(f))
+          assert len(rr)==100 and list(rr[0])==m.COLS and rr[-1]["排名"]=="100"
+          print("VALIDATED OUTPUT",filename,"TOP 10",json.dumps(rows[:10],ensure_ascii=False),flush=True)
+          print("RANK 100",json.dumps(rows[-1],ensure_ascii=False),flush=True)
+          print("NEW",json.dumps([r["项目"] for r in rows if r["对比上周排名变动"]=="新上榜"],ensure_ascii=False),flush=True)
+          print("SOURCE_SUMMARY",json.dumps(status,ensure_ascii=False),flush=True)
+          with open(os.environ.get("GITHUB_OUTPUT","/tmp/github-output"),"a",encoding="utf-8") as f:
+              f.write("output_file="+filename+"\n")
+          
+          PY
+      - name: Commit verified CSV to candidate branch only
+        env:
+          OUTPUT_FILE: ${{ steps.generate.outputs.output_file }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$OUTPUT_FILE"
+          test -s "$OUTPUT_FILE"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$OUTPUT_FILE"
+          git -c core.whitespace=cr-at-eol diff --cached --check
+          git commit -m "Candidate: GitHub AI Top100 for 2026-11-13"
+          git push origin HEAD:run-weekly-20261113
