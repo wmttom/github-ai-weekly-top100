@@ -52,7 +52,7 @@
 51,Niko1221/Strata,66393,下降9,本地 LLM / 高效推理,MIT,面向个人计算机的本地模型推理引擎，提供便捷部署和兼容常用模型服务格式的 API；适合私有化 AI 助手与本地推理。
 52,wangzan101/Mika,66336,下降19,Computer Use / Android Agent,Apache-2.0,在 Android 设备上运行的 AI Agent，可操作手机应用及网页来完成任务；适合移动端智能体和应用操作自动化。
 53,tt-a1i/archify,66203,下降4,AI Coding / 技术图生成,Apache-2.0,将想法、项目规划或代码库转化为可交互的结构图；适合架构讲解、项目展示和研发文档制作。
-54,modelflare-ai/AnyModelBot,65950,下降20,AI Agent / 工作流编排,MIT,"AnyModelBot 面向多步骤 agent 与业务流程编排，项目核心能力为“🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek…”；主要解决规划、工具调用、状态管理和结果交付难串联，适合自动研究、业务自动化和多 agent 协作。"
+54,modelflare-ai/AnyModelBot,65950,下降20,本地 AI / 个人 Agent,MIT,本地优先的开源 Bot 框架，可连接 GPT、Claude、Gemini、Grok、DeepSeek 等模型运行个人智能体；适合自托管助手、多模型交互与自动化任务。
 55,simpsoka/zigzag,65821,下降29,垂直 AI / 刺绣图案设计,Apache-2.0,跨平台刺绣设计软件，支持将 SVG 转成机器刺绣路径，并提供 MCP 接口供 AI Agent 编辑针迹和生成刺绣方案。
 56,hyperionaidev/smolmaxxing,65689,下降28,本地 LLM / 轻量设备推理,MIT,围绕小型设备的大模型运行能力进行测试和优化，探索如何在受限硬件环境加载与执行不同 LLM；适合端侧推理与性能实验。
 57,Nutlope/hallmark,65678,下降21,Agent Skills / UI 设计,MIT,为 Claude Code、Cursor 和 Codex 提供界面设计技能，减少 AI 生成页面中的重复视觉套路；适合前端设计打磨与产品原型优化。
@@ -77,11 +77,11 @@
 76,mksglu/context-mode,64133,下降7,Agent Context / 上下文治理,未知 / 未声明,将编码 Agent 的工具输出留在本地沙箱，并以 SQLite 全文检索按需取回，降低上下文污染和 token 消耗，适合长周期编程任务。
 77,NVIDIA/OpenShell,64075,下降10,AI 安全 / Agent 隔离运行时,Apache-2.0,为自主 AI Agent 提供安全且私有的执行环境，降低自动任务中的权限与数据风险；适合受控代理部署。
 78,heygen-com/hyperframes,63947,下降1,AI 视频 / 可编辑内容生成,Apache-2.0,开源 AI 视频创作工具，重点支持生成之后继续调整内容；适合营销视频、创意短片和持续迭代制作。
-79,huaxialucaicaizi/ai-startup-skills,63915,下降29,AI 编码助手 / Agent Skills,未知 / 未声明,ai-startup-skills 面向 coding agent 与工程协作，核心能力是创业公司做 AI 产品的 7 步 Agent Skill 合集：验证 → BP → 政策 → 路演 → 获客 → 定价 → 注册；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+79,huaxialucaicaizi/ai-startup-skills,63915,下降29,Agent Skills / 创业规划,未知 / 未声明,将商业想法验证、商业计划书、政策研究、路演、获客、定价和注册等步骤封装为 Agent Skills；适合 AI 创业团队的研究与规划。
 80,alibaba/open-code-review,63881,下降5,AI Coding / 自动代码审查,Apache-2.0,阿里巴巴的混合架构代码审查工具，将自动检测与智能分析结合，适合企业级代码质量检查和研发安全流程。
 81,JosssphZhou/poki,63718,下降25,Computer Use / iPhone Agent,AGPL-3.0,可在 iPhone 上运行的开源智能体，读取屏幕并点击、输入、滑动来操作应用；适合手机端 Computer Use 实验。
 82,t8y2/dbx,63692,下降8,MCP / AI 数据库助手,Apache-2.0,支持百余种数据库的跨平台客户端，内置 AI 助手、MCP Server 与 CLI，让 Agent 可通过统一接口检索和操作数据库；适合数据库分析。
-83,caldoai/skills,63434,下降24,AI 编码助手 / Agent Skills,MIT,skills 面向 coding agent 与工程协作，项目核心能力为“Caldo's skills”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+83,caldoai/skills,63434,下降24,Agent Skills / 开发辅助,MIT,Caldo 维护的编码代理技能仓库，用于让开发者把常用工程操作封装为可复用的 Skill；适合代理配置和开发工作流定制。
 84,deepseek-ai/DeepInfer,63299,下降6,本地 LLM / 高性能推理,Apache-2.0,面向 DeepSeek 模型的高性能推理框架，关注大规模模型服务效率；适合推理平台部署与性能优化。
 85,lemomo-ai/lemo-opuscar,63297,下降9,AI 视频生成 / 多媒体工作流,未知 / 未声明,"lemo-opuscar 面向视频生成、理解与自动化制作，项目核心能力为“A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in…”；主要解决从脚本、素材到成片的链路长且后期成本高，适合短视频、营销素材、演示视频和多媒体内容生产。"
 86,qybaihe/bla,63166,下降15,AI 安全 / Agent 安全治理,MIT,"bla 面向 AI 安全与自动化防护，项目核心能力为“🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQ…”；主要解决agent 执行、代码与技能引入中的风险难及时识别，适合安全审计、漏洞分析、权限控制和运行治理。"
@@ -90,12 +90,12 @@
 89,Zagitta/gpu-unlock,63025,下降9,AI 基础设施 / 运行与平台层,未知 / 未声明,gpu-unlock 面向 AI 应用运行、工具链和平台基础设施，项目核心能力为“Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput”；主要解决模型、工具、数据和运行环境接入分散，适合AI 平台、应用底座和生产化部署。
 90,AienTech/dossier,63013,下降18,AI 求职 / 招聘与职业运营,AGPL-3.0,dossier 面向求职与招聘流程自动化，项目核心能力为“A self-hosted job search and resume builder app that writes tailored resumes and cover letters from your profile”；主要解决岗位筛选、材料定制和候选人评估重复耗时，适合岗位匹配、简历优化、招聘初筛和申请跟踪。
 91,THU-MAIC/OpenMAIC,62994,下降6,教育 AI / 多 Agent 课堂,MIT,开源多智能体互动课堂系统，借助多角色协作组织沉浸式学习；适合教育产品和交互教学实验。
-92,DietrichGebert/ponytail,62964,下降26,AI 编码助手 / Agent Skills,MIT,ponytail 面向 coding agent 与工程协作，项目核心能力为“Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
+92,DietrichGebert/ponytail,62964,下降26,Agent Skills / 软件工程,MIT,面向编码代理的简化开发理念技能，强调通过减少不必要的实现来保持代码精炼；适合重构、设计评审和日常工程决策。
 93,rocketride-org/rocketride-server,62778,下降10,AI 基础设施 / 工作流引擎,MIT,以 C++ 核心和可扩展 Python 节点构建高性能 AI 数据处理流水线，适合 AI 工作流编排、调试和服务部署。
 94,rehan-remade/universal-modder,62753,下降15,AI 视频生成 / 多媒体工作流,MIT,"universal-modder 面向视频生成、理解与自动化制作，项目核心能力为“Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generate…”；主要解决从脚本、素材到成片的链路长且后期成本高，适合短视频、营销素材、演示视频和多媒体内容生产。"
 95,hypit-ai/hypit,62511,下降6,AI 视频生成 / 多媒体工作流,未知 / 未声明,"hypit 面向视频生成、理解与自动化制作，项目核心能力为“Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command…”；主要解决从脚本、素材到成片的链路长且后期成本高，适合短视频、营销素材、演示视频和多媒体内容生产。"
 96,elayadesign/ai-design-skills,62256,下降32,Agent Skills / UI 设计,MIT,为 Claude Code、Cursor、Codex 提供落地页设计与 Figma 设计技能，涵盖版式、排版及组件规范；适合前端和界面设计。
 97,blader/humanizer,62124,上升2,Agent Skills / 文本润色,MIT,用于减少 AI 生成文本中常见表达特征的 Agent Skill；适合文章、文案和报告初稿润色。
-98,openBitFun/OpenBitFun,62103,下降16,AI 编码助手 / Agent Skills,MIT,OpenBitFun 面向 coding agent 与工程协作，项目核心能力为“OpenBitFun combines a high-performance agent runtime written in Rust with a polished desktop application. It pairs the depth of a Code Agent with ope…”；主要解决仓库理解、代码修改、验证和团队方法难稳定复用，适合代码生成、重构、调试、审查和研发提效。
-99,CopilotKit/OpenDots,62021,下降13,AI Agent / 工作流编排,MIT,"OpenDots 面向多步骤 agent 与业务流程编排，项目核心能力为“Your always-on AI coworkers that move between text, calls, and Slack”；主要解决规划、工具调用、状态管理和结果交付难串联，适合自动研究、业务自动化和多 agent 协作。"
+98,openBitFun/OpenBitFun,62103,下降16,AI Agent / Rust 运行时,MIT,融合 Rust 高性能 Agent Runtime 与桌面应用界面的 AI 编码工具，支持运行和管理智能体任务；适合自托管 Coding Agent 和执行环境研究。
+99,CopilotKit/OpenDots,62021,下降13,通用 Agent / 常驻 AI 同事,MIT,常驻式 AI 工作伙伴，可在文本、语音通话和 Slack 等渠道之间延续任务；适合团队协作、跨渠道工作追踪与日常流程自动化。
 100,michael-denyer/pstack-claude,62000,下降16,Agent Skills / 多平台编码代理,MIT,把 Cursor 的 pstack 编码技能移植到 Claude Code、Codex、Copilot 等工具，并提供工作流路由与验证方法；适合多代理环境的工程实践。
