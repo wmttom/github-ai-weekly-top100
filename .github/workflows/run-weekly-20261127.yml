@@ -1,0 +1,187 @@
+name: One-off AI Top100 2026-11-27
+
+on:
+  push:
+    branches: [run-weekly-20261127]
+    paths:
+      - '.github/workflows/run-weekly-20261127.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r scripts/requirements-weekly.txt
+      - name: Fetch official Trendshift and verify candidate repository evidence
+        id: generate
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, importlib.util, json, os, re, sys, time
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          import requests
+          
+          root = Path.cwd()
+          spec = importlib.util.spec_from_file_location("weekly_gen", root/"scripts/generate_weekly_ranking.py")
+          m = importlib.util.module_from_spec(spec); sys.modules[spec.name] = m; spec.loader.exec_module(m)
+          now = datetime.now(timezone.utc)
+          tz = ZoneInfo("Asia/Shanghai")
+          date_now = datetime.now(tz).date()
+          if date_now.isoformat() != "2026-11-27":
+              raise SystemExit(f"Unexpected Asia/Shanghai date {date_now}")
+          session = requests.Session()
+          session.headers.update({"User-Agent": "Mozilla/5.0 Chrome/136 Safari/537.36", "Accept":"text/html,application/xhtml+xml", "Cache-Control":"no-cache, no-store, must-revalidate", "Pragma":"no-cache"})
+          base = Path(os.environ.get("RUNNER_TEMP", "/tmp"))/"github-ai-top100-20261127"
+          base.mkdir(parents=True,exist_ok=True)
+          trend={}
+          status={}
+          for period,url in m.URLS.items():
+              attempts=[]
+              for attempt in range(1,4):
+                  try:
+                      started=time.monotonic()
+                      resp=session.get(url,timeout=(25,120),headers={"Cache-Control":"no-cache","Pragma":"no-cache"})
+                      resp.raise_for_status()
+                      if len(resp.content)<40000: raise RuntimeError(f"HTML too small: {len(resp.content)}")
+                      path=base/f"{period}.html"
+                      path.write_bytes(resp.content)
+                      entries=m.parse(path,period)
+                      if len(entries)<m.MINS[period]:raise RuntimeError(f"Insufficient ranking data {len(entries)}")
+                      attempts.append({"attempt":attempt,"status":resp.status_code,"size":len(resp.content),"entries":len(entries),"seconds":round(time.monotonic()-started,2),"ok":True})
+                      trend[period]=entries
+                      break
+                  except Exception as exc:
+                      attempts.append({"attempt":attempt,"ok":False,"error":repr(exc)})
+                      if "NameResolutionError" in repr(exc) and attempt==1:
+                          try:
+                              dr=session.get("https://dns.google/dns-query",params={"name":"trendshift.io","type":"A"},headers={"Accept":"application/dns-json"},timeout=15)
+                              print("DNS over HTTPS fallback:",dr.status_code,dr.text[:400],flush=True)
+                          except Exception as de:
+                              print("DoH lookup unavailable:",repr(de),flush=True)
+                      if attempt<3:time.sleep(60)
+              status[period]={"url":url,"attempts":attempts,"success":period in trend}
+              print("SOURCE",period,json.dumps(status[period],ensure_ascii=False),flush=True)
+              if period not in trend:
+                  raise SystemExit("STOP: Trendshift source invalid after three attempts: "+period+" "+json.dumps(attempts,ensure_ascii=False))
+          
+          print("ALL THREE LIVE SOURCES VERIFIED:",{p:len(v) for p,v in trend.items()},flush=True)
+          prevpath=m.previous(root,date_now)
+          print("PREVIOUS", prevpath.name if prevpath else "none",flush=True)
+          prevrows=m.readprev(prevpath)
+          prevmap={m.key(x["项目"]):x for x in prevrows}
+          tm={}; names={}
+          for period,records in trend.items():
+              for entry in records:
+                  k=m.key(entry.repo)
+                  tm.setdefault(k,{})[period]=entry
+                  names.setdefault(k,entry.repo)
+          keys=list(dict.fromkeys([*tm,*prevmap]))
+          repos=[names.get(k) or prevmap[k]["项目"] for k in keys]
+          token=os.environ.get("GITHUB_TOKEN","")
+          if not token:raise SystemExit("Missing GitHub token")
+          meta=m.meta(repos,token,base)
+          cands={}
+          for k in keys:
+              md=meta.get(k,{})
+              repo=md.get("full_name") or names.get(k) or prevmap.get(k,{}).get("项目","")
+              c=cands.setdefault(m.key(repo),m.Cand(repo))
+              c.trend.update(tm.get(k,{}))
+              if len(md)>=len(c.meta):c.meta=md
+              if prevmap.get(k):c.prev=prevmap[k]
+          print("TOTAL CANDIDATES",len(cands),flush=True)
+          from concurrent.futures import ThreadPoolExecutor
+          from base64 import b64decode
+          from threading import local
+          tls=local()
+          def api_get(path, **params):
+              if not hasattr(tls,"api"):
+                  tls.api=m.session(token)
+                  tls.api.headers["Accept"]="application/vnd.github+json"
+              r=tls.api.get("https://api.github.com/repos/"+path,params=params,timeout=(20,60))
+              return r
+          threshold=(now-timedelta(days=30)).isoformat().replace("+00:00","Z")
+          code_ext=(".py",".js",".jsx",".ts",".tsx",".mjs",".cjs",".go",".rs",".c",".h",".cpp",".hpp",".cc",".cu",".cuh",".java",".kt",".swift",".rb",".php",".cs",".sh",".ps1",".sql",".ipynb",".lua",".vue",".svelte",".html",".css",".proto",".gradle",".dart",".ex",".exs",".jl",".r",".tf",".zig",".toml",".yaml",".yml",".wgsl",".metal",".mm",".m")
+          def verify(c):
+              md=c.meta
+              if md.get("error_status") or not md.get("created_at") or not md.get("full_name"):
+                  return {"repo":c.repo,"reject":"metadata unavailable"}
+              if md.get("archived") or md.get("disabled") or md.get("fork"):
+                  return {"repo":c.repo,"reject":"archived/disabled/fork"}
+              if (now-m.iso(md["created_at"])).days>366 and not (c.prev or c.trend):
+                  return {"repo":c.repo,"reject":"no trend evidence for older repo"}
+              try:
+                  res=api_get(c.repo+"/commits",since=threshold,per_page=30)
+                  if res.status_code!=200 or not isinstance(res.json(),list):
+                      return {"repo":c.repo,"reject":"commit listing HTTP "+str(res.status_code)}
+                  recent=res.json()
+                  if not recent:return {"repo":c.repo,"reject":"no recent commits"}
+                  witness=None
+                  for item in recent:
+                      sha=item.get("sha")
+                      if not sha:continue
+                      detail=api_get(c.repo+"/commits/"+sha)
+                      if detail.status_code!=200:continue
+                      obj=detail.json()
+                      commit_dt=m.iso((obj.get("commit",{}).get("committer") or {}).get("date"))
+                      if not commit_dt or commit_dt<now-timedelta(days=30):continue
+                      paths=[x.get("filename","") for x in obj.get("files",[]) if x.get("status")!="removed"]
+                      files=[p for p in paths if not p.lower().startswith(("docs/",".github/")) and (p.lower().endswith(code_ext) or p.lower().endswith("skill.md") or ("/skills/" in "/"+p.lower() and p.lower().endswith(".md") and not p.lower().endswith("readme.md")))]
+                      if files:
+                          witness={"sha":sha,"date":commit_dt.isoformat(),"file":files[0]}
+                          break
+                  if not witness:return {"repo":c.repo,"reject":"no implementation commit in sampled recent commits"}
+                  # Collect short current README excerpts for new or otherwise ambiguous repositories.
+                  readme=""
+                  if not c.prev or not md.get("description"):
+                      rr=api_get(c.repo+"/readme")
+                      if rr.status_code==200:
+                          j=rr.json()
+                          if j.get("encoding")=="base64":
+                              raw=b64decode(j.get("content","")).decode("utf-8","replace")
+                              # Strip image links and badge/HTML markup for compact evidence.
+                              raw=re.sub(r"!\[[^\]]*\]\([^\n]*?\)", "",raw)
+                              raw=re.sub(r"<[^>]*>"," ",raw)
+                              raw=re.sub(r"\s+"," ",raw).strip()
+                              readme=raw[:1100]
+                  lic=md.get("license_spdx")
+                  if not lic or lic.upper() in {"NOASSERTION","OTHER","NONE","NULL"}:lic="未知 / 未声明"
+                  # Prioritize current week, then day, then month. Historical rank only a weak carry-over.
+                  weights={"weekly":72000,"daily":42000,"monthly":30000}
+                  rawscore=sum(weights[p]*max(0.01,(101-min(t.rank,100))/100)+(1500 if p=="weekly" else 700 if p=="daily" else 500)*min(t.featured,30) for p,t in c.trend.items())
+                  rawscore+=6000*max(0,len(c.trend)-1)+5000*(len(c.trend)==3)
+                  prev_rank=int(c.prev["排名"]) if c.prev else None
+                  rawscore+= (1200+(101-prev_rank)*35) if prev_rank else 0
+                  rawscore+=2000*((now-m.iso(md["created_at"])).days<=366)
+                  rawscore+=min(len(recent),30)*80
+                  rawscore+=min(1000,250*m.math.log10(md.get("stargazers_count",0)+1))
+                  return {"repo":c.repo,"prev":prev_rank,"prev_category":(c.prev or {}).get("项目分类",""),"prev_intro":(c.prev or {}).get("项目简介",""),"desc":md.get("description",""),"topics":md.get("topics",[])[:15],"readme":readme,"license":lic,"created":md["created_at"],"trend":{p:[t.rank,t.featured] for p,t in c.trend.items()},"recent_count":len(recent),"commit":witness,"raw":round(rawscore,4)}
+              except Exception as ex:
+                  return {"repo":c.repo,"reject":"verification error: "+str(ex)[:200]}
+          # No CSV or repository write in this job. The final semantic review and publication are separate.
+          with ThreadPoolExecutor(max_workers=5) as pool:
+              results=list(pool.map(verify,cands.values()))
+          passed=[x for x in results if "reject" not in x]
+          rejected=[x for x in results if "reject" in x]
+          print("EVIDENCE_SUMMARY",json.dumps({"candidates":len(results),"commit_verified":len(passed),"rejected":len(rejected),"previous":prevpath.name if prevpath else None,"sources":status},ensure_ascii=False),flush=True)
+          for row in passed:
+              print("EVIDENCE_ROW "+json.dumps(row,ensure_ascii=False,separators=(",",":")),flush=True)
+          for row in rejected:
+              print("REJECTED_ROW "+json.dumps(row,ensure_ascii=False,separators=(",",":")),flush=True)
+          if len(passed)<100:raise SystemExit("STOP: fewer than 100 candidates with verifiable implementation commits")
+          PY
+
